@@ -1,0 +1,1206 @@
+-
+   sample_file  : sample_0001000000.npy
+   expect_file  : expect_0001000000.npy
+   size         : 1000000
+   average_time :  859.460 # [msec]
+   throughput   :    1.164 # [mwords/sec]
+-
+   sample_file  : sample_0001000000.npy
+   expect_file  : expect_0001000000.npy
+   size         : 1000000
+   average_time :  840.246 # [msec]
+   throughput   :    1.190 # [mwords/sec]
+-
+   sample_file  : sample_0000005000.npy
+   expect_file  : expect_0000005000.npy
+   size         : 5000
+   average_time :    0.747 # [msec]
+   throughput   :    6.694 # [mwords/sec]
+-
+   sample_file  : sample_0000010000.npy
+   expect_file  : expect_0000010000.npy
+   size         : 10000
+   average_time :    1.551 # [msec]
+   throughput   :    6.446 # [mwords/sec]
+-
+   sample_file  : sample_0000015000.npy
+   expect_file  : expect_0000015000.npy
+   size         : 15000
+   average_time :    2.592 # [msec]
+   throughput   :    5.786 # [mwords/sec]
+-
+   sample_file  : sample_0000020000.npy
+   expect_file  : expect_0000020000.npy
+   size         : 20000
+   average_time :    3.632 # [msec]
+   throughput   :    5.507 # [mwords/sec]
+-
+   sample_file  : sample_0000025000.npy
+   expect_file  : expect_0000025000.npy
+   size         : 25000
+   average_time :    4.816 # [msec]
+   throughput   :    5.191 # [mwords/sec]
+-
+   sample_file  : sample_0000030000.npy
+   expect_file  : expect_0000030000.npy
+   size         : 30000
+   average_time :    6.094 # [msec]
+   throughput   :    4.923 # [mwords/sec]
+-
+   sample_file  : sample_0000035000.npy
+   expect_file  : expect_0000035000.npy
+   size         : 35000
+   average_time :    7.245 # [msec]
+   throughput   :    4.831 # [mwords/sec]
+-
+   sample_file  : sample_0000040000.npy
+   expect_file  : expect_0000040000.npy
+   size         : 40000
+   average_time :    8.728 # [msec]
+   throughput   :    4.583 # [mwords/sec]
+-
+   sample_file  : sample_0000045000.npy
+   expect_file  : expect_0000045000.npy
+   size         : 45000
+   average_time :    9.984 # [msec]
+   throughput   :    4.507 # [mwords/sec]
+-
+   sample_file  : sample_0000050000.npy
+   expect_file  : expect_0000050000.npy
+   size         : 50000
+   average_time :   11.538 # [msec]
+   throughput   :    4.334 # [mwords/sec]
+-
+   sample_file  : sample_0000055000.npy
+   expect_file  : expect_0000055000.npy
+   size         : 55000
+   average_time :   12.571 # [msec]
+   throughput   :    4.375 # [mwords/sec]
+-
+   sample_file  : sample_0000060000.npy
+   expect_file  : expect_0000060000.npy
+   size         : 60000
+   average_time :   13.619 # [msec]
+   throughput   :    4.406 # [mwords/sec]
+-
+   sample_file  : sample_0000065000.npy
+   expect_file  : expect_0000065000.npy
+   size         : 65000
+   average_time :   14.906 # [msec]
+   throughput   :    4.361 # [mwords/sec]
+-
+   sample_file  : sample_0000070000.npy
+   expect_file  : expect_0000070000.npy
+   size         : 70000
+   average_time :   16.457 # [msec]
+   throughput   :    4.253 # [mwords/sec]
+-
+   sample_file  : sample_0000075000.npy
+   expect_file  : expect_0000075000.npy
+   size         : 75000
+   average_time :   17.767 # [msec]
+   throughput   :    4.221 # [mwords/sec]
+-
+   sample_file  : sample_0000080000.npy
+   expect_file  : expect_0000080000.npy
+   size         : 80000
+   average_time :   19.262 # [msec]
+   throughput   :    4.153 # [mwords/sec]
+-
+   sample_file  : sample_0000085000.npy
+   expect_file  : expect_0000085000.npy
+   size         : 85000
+   average_time :   21.564 # [msec]
+   throughput   :    3.942 # [mwords/sec]
+-
+   sample_file  : sample_0000090000.npy
+   expect_file  : expect_0000090000.npy
+   size         : 90000
+   average_time :   22.989 # [msec]
+   throughput   :    3.915 # [mwords/sec]
+-
+   sample_file  : sample_0000095000.npy
+   expect_file  : expect_0000095000.npy
+   size         : 95000
+   average_time :   24.314 # [msec]
+   throughput   :    3.907 # [mwords/sec]
+-
+   sample_file  : sample_0000100000.npy
+   expect_file  : expect_0000100000.npy
+   size         : 100000
+   average_time :   26.107 # [msec]
+   throughput   :    3.830 # [mwords/sec]
+-
+   sample_file  : sample_0000105000.npy
+   expect_file  : expect_0000105000.npy
+   size         : 105000
+   average_time :   27.516 # [msec]
+   throughput   :    3.816 # [mwords/sec]
+-
+   sample_file  : sample_0000110000.npy
+   expect_file  : expect_0000110000.npy
+   size         : 110000
+   average_time :   29.776 # [msec]
+   throughput   :    3.694 # [mwords/sec]
+-
+   sample_file  : sample_0000115000.npy
+   expect_file  : expect_0000115000.npy
+   size         : 115000
+   average_time :   30.859 # [msec]
+   throughput   :    3.727 # [mwords/sec]
+-
+   sample_file  : sample_0000120000.npy
+   expect_file  : expect_0000120000.npy
+   size         : 120000
+   average_time :   33.003 # [msec]
+   throughput   :    3.636 # [mwords/sec]
+-
+   sample_file  : sample_0000125000.npy
+   expect_file  : expect_0000125000.npy
+   size         : 125000
+   average_time :   34.756 # [msec]
+   throughput   :    3.596 # [mwords/sec]
+-
+   sample_file  : sample_0000130000.npy
+   expect_file  : expect_0000130000.npy
+   size         : 130000
+   average_time :   36.634 # [msec]
+   throughput   :    3.549 # [mwords/sec]
+-
+   sample_file  : sample_0000135000.npy
+   expect_file  : expect_0000135000.npy
+   size         : 135000
+   average_time :   38.673 # [msec]
+   throughput   :    3.491 # [mwords/sec]
+-
+   sample_file  : sample_0000140000.npy
+   expect_file  : expect_0000140000.npy
+   size         : 140000
+   average_time :   40.537 # [msec]
+   throughput   :    3.454 # [mwords/sec]
+-
+   sample_file  : sample_0000145000.npy
+   expect_file  : expect_0000145000.npy
+   size         : 145000
+   average_time :   42.152 # [msec]
+   throughput   :    3.440 # [mwords/sec]
+-
+   sample_file  : sample_0000150000.npy
+   expect_file  : expect_0000150000.npy
+   size         : 150000
+   average_time :   43.902 # [msec]
+   throughput   :    3.417 # [mwords/sec]
+-
+   sample_file  : sample_0000155000.npy
+   expect_file  : expect_0000155000.npy
+   size         : 155000
+   average_time :   45.619 # [msec]
+   throughput   :    3.398 # [mwords/sec]
+-
+   sample_file  : sample_0000160000.npy
+   expect_file  : expect_0000160000.npy
+   size         : 160000
+   average_time :   48.127 # [msec]
+   throughput   :    3.325 # [mwords/sec]
+-
+   sample_file  : sample_0000165000.npy
+   expect_file  : expect_0000165000.npy
+   size         : 165000
+   average_time :   48.590 # [msec]
+   throughput   :    3.396 # [mwords/sec]
+-
+   sample_file  : sample_0000170000.npy
+   expect_file  : expect_0000170000.npy
+   size         : 170000
+   average_time :   52.575 # [msec]
+   throughput   :    3.233 # [mwords/sec]
+-
+   sample_file  : sample_0000175000.npy
+   expect_file  : expect_0000175000.npy
+   size         : 175000
+   average_time :   54.234 # [msec]
+   throughput   :    3.227 # [mwords/sec]
+-
+   sample_file  : sample_0000180000.npy
+   expect_file  : expect_0000180000.npy
+   size         : 180000
+   average_time :   56.023 # [msec]
+   throughput   :    3.213 # [mwords/sec]
+-
+   sample_file  : sample_0000185000.npy
+   expect_file  : expect_0000185000.npy
+   size         : 185000
+   average_time :   58.778 # [msec]
+   throughput   :    3.147 # [mwords/sec]
+-
+   sample_file  : sample_0000190000.npy
+   expect_file  : expect_0000190000.npy
+   size         : 190000
+   average_time :   60.663 # [msec]
+   throughput   :    3.132 # [mwords/sec]
+-
+   sample_file  : sample_0000195000.npy
+   expect_file  : expect_0000195000.npy
+   size         : 195000
+   average_time :   61.921 # [msec]
+   throughput   :    3.149 # [mwords/sec]
+-
+   sample_file  : sample_0000200000.npy
+   expect_file  : expect_0000200000.npy
+   size         : 200000
+   average_time :   66.442 # [msec]
+   throughput   :    3.010 # [mwords/sec]
+-
+   sample_file  : sample_0000205000.npy
+   expect_file  : expect_0000205000.npy
+   size         : 205000
+   average_time :   69.776 # [msec]
+   throughput   :    2.938 # [mwords/sec]
+-
+   sample_file  : sample_0000210000.npy
+   expect_file  : expect_0000210000.npy
+   size         : 210000
+   average_time :   72.047 # [msec]
+   throughput   :    2.915 # [mwords/sec]
+-
+   sample_file  : sample_0000215000.npy
+   expect_file  : expect_0000215000.npy
+   size         : 215000
+   average_time :   75.583 # [msec]
+   throughput   :    2.845 # [mwords/sec]
+-
+   sample_file  : sample_0000220000.npy
+   expect_file  : expect_0000220000.npy
+   size         : 220000
+   average_time :   78.754 # [msec]
+   throughput   :    2.793 # [mwords/sec]
+-
+   sample_file  : sample_0000225000.npy
+   expect_file  : expect_0000225000.npy
+   size         : 225000
+   average_time :   82.993 # [msec]
+   throughput   :    2.711 # [mwords/sec]
+-
+   sample_file  : sample_0000230000.npy
+   expect_file  : expect_0000230000.npy
+   size         : 230000
+   average_time :   87.060 # [msec]
+   throughput   :    2.642 # [mwords/sec]
+-
+   sample_file  : sample_0000235000.npy
+   expect_file  : expect_0000235000.npy
+   size         : 235000
+   average_time :   90.690 # [msec]
+   throughput   :    2.591 # [mwords/sec]
+-
+   sample_file  : sample_0000240000.npy
+   expect_file  : expect_0000240000.npy
+   size         : 240000
+   average_time :   95.555 # [msec]
+   throughput   :    2.512 # [mwords/sec]
+-
+   sample_file  : sample_0000245000.npy
+   expect_file  : expect_0000245000.npy
+   size         : 245000
+   average_time :   99.629 # [msec]
+   throughput   :    2.459 # [mwords/sec]
+-
+   sample_file  : sample_0000250000.npy
+   expect_file  : expect_0000250000.npy
+   size         : 250000
+   average_time :  100.844 # [msec]
+   throughput   :    2.479 # [mwords/sec]
+-
+   sample_file  : sample_0000255000.npy
+   expect_file  : expect_0000255000.npy
+   size         : 255000
+   average_time :  105.327 # [msec]
+   throughput   :    2.421 # [mwords/sec]
+-
+   sample_file  : sample_0000260000.npy
+   expect_file  : expect_0000260000.npy
+   size         : 260000
+   average_time :  111.234 # [msec]
+   throughput   :    2.337 # [mwords/sec]
+-
+   sample_file  : sample_0000265000.npy
+   expect_file  : expect_0000265000.npy
+   size         : 265000
+   average_time :  112.557 # [msec]
+   throughput   :    2.354 # [mwords/sec]
+-
+   sample_file  : sample_0000270000.npy
+   expect_file  : expect_0000270000.npy
+   size         : 270000
+   average_time :  114.663 # [msec]
+   throughput   :    2.355 # [mwords/sec]
+-
+   sample_file  : sample_0000275000.npy
+   expect_file  : expect_0000275000.npy
+   size         : 275000
+   average_time :  119.290 # [msec]
+   throughput   :    2.305 # [mwords/sec]
+-
+   sample_file  : sample_0000280000.npy
+   expect_file  : expect_0000280000.npy
+   size         : 280000
+   average_time :  122.363 # [msec]
+   throughput   :    2.288 # [mwords/sec]
+-
+   sample_file  : sample_0000285000.npy
+   expect_file  : expect_0000285000.npy
+   size         : 285000
+   average_time :  124.410 # [msec]
+   throughput   :    2.291 # [mwords/sec]
+-
+   sample_file  : sample_0000290000.npy
+   expect_file  : expect_0000290000.npy
+   size         : 290000
+   average_time :  129.742 # [msec]
+   throughput   :    2.235 # [mwords/sec]
+-
+   sample_file  : sample_0000295000.npy
+   expect_file  : expect_0000295000.npy
+   size         : 295000
+   average_time :  131.796 # [msec]
+   throughput   :    2.238 # [mwords/sec]
+-
+   sample_file  : sample_0000300000.npy
+   expect_file  : expect_0000300000.npy
+   size         : 300000
+   average_time :  136.114 # [msec]
+   throughput   :    2.204 # [mwords/sec]
+-
+   sample_file  : sample_0000305000.npy
+   expect_file  : expect_0000305000.npy
+   size         : 305000
+   average_time :  139.503 # [msec]
+   throughput   :    2.186 # [mwords/sec]
+-
+   sample_file  : sample_0000310000.npy
+   expect_file  : expect_0000310000.npy
+   size         : 310000
+   average_time :  143.414 # [msec]
+   throughput   :    2.162 # [mwords/sec]
+-
+   sample_file  : sample_0000315000.npy
+   expect_file  : expect_0000315000.npy
+   size         : 315000
+   average_time :  145.980 # [msec]
+   throughput   :    2.158 # [mwords/sec]
+-
+   sample_file  : sample_0000320000.npy
+   expect_file  : expect_0000320000.npy
+   size         : 320000
+   average_time :  148.760 # [msec]
+   throughput   :    2.151 # [mwords/sec]
+-
+   sample_file  : sample_0000325000.npy
+   expect_file  : expect_0000325000.npy
+   size         : 325000
+   average_time :  154.812 # [msec]
+   throughput   :    2.099 # [mwords/sec]
+-
+   sample_file  : sample_0000330000.npy
+   expect_file  : expect_0000330000.npy
+   size         : 330000
+   average_time :  157.555 # [msec]
+   throughput   :    2.095 # [mwords/sec]
+-
+   sample_file  : sample_0000335000.npy
+   expect_file  : expect_0000335000.npy
+   size         : 335000
+   average_time :  162.604 # [msec]
+   throughput   :    2.060 # [mwords/sec]
+-
+   sample_file  : sample_0000340000.npy
+   expect_file  : expect_0000340000.npy
+   size         : 340000
+   average_time :  165.788 # [msec]
+   throughput   :    2.051 # [mwords/sec]
+-
+   sample_file  : sample_0000345000.npy
+   expect_file  : expect_0000345000.npy
+   size         : 345000
+   average_time :  170.049 # [msec]
+   throughput   :    2.029 # [mwords/sec]
+-
+   sample_file  : sample_0000350000.npy
+   expect_file  : expect_0000350000.npy
+   size         : 350000
+   average_time :  172.115 # [msec]
+   throughput   :    2.034 # [mwords/sec]
+-
+   sample_file  : sample_0000355000.npy
+   expect_file  : expect_0000355000.npy
+   size         : 355000
+   average_time :  180.589 # [msec]
+   throughput   :    1.966 # [mwords/sec]
+-
+   sample_file  : sample_0000360000.npy
+   expect_file  : expect_0000360000.npy
+   size         : 360000
+   average_time :  179.258 # [msec]
+   throughput   :    2.008 # [mwords/sec]
+-
+   sample_file  : sample_0000365000.npy
+   expect_file  : expect_0000365000.npy
+   size         : 365000
+   average_time :  185.409 # [msec]
+   throughput   :    1.969 # [mwords/sec]
+-
+   sample_file  : sample_0000370000.npy
+   expect_file  : expect_0000370000.npy
+   size         : 370000
+   average_time :  192.467 # [msec]
+   throughput   :    1.922 # [mwords/sec]
+-
+   sample_file  : sample_0000375000.npy
+   expect_file  : expect_0000375000.npy
+   size         : 375000
+   average_time :  195.131 # [msec]
+   throughput   :    1.922 # [mwords/sec]
+-
+   sample_file  : sample_0000380000.npy
+   expect_file  : expect_0000380000.npy
+   size         : 380000
+   average_time :  196.004 # [msec]
+   throughput   :    1.939 # [mwords/sec]
+-
+   sample_file  : sample_0000385000.npy
+   expect_file  : expect_0000385000.npy
+   size         : 385000
+   average_time :  203.533 # [msec]
+   throughput   :    1.892 # [mwords/sec]
+-
+   sample_file  : sample_0000390000.npy
+   expect_file  : expect_0000390000.npy
+   size         : 390000
+   average_time :  211.701 # [msec]
+   throughput   :    1.842 # [mwords/sec]
+-
+   sample_file  : sample_0000395000.npy
+   expect_file  : expect_0000395000.npy
+   size         : 395000
+   average_time :  210.404 # [msec]
+   throughput   :    1.877 # [mwords/sec]
+-
+   sample_file  : sample_0000400000.npy
+   expect_file  : expect_0000400000.npy
+   size         : 400000
+   average_time :  216.304 # [msec]
+   throughput   :    1.849 # [mwords/sec]
+-
+   sample_file  : sample_0000405000.npy
+   expect_file  : expect_0000405000.npy
+   size         : 405000
+   average_time :  218.942 # [msec]
+   throughput   :    1.850 # [mwords/sec]
+-
+   sample_file  : sample_0000410000.npy
+   expect_file  : expect_0000410000.npy
+   size         : 410000
+   average_time :  221.008 # [msec]
+   throughput   :    1.855 # [mwords/sec]
+-
+   sample_file  : sample_0000415000.npy
+   expect_file  : expect_0000415000.npy
+   size         : 415000
+   average_time :  225.073 # [msec]
+   throughput   :    1.844 # [mwords/sec]
+-
+   sample_file  : sample_0000420000.npy
+   expect_file  : expect_0000420000.npy
+   size         : 420000
+   average_time :  234.952 # [msec]
+   throughput   :    1.788 # [mwords/sec]
+-
+   sample_file  : sample_0000425000.npy
+   expect_file  : expect_0000425000.npy
+   size         : 425000
+   average_time :  237.098 # [msec]
+   throughput   :    1.793 # [mwords/sec]
+-
+   sample_file  : sample_0000430000.npy
+   expect_file  : expect_0000430000.npy
+   size         : 430000
+   average_time :  237.669 # [msec]
+   throughput   :    1.809 # [mwords/sec]
+-
+   sample_file  : sample_0000435000.npy
+   expect_file  : expect_0000435000.npy
+   size         : 435000
+   average_time :  241.191 # [msec]
+   throughput   :    1.804 # [mwords/sec]
+-
+   sample_file  : sample_0000440000.npy
+   expect_file  : expect_0000440000.npy
+   size         : 440000
+   average_time :  251.893 # [msec]
+   throughput   :    1.747 # [mwords/sec]
+-
+   sample_file  : sample_0000445000.npy
+   expect_file  : expect_0000445000.npy
+   size         : 445000
+   average_time :  250.491 # [msec]
+   throughput   :    1.777 # [mwords/sec]
+-
+   sample_file  : sample_0000450000.npy
+   expect_file  : expect_0000450000.npy
+   size         : 450000
+   average_time :  254.514 # [msec]
+   throughput   :    1.768 # [mwords/sec]
+-
+   sample_file  : sample_0000455000.npy
+   expect_file  : expect_0000455000.npy
+   size         : 455000
+   average_time :  259.899 # [msec]
+   throughput   :    1.751 # [mwords/sec]
+-
+   sample_file  : sample_0000460000.npy
+   expect_file  : expect_0000460000.npy
+   size         : 460000
+   average_time :  267.988 # [msec]
+   throughput   :    1.716 # [mwords/sec]
+-
+   sample_file  : sample_0000465000.npy
+   expect_file  : expect_0000465000.npy
+   size         : 465000
+   average_time :  269.857 # [msec]
+   throughput   :    1.723 # [mwords/sec]
+-
+   sample_file  : sample_0000470000.npy
+   expect_file  : expect_0000470000.npy
+   size         : 470000
+   average_time :  278.998 # [msec]
+   throughput   :    1.685 # [mwords/sec]
+-
+   sample_file  : sample_0000475000.npy
+   expect_file  : expect_0000475000.npy
+   size         : 475000
+   average_time :  281.272 # [msec]
+   throughput   :    1.689 # [mwords/sec]
+-
+   sample_file  : sample_0000480000.npy
+   expect_file  : expect_0000480000.npy
+   size         : 480000
+   average_time :  284.676 # [msec]
+   throughput   :    1.686 # [mwords/sec]
+-
+   sample_file  : sample_0000485000.npy
+   expect_file  : expect_0000485000.npy
+   size         : 485000
+   average_time :  284.644 # [msec]
+   throughput   :    1.704 # [mwords/sec]
+-
+   sample_file  : sample_0000490000.npy
+   expect_file  : expect_0000490000.npy
+   size         : 490000
+   average_time :  291.684 # [msec]
+   throughput   :    1.680 # [mwords/sec]
+-
+   sample_file  : sample_0000495000.npy
+   expect_file  : expect_0000495000.npy
+   size         : 495000
+   average_time :  306.648 # [msec]
+   throughput   :    1.614 # [mwords/sec]
+-
+   sample_file  : sample_0000500000.npy
+   expect_file  : expect_0000500000.npy
+   size         : 500000
+   average_time :  296.395 # [msec]
+   throughput   :    1.687 # [mwords/sec]
+-
+   sample_file  : sample_0000505000.npy
+   expect_file  : expect_0000505000.npy
+   size         : 505000
+   average_time :  308.431 # [msec]
+   throughput   :    1.637 # [mwords/sec]
+-
+   sample_file  : sample_0000510000.npy
+   expect_file  : expect_0000510000.npy
+   size         : 510000
+   average_time :  311.599 # [msec]
+   throughput   :    1.637 # [mwords/sec]
+-
+   sample_file  : sample_0000515000.npy
+   expect_file  : expect_0000515000.npy
+   size         : 515000
+   average_time :  316.181 # [msec]
+   throughput   :    1.629 # [mwords/sec]
+-
+   sample_file  : sample_0000520000.npy
+   expect_file  : expect_0000520000.npy
+   size         : 520000
+   average_time :  320.406 # [msec]
+   throughput   :    1.623 # [mwords/sec]
+-
+   sample_file  : sample_0000525000.npy
+   expect_file  : expect_0000525000.npy
+   size         : 525000
+   average_time :  326.753 # [msec]
+   throughput   :    1.607 # [mwords/sec]
+-
+   sample_file  : sample_0000530000.npy
+   expect_file  : expect_0000530000.npy
+   size         : 530000
+   average_time :  339.148 # [msec]
+   throughput   :    1.563 # [mwords/sec]
+-
+   sample_file  : sample_0000535000.npy
+   expect_file  : expect_0000535000.npy
+   size         : 535000
+   average_time :  341.132 # [msec]
+   throughput   :    1.568 # [mwords/sec]
+-
+   sample_file  : sample_0000540000.npy
+   expect_file  : expect_0000540000.npy
+   size         : 540000
+   average_time :  335.174 # [msec]
+   throughput   :    1.611 # [mwords/sec]
+-
+   sample_file  : sample_0000545000.npy
+   expect_file  : expect_0000545000.npy
+   size         : 545000
+   average_time :  337.497 # [msec]
+   throughput   :    1.615 # [mwords/sec]
+-
+   sample_file  : sample_0000550000.npy
+   expect_file  : expect_0000550000.npy
+   size         : 550000
+   average_time :  355.361 # [msec]
+   throughput   :    1.548 # [mwords/sec]
+-
+   sample_file  : sample_0000555000.npy
+   expect_file  : expect_0000555000.npy
+   size         : 555000
+   average_time :  354.269 # [msec]
+   throughput   :    1.567 # [mwords/sec]
+-
+   sample_file  : sample_0000560000.npy
+   expect_file  : expect_0000560000.npy
+   size         : 560000
+   average_time :  365.587 # [msec]
+   throughput   :    1.532 # [mwords/sec]
+-
+   sample_file  : sample_0000565000.npy
+   expect_file  : expect_0000565000.npy
+   size         : 565000
+   average_time :  362.547 # [msec]
+   throughput   :    1.558 # [mwords/sec]
+-
+   sample_file  : sample_0000570000.npy
+   expect_file  : expect_0000570000.npy
+   size         : 570000
+   average_time :  368.009 # [msec]
+   throughput   :    1.549 # [mwords/sec]
+-
+   sample_file  : sample_0000575000.npy
+   expect_file  : expect_0000575000.npy
+   size         : 575000
+   average_time :  374.504 # [msec]
+   throughput   :    1.535 # [mwords/sec]
+-
+   sample_file  : sample_0000580000.npy
+   expect_file  : expect_0000580000.npy
+   size         : 580000
+   average_time :  378.598 # [msec]
+   throughput   :    1.532 # [mwords/sec]
+-
+   sample_file  : sample_0000585000.npy
+   expect_file  : expect_0000585000.npy
+   size         : 585000
+   average_time :  383.094 # [msec]
+   throughput   :    1.527 # [mwords/sec]
+-
+   sample_file  : sample_0000590000.npy
+   expect_file  : expect_0000590000.npy
+   size         : 590000
+   average_time :  390.076 # [msec]
+   throughput   :    1.513 # [mwords/sec]
+-
+   sample_file  : sample_0000595000.npy
+   expect_file  : expect_0000595000.npy
+   size         : 595000
+   average_time :  400.980 # [msec]
+   throughput   :    1.484 # [mwords/sec]
+-
+   sample_file  : sample_0000600000.npy
+   expect_file  : expect_0000600000.npy
+   size         : 600000
+   average_time :  398.908 # [msec]
+   throughput   :    1.504 # [mwords/sec]
+-
+   sample_file  : sample_0000605000.npy
+   expect_file  : expect_0000605000.npy
+   size         : 605000
+   average_time :  410.779 # [msec]
+   throughput   :    1.473 # [mwords/sec]
+-
+   sample_file  : sample_0000610000.npy
+   expect_file  : expect_0000610000.npy
+   size         : 610000
+   average_time :  409.138 # [msec]
+   throughput   :    1.491 # [mwords/sec]
+-
+   sample_file  : sample_0000615000.npy
+   expect_file  : expect_0000615000.npy
+   size         : 615000
+   average_time :  413.119 # [msec]
+   throughput   :    1.489 # [mwords/sec]
+-
+   sample_file  : sample_0000620000.npy
+   expect_file  : expect_0000620000.npy
+   size         : 620000
+   average_time :  426.646 # [msec]
+   throughput   :    1.453 # [mwords/sec]
+-
+   sample_file  : sample_0000625000.npy
+   expect_file  : expect_0000625000.npy
+   size         : 625000
+   average_time :  422.227 # [msec]
+   throughput   :    1.480 # [mwords/sec]
+-
+   sample_file  : sample_0000630000.npy
+   expect_file  : expect_0000630000.npy
+   size         : 630000
+   average_time :  432.163 # [msec]
+   throughput   :    1.458 # [mwords/sec]
+-
+   sample_file  : sample_0000635000.npy
+   expect_file  : expect_0000635000.npy
+   size         : 635000
+   average_time :  435.803 # [msec]
+   throughput   :    1.457 # [mwords/sec]
+-
+   sample_file  : sample_0000640000.npy
+   expect_file  : expect_0000640000.npy
+   size         : 640000
+   average_time :  444.509 # [msec]
+   throughput   :    1.440 # [mwords/sec]
+-
+   sample_file  : sample_0000645000.npy
+   expect_file  : expect_0000645000.npy
+   size         : 645000
+   average_time :  450.071 # [msec]
+   throughput   :    1.433 # [mwords/sec]
+-
+   sample_file  : sample_0000650000.npy
+   expect_file  : expect_0000650000.npy
+   size         : 650000
+   average_time :  455.472 # [msec]
+   throughput   :    1.427 # [mwords/sec]
+-
+   sample_file  : sample_0000655000.npy
+   expect_file  : expect_0000655000.npy
+   size         : 655000
+   average_time :  454.507 # [msec]
+   throughput   :    1.441 # [mwords/sec]
+-
+   sample_file  : sample_0000660000.npy
+   expect_file  : expect_0000660000.npy
+   size         : 660000
+   average_time :  464.506 # [msec]
+   throughput   :    1.421 # [mwords/sec]
+-
+   sample_file  : sample_0000665000.npy
+   expect_file  : expect_0000665000.npy
+   size         : 665000
+   average_time :  476.209 # [msec]
+   throughput   :    1.396 # [mwords/sec]
+-
+   sample_file  : sample_0000670000.npy
+   expect_file  : expect_0000670000.npy
+   size         : 670000
+   average_time :  481.126 # [msec]
+   throughput   :    1.393 # [mwords/sec]
+-
+   sample_file  : sample_0000675000.npy
+   expect_file  : expect_0000675000.npy
+   size         : 675000
+   average_time :  476.441 # [msec]
+   throughput   :    1.417 # [mwords/sec]
+-
+   sample_file  : sample_0000680000.npy
+   expect_file  : expect_0000680000.npy
+   size         : 680000
+   average_time :  479.730 # [msec]
+   throughput   :    1.417 # [mwords/sec]
+-
+   sample_file  : sample_0000685000.npy
+   expect_file  : expect_0000685000.npy
+   size         : 685000
+   average_time :  488.905 # [msec]
+   throughput   :    1.401 # [mwords/sec]
+-
+   sample_file  : sample_0000690000.npy
+   expect_file  : expect_0000690000.npy
+   size         : 690000
+   average_time :  490.756 # [msec]
+   throughput   :    1.406 # [mwords/sec]
+-
+   sample_file  : sample_0000695000.npy
+   expect_file  : expect_0000695000.npy
+   size         : 695000
+   average_time :  505.927 # [msec]
+   throughput   :    1.374 # [mwords/sec]
+-
+   sample_file  : sample_0000700000.npy
+   expect_file  : expect_0000700000.npy
+   size         : 700000
+   average_time :  510.649 # [msec]
+   throughput   :    1.371 # [mwords/sec]
+-
+   sample_file  : sample_0000705000.npy
+   expect_file  : expect_0000705000.npy
+   size         : 705000
+   average_time :  527.027 # [msec]
+   throughput   :    1.338 # [mwords/sec]
+-
+   sample_file  : sample_0000710000.npy
+   expect_file  : expect_0000710000.npy
+   size         : 710000
+   average_time :  516.065 # [msec]
+   throughput   :    1.376 # [mwords/sec]
+-
+   sample_file  : sample_0000715000.npy
+   expect_file  : expect_0000715000.npy
+   size         : 715000
+   average_time :  518.433 # [msec]
+   throughput   :    1.379 # [mwords/sec]
+-
+   sample_file  : sample_0000720000.npy
+   expect_file  : expect_0000720000.npy
+   size         : 720000
+   average_time :  528.022 # [msec]
+   throughput   :    1.364 # [mwords/sec]
+-
+   sample_file  : sample_0000725000.npy
+   expect_file  : expect_0000725000.npy
+   size         : 725000
+   average_time :  532.277 # [msec]
+   throughput   :    1.362 # [mwords/sec]
+-
+   sample_file  : sample_0000730000.npy
+   expect_file  : expect_0000730000.npy
+   size         : 730000
+   average_time :  543.395 # [msec]
+   throughput   :    1.343 # [mwords/sec]
+-
+   sample_file  : sample_0000735000.npy
+   expect_file  : expect_0000735000.npy
+   size         : 735000
+   average_time :  534.872 # [msec]
+   throughput   :    1.374 # [mwords/sec]
+-
+   sample_file  : sample_0000740000.npy
+   expect_file  : expect_0000740000.npy
+   size         : 740000
+   average_time :  556.159 # [msec]
+   throughput   :    1.331 # [mwords/sec]
+-
+   sample_file  : sample_0000745000.npy
+   expect_file  : expect_0000745000.npy
+   size         : 745000
+   average_time :  559.674 # [msec]
+   throughput   :    1.331 # [mwords/sec]
+-
+   sample_file  : sample_0000750000.npy
+   expect_file  : expect_0000750000.npy
+   size         : 750000
+   average_time :  568.393 # [msec]
+   throughput   :    1.320 # [mwords/sec]
+-
+   sample_file  : sample_0000755000.npy
+   expect_file  : expect_0000755000.npy
+   size         : 755000
+   average_time :  574.342 # [msec]
+   throughput   :    1.315 # [mwords/sec]
+-
+   sample_file  : sample_0000760000.npy
+   expect_file  : expect_0000760000.npy
+   size         : 760000
+   average_time :  567.681 # [msec]
+   throughput   :    1.339 # [mwords/sec]
+-
+   sample_file  : sample_0000765000.npy
+   expect_file  : expect_0000765000.npy
+   size         : 765000
+   average_time :  572.946 # [msec]
+   throughput   :    1.335 # [mwords/sec]
+-
+   sample_file  : sample_0000770000.npy
+   expect_file  : expect_0000770000.npy
+   size         : 770000
+   average_time :  581.197 # [msec]
+   throughput   :    1.325 # [mwords/sec]
+-
+   sample_file  : sample_0000775000.npy
+   expect_file  : expect_0000775000.npy
+   size         : 775000
+   average_time :  586.525 # [msec]
+   throughput   :    1.321 # [mwords/sec]
+-
+   sample_file  : sample_0000780000.npy
+   expect_file  : expect_0000780000.npy
+   size         : 780000
+   average_time :  594.569 # [msec]
+   throughput   :    1.312 # [mwords/sec]
+-
+   sample_file  : sample_0000785000.npy
+   expect_file  : expect_0000785000.npy
+   size         : 785000
+   average_time :  599.840 # [msec]
+   throughput   :    1.309 # [mwords/sec]
+-
+   sample_file  : sample_0000790000.npy
+   expect_file  : expect_0000790000.npy
+   size         : 790000
+   average_time :  605.779 # [msec]
+   throughput   :    1.304 # [mwords/sec]
+-
+   sample_file  : sample_0000795000.npy
+   expect_file  : expect_0000795000.npy
+   size         : 795000
+   average_time :  618.460 # [msec]
+   throughput   :    1.285 # [mwords/sec]
+-
+   sample_file  : sample_0000800000.npy
+   expect_file  : expect_0000800000.npy
+   size         : 800000
+   average_time :  626.240 # [msec]
+   throughput   :    1.277 # [mwords/sec]
+-
+   sample_file  : sample_0000805000.npy
+   expect_file  : expect_0000805000.npy
+   size         : 805000
+   average_time :  615.973 # [msec]
+   throughput   :    1.307 # [mwords/sec]
+-
+   sample_file  : sample_0000810000.npy
+   expect_file  : expect_0000810000.npy
+   size         : 810000
+   average_time :  621.730 # [msec]
+   throughput   :    1.303 # [mwords/sec]
+-
+   sample_file  : sample_0000815000.npy
+   expect_file  : expect_0000815000.npy
+   size         : 815000
+   average_time :  632.932 # [msec]
+   throughput   :    1.288 # [mwords/sec]
+-
+   sample_file  : sample_0000820000.npy
+   expect_file  : expect_0000820000.npy
+   size         : 820000
+   average_time :  630.471 # [msec]
+   throughput   :    1.301 # [mwords/sec]
+-
+   sample_file  : sample_0000825000.npy
+   expect_file  : expect_0000825000.npy
+   size         : 825000
+   average_time :  640.866 # [msec]
+   throughput   :    1.287 # [mwords/sec]
+-
+   sample_file  : sample_0000830000.npy
+   expect_file  : expect_0000830000.npy
+   size         : 830000
+   average_time :  647.066 # [msec]
+   throughput   :    1.283 # [mwords/sec]
+-
+   sample_file  : sample_0000835000.npy
+   expect_file  : expect_0000835000.npy
+   size         : 835000
+   average_time :  660.865 # [msec]
+   throughput   :    1.263 # [mwords/sec]
+-
+   sample_file  : sample_0000840000.npy
+   expect_file  : expect_0000840000.npy
+   size         : 840000
+   average_time :  666.851 # [msec]
+   throughput   :    1.260 # [mwords/sec]
+-
+   sample_file  : sample_0000845000.npy
+   expect_file  : expect_0000845000.npy
+   size         : 845000
+   average_time :  684.676 # [msec]
+   throughput   :    1.234 # [mwords/sec]
+-
+   sample_file  : sample_0000850000.npy
+   expect_file  : expect_0000850000.npy
+   size         : 850000
+   average_time :  671.750 # [msec]
+   throughput   :    1.265 # [mwords/sec]
+-
+   sample_file  : sample_0000855000.npy
+   expect_file  : expect_0000855000.npy
+   size         : 855000
+   average_time :  676.280 # [msec]
+   throughput   :    1.264 # [mwords/sec]
+-
+   sample_file  : sample_0000860000.npy
+   expect_file  : expect_0000860000.npy
+   size         : 860000
+   average_time :  686.458 # [msec]
+   throughput   :    1.253 # [mwords/sec]
+-
+   sample_file  : sample_0000865000.npy
+   expect_file  : expect_0000865000.npy
+   size         : 865000
+   average_time :  685.821 # [msec]
+   throughput   :    1.261 # [mwords/sec]
+-
+   sample_file  : sample_0000870000.npy
+   expect_file  : expect_0000870000.npy
+   size         : 870000
+   average_time :  690.122 # [msec]
+   throughput   :    1.261 # [mwords/sec]
+-
+   sample_file  : sample_0000875000.npy
+   expect_file  : expect_0000875000.npy
+   size         : 875000
+   average_time :  696.657 # [msec]
+   throughput   :    1.256 # [mwords/sec]
+-
+   sample_file  : sample_0000880000.npy
+   expect_file  : expect_0000880000.npy
+   size         : 880000
+   average_time :  705.657 # [msec]
+   throughput   :    1.247 # [mwords/sec]
+-
+   sample_file  : sample_0000885000.npy
+   expect_file  : expect_0000885000.npy
+   size         : 885000
+   average_time :  708.183 # [msec]
+   throughput   :    1.250 # [mwords/sec]
+-
+   sample_file  : sample_0000890000.npy
+   expect_file  : expect_0000890000.npy
+   size         : 890000
+   average_time :  715.564 # [msec]
+   throughput   :    1.244 # [mwords/sec]
+-
+   sample_file  : sample_0000895000.npy
+   expect_file  : expect_0000895000.npy
+   size         : 895000
+   average_time :  723.531 # [msec]
+   throughput   :    1.237 # [mwords/sec]
+-
+   sample_file  : sample_0000900000.npy
+   expect_file  : expect_0000900000.npy
+   size         : 900000
+   average_time :  727.108 # [msec]
+   throughput   :    1.238 # [mwords/sec]
+-
+   sample_file  : sample_0000905000.npy
+   expect_file  : expect_0000905000.npy
+   size         : 905000
+   average_time :  737.185 # [msec]
+   throughput   :    1.228 # [mwords/sec]
+-
+   sample_file  : sample_0000910000.npy
+   expect_file  : expect_0000910000.npy
+   size         : 910000
+   average_time :  754.676 # [msec]
+   throughput   :    1.206 # [mwords/sec]
+-
+   sample_file  : sample_0000915000.npy
+   expect_file  : expect_0000915000.npy
+   size         : 915000
+   average_time :  738.512 # [msec]
+   throughput   :    1.239 # [mwords/sec]
+-
+   sample_file  : sample_0000920000.npy
+   expect_file  : expect_0000920000.npy
+   size         : 920000
+   average_time :  727.237 # [msec]
+   throughput   :    1.265 # [mwords/sec]
+-
+   sample_file  : sample_0000925000.npy
+   expect_file  : expect_0000925000.npy
+   size         : 925000
+   average_time :  773.212 # [msec]
+   throughput   :    1.196 # [mwords/sec]
+-
+   sample_file  : sample_0000930000.npy
+   expect_file  : expect_0000930000.npy
+   size         : 930000
+   average_time :  759.459 # [msec]
+   throughput   :    1.225 # [mwords/sec]
+-
+   sample_file  : sample_0000935000.npy
+   expect_file  : expect_0000935000.npy
+   size         : 935000
+   average_time :  760.711 # [msec]
+   throughput   :    1.229 # [mwords/sec]
+-
+   sample_file  : sample_0000940000.npy
+   expect_file  : expect_0000940000.npy
+   size         : 940000
+   average_time :  779.283 # [msec]
+   throughput   :    1.206 # [mwords/sec]
+-
+   sample_file  : sample_0000945000.npy
+   expect_file  : expect_0000945000.npy
+   size         : 945000
+   average_time :  773.126 # [msec]
+   throughput   :    1.222 # [mwords/sec]
+-
+   sample_file  : sample_0000950000.npy
+   expect_file  : expect_0000950000.npy
+   size         : 950000
+   average_time :  792.199 # [msec]
+   throughput   :    1.199 # [mwords/sec]
+-
+   sample_file  : sample_0000955000.npy
+   expect_file  : expect_0000955000.npy
+   size         : 955000
+   average_time :  800.552 # [msec]
+   throughput   :    1.193 # [mwords/sec]
+-
+   sample_file  : sample_0000960000.npy
+   expect_file  : expect_0000960000.npy
+   size         : 960000
+   average_time :  800.384 # [msec]
+   throughput   :    1.199 # [mwords/sec]
+-
+   sample_file  : sample_0000965000.npy
+   expect_file  : expect_0000965000.npy
+   size         : 965000
+   average_time :  791.742 # [msec]
+   throughput   :    1.219 # [mwords/sec]
+-
+   sample_file  : sample_0000970000.npy
+   expect_file  : expect_0000970000.npy
+   size         : 970000
+   average_time :  814.672 # [msec]
+   throughput   :    1.191 # [mwords/sec]
+-
+   sample_file  : sample_0000975000.npy
+   expect_file  : expect_0000975000.npy
+   size         : 975000
+   average_time :  821.896 # [msec]
+   throughput   :    1.186 # [mwords/sec]
+-
+   sample_file  : sample_0000980000.npy
+   expect_file  : expect_0000980000.npy
+   size         : 980000
+   average_time :  837.132 # [msec]
+   throughput   :    1.171 # [mwords/sec]
+-
+   sample_file  : sample_0000985000.npy
+   expect_file  : expect_0000985000.npy
+   size         : 985000
+   average_time :  826.930 # [msec]
+   throughput   :    1.191 # [mwords/sec]
+-
+   sample_file  : sample_0000990000.npy
+   expect_file  : expect_0000990000.npy
+   size         : 990000
+   average_time :  852.555 # [msec]
+   throughput   :    1.161 # [mwords/sec]
+-
+   sample_file  : sample_0000995000.npy
+   expect_file  : expect_0000995000.npy
+   size         : 995000
+   average_time :  837.564 # [msec]
+   throughput   :    1.188 # [mwords/sec]
