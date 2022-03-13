@@ -215,7 +215,7 @@ proc create_root_design { parentCell } {
    CONFIG.STM_AXI_ID_BASE {0} \
    CONFIG.STM_AXI_ID_WIDTH {5} \
    CONFIG.STM_AXI_USER_WIDTH {1} \
-   CONFIG.STM_FEEDBACK {1} \
+   CONFIG.STM_FEEDBACK {2} \
    CONFIG.STM_RD_AXI_XFER_SIZE {12} \
    CONFIG.STM_WR_AXI_XFER_SIZE {12} \
  ] $ArgSort_AXI_1
