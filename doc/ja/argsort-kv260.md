@@ -122,7 +122,7 @@ Table.1 ArgSort_AXI の主なパラメータの設定値
 ### 使用リソース
 
 
-次表に MRG_WAYS、MRG_WORDS、STM_FEEDBACK を振ったそれぞれのデザインを Ultra96 に実装した時のリソースの使用状況を示します。なお、MRG_WASY が64 以上は Kv260 で使われているデバイスには入りきりませんでした。また、MRG_WAYS が 32 かつ MRG_WORD が ２の場合、動作周波数が250MHz ではタイミング違反が発生したため、220MHz に落としています。
+次表に MRG_WAYS、MRG_WORDS、STM_FEEDBACK を振ったそれぞれのデザインを Kv260 に実装した時のリソースの使用状況を示します。なお、MRG_WASY が64 以上は Kv260 で使われているデバイスには入りきりませんでした。また、MRG_WAYS が 32 かつ MRG_WORD が ２の場合、動作周波数が250MHz ではタイミング違反が発生したため、220MHz に落としています。
 
 
 
@@ -685,7 +685,7 @@ fpga@debian-fpga:~/ArgSort-Kv260$ sudo rake uninstall
 ### ビルド環境
 
 * 開発ツール: Xilinx Vivado 2021.2
-* IP: [ArgSort_AXI IP 1.2]、[ZynqMP-ACP-Adapter IP 0.4]
+* IP: [ArgSort_AXI IP 1.2]、[ZynqMP-ACP-Adapter IP v0.4]
 
 
 
@@ -697,8 +697,8 @@ fpga@debian-fpga:~/ArgSort-Kv260$ sudo rake uninstall
 
 
 ```console
-shell$ git clone --branch 1.2.1 git://github.com/ikwzm/ArgSort-Ultra96.git
-shell$ cd ArgSort-Ultra96
+shell$ git clone --branch 1.2.1 --recursive git://github.com/ikwzm/ArgSort-Kv260.git
+shell$ cd ArgSort-Kv260
 ```
 
 
@@ -786,7 +786,7 @@ shell$ gzip argsort_16_2_2.bin
 ### バス帯域について
 
 
-ArgSort で使用しているマージソーターコアは [マルチワード マージソート ノード] で説明したように１クロックあたりに出力できるワード数を複数ワードにすることができます。[ArgSort IP 1.2] ではこのパラメータの値は MRG_WORDS で指定します。
+ArgSort で使用しているマージソーターコアは[「マルチワード マージソート ノード」]で説明したように１クロックあたりに出力できるワード数を複数ワードにすることができます。[ArgSort_AXI IP 1.2] ではこのパラメータの値は MRG_WORDS で指定します。
 
 本来ならこのパラメータを１から２に変更することで性能が倍になるはずです。しかし [「ArgSort-Ultra96」] では残念ながら次の表のようにそれほどの性能の差はみられませんでした。これは Ultra96-V2 のシステムメモリである DDR-SDRAM は32bit(4Byte)×2(DDR分)×533MHz で 4.264GByte/sec しかなかったために起こったものでした。
 
@@ -965,5 +965,8 @@ Table.5 Kv260 におけるMRG_WORDSの違いによる性能の比較
 [『ZynqMP ACP と AXI をつなぐアダプタ』 @Qiita]: https://qiita.com/ikwzm/items/302c28c18af8ca51388a "『ZynqMP ACP と AXI をつなぐアダプタ』 @Qiita"
 [『UltraZed/Ultra96/Ultra96-V2/KV260 向け Debian GNU/Linux (v2021.1版) ブートイメージの提供』@Qiita]: https://qiita.com/ikwzm/items/a9adc5a7329b2eb36895 "『UltraZed/Ultra96/Ultra96-V2/KV260 向け Debian GNU/Linux (v2021.1版) ブートイメージの提供』@Qiita"
 [ArgSort_AXI IP 1.2]: https://github.com/ikwzm/ArgSort-Kv260/tree/1.2.0/ip/argsort_axi_1.2 "ArgSort_AXI IP 1.2"
-[ZynqMP-ACP-Adapter]: https://github.com/ikwzm/ZynqMP-ACP-Adapter "ZynqMP-ACP-Adapter"
+[ZynqMP-ACP-Adapter]: https://github.com/ikwzm/ZynqMP-ACP-Adapter/ "ZynqMP-ACP-Adapter"
+[ZynqMP-ACP-Adapter IP v0.4]: https://github.com/ikwzm/ZynqMP-ACP-Adapter/tree/v0.4 "ZynqMP-ACP-Adapter IP v0.4"
 [ZynqMP-FPGA-Linux v2021.1.1]: https://github.com/ikwzm/ZynqMP-FPGA-Linux/tree/v2021.1.1 "ZynqMP-FPGA-Linux v2021.1.1"
+[Xilinx Kria Kv260 Vision AI Starter Kit]: https://japan.xilinx.com/products/som/kria/kv260-vision-starter-kit.html "Xilinx Kria Kv260 Vision AI Starter Kit"
+
