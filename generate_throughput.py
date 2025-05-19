@@ -77,6 +77,9 @@ if __name__ == '__main__':
                        '32_1_0' : 'light-green',
                        '32_1_1' : 'green',
                        '32_1_2' : 'dark-green',
+                       '32_2_0' : 'light-green',
+                       '32_2_1' : 'green',
+                       '32_2_2' : 'dark-green',
                        'expect' : 'pink'}
         key_font_size = 8
         max_yrange    = (math.ceil(float(max_time)/10.0)*10.0)*args.yscale
