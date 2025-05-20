@@ -1,4 +1,4 @@
-ArgSorter for Kv260
+ArgSorter for Kv260 (vivado-2023.1-abnormal-program-termination)
 ====================================================================================
 
 Overvier
@@ -28,604 +28,1258 @@ Fig.1 ArgSort-Kv260 Design Block
 
 <br />
 
-### Utilization
-
-Table.2 Utilization
-
-<table border="2">
-  <tr>
-    <td align="center" colspan="4">Design</td>
-    <td align="center" colspan="5">Resources</td>
-    <td align="center" rowspan="3">Freq<br />[MHz]</td>
-  </tr>
-  <tr>
-    <td align="center" rowspan="2">Name</td>
-    <td align="center" rowspan="2">MRG<br />WAYS</td>
-    <td align="center" rowspan="2">MRG<br />WORDS</td>
-    <td align="center" rowspan="2">STM<br />FB</td>
-    <td align="center" colspan="2">CLB</td>
-    <td align="center" colspan="2">BLOCK RAM</td>
-    <td align="center" rowspan="2">DSPs</td>
-  <tr>
-    <td align="center">LUTs</td>
-    <td align="center">Register</td>
-    <td align="center">RAMB36</td>
-    <td align="center">URAM</td>
-  <tr>
-    <td>argsort_16_1_0</td>
-    <td align="center">16</td>
-    <td align="center">1</td>
-    <td align="center">0</td>
-    <td align="right">42507</td>
-    <td align="right">27176</td>
-    <td align="right">38</td>
-    <td align="right">0</td>
-    <td align="right">0</td>
-    <td align="center">250</td>
-  </tr>
-  <tr>
-    <td>argsort_16_1_1</td>
-    <td align="center">16</td>
-    <td align="center">1</td>
-    <td align="center">1</td>
-    <td align="right">42714</td>
-    <td align="right">27843</td>
-    <td align="right">38</td>
-    <td align="right">0</td>
-    <td align="right">0</td>
-    <td align="center">250</td>
-  </tr>
-  <tr>
-    <td>argsort_16_1_2</td>
-    <td align="center">16</td>
-    <td align="center">1</td>
-    <td align="center">2</td>
-    <td align="right">42859</td>
-    <td align="right">27014</td>
-    <td align="right">54</td>
-    <td align="right">0</td>
-    <td align="right">0</td>
-    <td align="center">250</td>
-  </tr>
-  <tr>
-    <td>argsort_16_2_0</td>
-    <td align="center">16</td>
-    <td align="center">2</td>
-    <td align="center">0</td>
-    <td align="right">59239</td>
-    <td align="right">55627</td>
-    <td align="right">38</td>
-    <td align="right">0</td>
-    <td align="right">0</td>
-    <td align="center">250</td>
-  </tr>
-  <tr>
-    <td>argsort_16_2_1</td>
-    <td align="center">16</td>
-    <td align="center">2</td>
-    <td align="center">1</td>
-    <td align="right">60491</td>
-    <td align="right">56881</td>
-    <td align="right">38</td>
-    <td align="right">0</td>
-    <td align="right">0</td>
-    <td align="center">250</td>
-  </tr>
-  <tr>
-    <td>argsort_16_2_2</td>
-    <td align="center">16</td>
-    <td align="center">2</td>
-    <td align="center">2</td>
-    <td align="right">58363</td>
-    <td align="right">54870</td>
-    <td align="right">70</td>
-    <td align="right">0</td>
-    <td align="right">0</td>
-    <td align="center">250</td>
-  </tr>
-  <tr>
-    <td>argsort_32_1_0</td>
-    <td align="center">32</td>
-    <td align="center">1</td>
-    <td align="center">0</td>
-    <td align="right">66648</td>
-    <td align="right">46134</td>
-    <td align="right">70</td>
-    <td align="right">0</td>
-    <td align="right">15</td>
-    <td align="center">250</td>
-  </tr>
-  <tr>
-    <td>argsort_32_1_1</td>
-    <td align="center">32</td>
-    <td align="center">1</td>
-    <td align="center">1</td>
-    <td align="right">69430</td>
-    <td align="right">47579</td>
-    <td align="right">70</td>
-    <td align="right">0</td>
-    <td align="right">15</td>
-    <td align="center">250</td>
-  </tr>
-  <tr>
-    <td>argsort_32_1_2</td>
-    <td align="center">32</td>
-    <td align="center">1</td>
-    <td align="center">2</td>
-    <td align="right">68064</td>
-    <td align="right">46136</td>
-    <td align="right">70</td>
-    <td align="right">32</td>
-    <td align="right">15</td>
-    <td align="center">250</td>
-  </tr>
-  <tr>
-    <td>argsort_32_2_0</td>
-    <td align="center">32</td>
-    <td align="center">2</td>
-    <td align="center">0</td>
-    <td align="right">106793</td>
-    <td align="right">103907</td>
-    <td align="right">70</td>
-    <td align="right">0</td>
-    <td align="right">0</td>
-    <td align="center">220</td>
-  </tr>
-  <tr>
-    <td>argsort_32_2_1</td>
-    <td align="center">32</td>
-    <td align="center">2</td>
-    <td align="center">1</td>
-    <td align="right">109295</td>
-    <td align="right">106776</td>
-    <td align="right">70</td>
-    <td align="right">0</td>
-    <td align="right">0</td>
-    <td align="center">220</td>
-  </tr>
-  <tr>
-    <td>argsort_32_2_2</td>
-    <td align="center">32</td>
-    <td align="center">2</td>
-    <td align="center">2</td>
-    <td align="right">103651</td>
-    <td align="right">103225</td>
-    <td align="right">70</td>
-    <td align="right">64</td>
-    <td align="right">0</td>
-    <td align="center">220</td>
-  </tr>
-  <tr>
-    <td colspan="4">xck26-sfvc784-2LV-c resouce available</td>
-    <td align="right">117120</td>
-    <td align="right">234240</td>
-    <td align="right">144</td>
-    <td align="right">64</td>
-    <td align="right">1248</td>
-    <td align="center"></td>
-  </tr>
-</table>
-
-
-<br />
-
-
-![Fig.2 Utlization(LUTs %)](./doc/ja/argsort-kv260-resources.jpg "Fig.2 Utlization(LUTs %)")
-
-Fig.2 Utlization(LUTs %)
-
-<br />
-
-### Performance
-
-<table border="2">
-  <tr>
-    <td align="center" colspan="4">Design</td>
-    <td align="center" colspan="3">Sort time [msec]</td>
-    <td align="center" rowspan="2">Throughput <br />Average<br />[Mwords/sec]</td>
-  </tr>
-  <tr>
-    <td align="center">Name</td>
-    <td align="center">MRG<br />WAYS</td>
-    <td align="center">MRG<br />WORDS</td>
-    <td align="center">STM<br />FB</td>
-    <td align="center">10K<br />[words]</td>
-    <td align="center">100K<br />[words]</td>
-    <td align="center">1M<br />[words]</td>
-  <tr>
-    <td>argsort_16_1_0</td>
-    <td align="center">16</td>
-    <td align="center">1</td>
-    <td align="center">0</td>
-    <td align="right">0.445</td>
-    <td align="right">3.277</td>
-    <td align="right">34.805</td>
-    <td align="right">28.59</td>
-  </tr>
-  <tr>
-    <td>argsort_16_1_1</td>
-    <td align="center">16</td>
-    <td align="center">1</td>
-    <td align="center">1</td>
-    <td align="right">0.347</td>
-    <td align="right">2.364</td>
-    <td align="right">22.136</td>
-    <td align="right">43.87</td>
-  </tr>
-  <tr>
-    <td>argsort_16_1_2</td>
-    <td align="center">16</td>
-    <td align="center">1</td>
-    <td align="center">2</td>
-    <td align="right">0.353</td>
-    <td align="right">2.270</td>
-    <td align="right">21.287</td>
-    <td align="right">45.67</td>
-  </tr>
-  <tr>
-    <td>argsort_16_2_0</td>
-    <td align="center">16</td>
-    <td align="center">2</td>
-    <td align="center">0</td>
-    <td align="right">0.328</td>
-    <td align="right">2.004</td>
-    <td align="right">24.568</td>
-    <td align="right">40.87</td>
-  </tr>
-  <tr>
-    <td>argsort_16_2_1</td>
-    <td align="center">16</td>
-    <td align="center">2</td>
-    <td align="center">1</td>
-    <td align="right">0.274</td>
-    <td align="right">1.214</td>
-    <td align="right">17.030</td>
-    <td align="right">59.95</td>
-  </tr>
-  <tr>
-    <td>argsort_16_2_2</td>
-    <td align="center">16</td>
-    <td align="center">2</td>
-    <td align="center">2</td>
-    <td align="right">0.292</td>
-    <td align="right">1.092</td>
-    <td align="right">15.289</td>
-    <td align="right">66.27</td>
-  </tr>
-  <tr>
-    <td>argsort_32_1_0</td>
-    <td align="center">32</td>
-    <td align="center">1</td>
-    <td align="center">0</td>
-    <td align="right">0.338</td>
-    <td align="right">2.393</td>
-    <td align="right">24.882</td>
-    <td align="right">39.59</td>
-  </tr>
-  <tr>
-    <td>argsort_32_1_1</td>
-    <td align="center">32</td>
-    <td align="center">1</td>
-    <td align="center">1</td>
-    <td align="right">0.297</td>
-    <td align="right">1.898</td>
-    <td align="right">17.478</td>
-    <td align="right">54.79</td>
-  </tr>
-  <tr>
-    <td>argsort_32_1_2</td>
-    <td align="center">32</td>
-    <td align="center">1</td>
-    <td align="center">2</td>
-    <td align="right">0.566</td>
-    <td align="right">2.285</td>
-    <td align="right">19.921</td>
-    <td align="right">47.65</td>
-  </tr>
-  <tr>
-    <td>argsort_32_2_0</td>
-    <td align="center">32</td>
-    <td align="center">2</td>
-    <td align="center">0</td>
-    <td align="right">0.280</td>
-    <td align="right">1.489</td>
-    <td align="right">19.003</td>
-    <td align="right">53.62</td>
-  </tr>
-  <tr>
-    <td>argsort_32_2_1</td>
-    <td align="center">32</td>
-    <td align="center">2</td>
-    <td align="center">1</td>
-    <td align="right">0.239</td>
-    <td align="right">1.184</td>
-    <td align="right">13.765</td>
-    <td align="right">72.11</td>
-  </tr>
-  <tr>
-    <td>argsort_32_2_2</td>
-    <td align="center">32</td>
-    <td align="center">2</td>
-    <td align="center">2</td>
-    <td align="right">0.619</td>
-    <td align="right">1.526</td>
-    <td align="right">15.389</td>
-    <td align="right">63.20</td>
-  </tr>
-  <tr>
-    <td colspan="4">ZynqMP(arm64) numpy.argsort()</td>
-    <td align="right">1.551</td>
-    <td align="right">26.107</td>
-    <td align="right">840.246</td>
-    <td align="right">2.11</td>
-  </tr>
-</table>
-
-
-
-<br />
-
-
-![Fig.3 Throughput Average [Mwords/sec]](./doc/ja/argsort-kv260-performance.jpg "Fig.3 Throughput Average [Mwords/sec]")
-
-Fig.3 Throughput Average [Mwords/sec]
-
-<br />
-
-
-
-
-Quick Start
-------------------------------------------------------------------------------------
-
-### Install
-
-#### Install ZynqMP-FPGA-Linux or ZynqMP-FPGA-Ubuntu20.04
-
-See the following URL:
-
-* ZynqMP-FPGA-Linux
- - https://github.com/ikwzm/ZynqMP-FPGA-Linux/blob/v2021.1.1/doc/install/kv260.md
-* ZynqMP-FPGA-Ubuntu20.04
- - https://github.com/ikwzm/ZynqMP-FPGA-Ubuntu20.04/blob/v2021.1-console-1/doc/install/kv260-console.md
- - https://github.com/ikwzm/ZynqMP-FPGA-Ubuntu20.04/blob/v2021.1-desktop-1/doc/install/kv260-desktop.md
-
-#### Boot Kv260
-
-#### Login fpga user
-
-#### Download ArgSort-Kv260 to Kv260
-
-```console
-fpga@debian-fpga:~/$ git clone --branch 1.2.0 git://github.com/ikwzm/ArgSort-Kv260.git
-fpga@debian-fpga:~/$ cd ArgSort-Kv260
-```
-
-#### Set TARGET to Rakefile.env
-
-```console
-fpga@debian-fpga:~/ArgSort-Kv260$ cat Rakefile.env
----
-TARGET: argsort_32_2_1
-```
-Specify the base name of the Bitstream file you want to execute in place of TARGET:.
-
-#### Install Bitstream file to PL and Device Tree
-
-```console
-fpga@debian-fpga:~/ArgSort-Kv260$ sudo rake install
-[sudo] password for fpga:
-./dtbocfg.rb --install argsort --dts argsort_32_2_1_5.10.dts
-<stdin>:27.16-32.20: Warning (unit_address_vs_reg): /fragment@2/__overlay__/uio_argsort: node has a reg or ranges property, but no unit name
-<stdin>:18.13-52.5: Warning (avoid_unnecessary_addr_size): /fragment@2: unnecessary #address-cells/#size-cells without "ranges" or child "reg" property
-[ 3617.061703] fpga_manager fpga0: writing argsort_32_2_1.bin to Xilinx ZynqMP FPGA Manager
-[ 3617.538577] OF: overlay: WARNING: memory leak will occur if overlay removed, property: /fpga-full/firmware-name
-[ 3617.561601] u-dma-buf udmabuf-argsort-in: driver version = 3.2.4
-[ 3617.567613] u-dma-buf udmabuf-argsort-in: major number   = 243
-[ 3617.573445] u-dma-buf udmabuf-argsort-in: minor number   = 0
-[ 3617.579099] u-dma-buf udmabuf-argsort-in: phys address   = 0x0000000070100000
-[ 3617.586234] u-dma-buf udmabuf-argsort-in: buffer size    = 33554432
-[ 3617.592503] u-dma-buf amba_pl@0:udmabuf_argsort_in: driver installed.
-[ 3617.608308] u-dma-buf udmabuf-argsort-out: driver version = 3.2.4
-[ 3617.614407] u-dma-buf udmabuf-argsort-out: major number   = 243
-[ 3617.620323] u-dma-buf udmabuf-argsort-out: minor number   = 1
-[ 3617.626064] u-dma-buf udmabuf-argsort-out: phys address   = 0x0000000072100000
-[ 3617.633277] u-dma-buf udmabuf-argsort-out: buffer size    = 33554432
-[ 3617.639636] u-dma-buf amba_pl@0:udmabuf_argsort_out: driver installed.
-[ 3617.682789] u-dma-buf udmabuf-argsort-tmp: driver version = 3.2.4
-[ 3617.688883] u-dma-buf udmabuf-argsort-tmp: major number   = 243
-[ 3617.694800] u-dma-buf udmabuf-argsort-tmp: minor number   = 2
-[ 3617.700542] u-dma-buf udmabuf-argsort-tmp: phys address   = 0x0000000074100000
-[ 3617.707761] u-dma-buf udmabuf-argsort-tmp: buffer size    = 134217728
-[ 3617.714202] u-dma-buf amba_pl@0:udmabuf_argsort_tmp: driver installed.
-```
-
-If u-dma-buf device file permissions are not granted to the user, please give them permission.
-
-```console
-fpga@debian-fpga:~/ArgSort-Kv260$ ls -la /dev/udmabuf-argsort-*
-crw------- 1 root root 243, 0 Mar 14 05:08 /dev/udmabuf-argsort-in
-crw------- 1 root root 243, 1 Mar 14 05:08 /dev/udmabuf-argsort-out
-crw------- 1 root root 243, 2 Mar 14 05:08 /dev/udmabuf-argsort-tmp
-fpga@debian-fpga:~/ArgSort-Kv260$ sudo chmod o+rw /dev/udmabuf-argsort-*
-fpga@debian-fpga:~/ArgSort-Kv260$ ls -la /dev/udmabuf-argsort-*
-crw----rw- 1 root root 243, 0 Mar 14 05:08 /dev/udmabuf-argsort-in
-crw----rw- 1 root root 243, 1 Mar 14 05:08 /dev/udmabuf-argsort-out
-crw----rw- 1 root root 243, 2 Mar 14 05:08 /dev/udmabuf-argsort-tmp
-```
-
-#### Check Bitstream file installed to PL
-
-```console
-fpga@debian-fpga:~/ArgSort-Kv260$ rake info
-python3 argsort_info.py
-ArgSort_AXI Version      : 1.2
-ArgSort_AXI Ways         : 32
-ArgSort_AXI Words        : 2
-ArgSort_AXI Feedback     : 1
-ArgSort_AXI WordBits     : 32
-ArgSort_AXI IndexBits    : 32
-ArgSort_AXI Sort Order   : 0
-ArgSort_AXI Sign Compare : 0
-ArgSort_AXI Max Size     : 268435455
-ArgSort_AXI Debug Enable : 1
-```
-
-#### Run test all
-
-```console
-fpga@debian-fpga:~/ArgSort-Kv260$ rake test_all
-echo --- > argsort_32_2_1.log
-python3 generate_sample.py --size 5000 --sample sample_0000005000.npy
-generate_sample: sample_file : sample_0000005000.npy
-generate_sample: size        : 5000
-generate_sample: time        : 0.584 [msec]
-python3 generate_expect.py --sample sample_0000005000.npy --expect expect_0000005000.npy --log expect.log
-generate_expect: sample_file  : sample_0000005000.npy
-generate_expect: expect_file  : expect_0000005000.npy
-generate_expect: size         : 5000
-generate_expect: average_time :    0.868 # [msec]
-generate_expect: throughput   :    5.758 # [mwords/sec]
-python3 argsort_test.py --sample sample_0000005000.npy --result result_0000005000.npy -n 10 -d 2 --log argsort_32_2_1.log
-argsort_test   : Version      : 1.2
-argsort_test   : Ways         : 32
-argsort_test   : Words        : 2
-argsort_test   : Feedback     : 1
-argsort_test   : WordBits     : 32
-argsort_test   : IndexBits    : 32
-argsort_test   : Sort Order   : 0
-argsort_test   : Sign Compare : 0
-argsort_test   : Max Size     : 268435455
-argsort_test   : Debug Enable : 1
-argsort_test   : sample_file  : sample_0000005000.npy
-argsort_test   : size         : 5000
-argsort_test   : debug_mode   : 2
-argsort_test   : loops        : 10
-argsort_test   : time         :    0.290 # [msec]
-argsort_test   : time         :    0.203 # [msec]
-argsort_test   : time         :    0.194 # [msec]
-argsort_test   : time         :    0.193 # [msec]
-argsort_test   : time         :    0.194 # [msec]
-argsort_test   : time         :    0.226 # [msec]
-argsort_test   : time         :    0.194 # [msec]
-argsort_test   : time         :    0.195 # [msec]
-argsort_test   : time         :    0.194 # [msec]
-argsort_test   : time         :    0.194 # [msec]
-argsort_test   : result_file  : result_0000005000.npy
-argsort_test   : average_time :    0.208 # [msec]
-argsort_test   : throughput   :   24.094 # [mwords/sec]
-argsort_test   : Debug_Time(0):    0.046 # [msec]
-argsort_test   : Debug_Time(1):    0.030 # [msec]
-argsort_test   : Debug_Time(2):    0.016 # [msec]
-python3 check_result.py --sample sample_0000005000.npy --result result_0000005000.npy --expect expect_0000005000.npy
-check_result: sample file : sample_0000005000.npy
-check_result: expect file : expect_0000005000.npy
-check_result: result file : result_0000005000.npy
-check_result: OK
-    :
-    :
-    :
-python3 generate_expect.py --sample sample_0001000000.npy --expect expect_0001000000.npy --log expect.log
-generate_expect: sample_file  : sample_0001000000.npy
-generate_expect: expect_file  : expect_0001000000.npy
-generate_expect: size         : 1000000
-generate_expect: average_time :  839.076 # [msec]
-generate_expect: throughput   :    1.192 # [mwords/sec]
-python3 argsort_test.py --sample sample_0001000000.npy --result result_0001000000.npy -n 10 -d 2 --log argsort_32_2_1.log
-argsort_test   : Version      : 1.2
-argsort_test   : Ways         : 32
-argsort_test   : Words        : 2
-argsort_test   : Feedback     : 1
-argsort_test   : WordBits     : 32
-argsort_test   : IndexBits    : 32
-argsort_test   : Sort Order   : 0
-argsort_test   : Sign Compare : 0
-argsort_test   : Max Size     : 268435455
-argsort_test   : Debug Enable : 1
-argsort_test   : sample_file  : sample_0001000000.npy
-argsort_test   : size         : 1000000
-argsort_test   : debug_mode   : 2
-argsort_test   : loops        : 10
-argsort_test   : time         :   13.931 # [msec]
-argsort_test   : time         :   13.877 # [msec]
-argsort_test   : time         :   13.888 # [msec]
-argsort_test   : time         :   13.875 # [msec]
-argsort_test   : time         :   13.870 # [msec]
-argsort_test   : time         :   13.796 # [msec]
-argsort_test   : time         :   13.894 # [msec]
-argsort_test   : time         :   13.908 # [msec]
-argsort_test   : time         :   13.908 # [msec]
-argsort_test   : time         :   13.910 # [msec]
-argsort_test   : result_file  : result_0001000000.npy
-argsort_test   : average_time :   13.886 # [msec]
-argsort_test   : throughput   :   72.017 # [mwords/sec]
-argsort_test   : Debug_Time(0):   13.622 # [msec]
-argsort_test   : Debug_Time(1):    8.104 # [msec]
-argsort_test   : Debug_Time(2):    2.882 # [msec]
-argsort_test   : Debug_Time(3):    2.637 # [msec]
-python3 check_result.py --sample sample_0001000000.npy --result result_0001000000.npy --expect expect_0001000000.npy
-check_result: sample file : sample_0001000000.npy
-check_result: expect file : expect_0001000000.npy
-check_result: result file : result_0001000000.npy
-check_result: OK
-```
-
-Make sure all test results are OK.
-
-#### Uninstall Bitstream file and Device Tree
-
-```console
-fpga@debian-fpga:~/ArgSort-Kv260$ sudo rake uninstall
-[sudo] password for fpga:
-./dtbocfg.rb --remove argsort
-[ 4638.696910] u-dma-buf amba_pl@0:udmabuf_argsort_tmp: driver removed.
-[ 4638.709041] u-dma-buf amba_pl@0:udmabuf_argsort_out: driver removed.
-[ 4638.721107] u-dma-buf amba_pl@0:udmabuf_argsort_in: driver removed.
-```
-
-If you want to try another Bitstream file, be sure to uninstall the currently installed Bitstream file.
-
-
-Build Bitstream file
+Build Bitstream file (but abnormal program termination)
 ------------------------------------------------------------------------------------
 
 ### Requirement
 
-* Xilinx Vivado 2021.2
+* Windows 10 + WSL + Ubuntu 20.04.6 LTS
+* Xilinx Vivado 2023.1
 
 ### Download ArgSort-Kv260
 
 ```console
-shell$ git clone --branch 1.2.0 git://github.com/ikwzm/ArgSort-Kv260.git
-shell$ cd ArgSort-Kv260
+shell$ git clone --branch vivado-2023.1-abnormal-program-termination https://github.com/ikwzm/ArgSort-Kv260.git ArgSort-Kv260-Vivado-Abort
+shell$ cd ArgSort-Kv260-Vivado-Abort
 shell$ git submodule update --init --recursive
 ```
 
-### Build argsort_32_2_1.bin
+### Setup Vivado
+
+```console
+shell$ source $VIVADO_INSTALLED_PATH/settings64.sh
+```
+
+### Build argsort_16_2_0.bin
 
 #### Create Project
 
-```
-Vivado > Tools > Run Tcl Script... > argsort_32_2_1/create_project.tcl
+```console
+shell$ cd argsort_16_2_0
+shell$ make project
+cp ../argsort_template//create_project.tcl  create_project.tcl
+cp ../argsort_template//implementation.tcl  implementation.tcl
+cp ../argsort_template//add_fan_enable.tcl  add_fan_enable.tcl
+cp ../argsort_template//design_1_pin.xdc  design_1_pin.xdc
+cp ../argsort_template//design_1.bif  design_1.bif
+sed -e 's/\(.*CONFIG.MRG_WAYS\).*/\1 {16} \\/'         \
+               -e 's/\(.*CONFIG.MRG_WORDS\).*/\1 {2} \\/'       \
+               -e 's/\(.*CONFIG.STM_FEEDBACK\).*/\1 {0} \\/' \
+               ../argsort_template//design_1_bd_2023.1.tcl > design_1_bd_2023.1.tcl
+vivado -mode batch -source create_project.tcl
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source create_project.tcl
+# set project_directory       [file dirname [info script]]
+# set project_name            "project"
+# set board_part              [get_board_parts -quiet -latest_file_version "*kv260*"]
+# lappend constrs_file_list   [file join $project_directory "design_1_pin.xdc" ]
+# lappend ip_repo_path_list   [file join $project_directory ".." "ip"]
+# lappend ip_repo_path_list   [file join $project_directory ".." "ZynqMP-ACP-Adapter" "ip"]
+# set design_bd_tcl_file      [file join $project_directory "design_1_bd_[version -short].tcl"  ]
+# if {[info exists project_name     ] == 0} {
+#     set project_name        "project"
+# }
+# if {[info exists project_directory] == 0} {
+#     set project_directory   [pwd]
+# }
+# cd $project_directory
+# create_project -force $project_name $project_directory
+# if       {[info exists board_part ] && [string equal $board_part  "" ] == 0} {
+#     set_property "board_part"     $board_part      [current_project]
+# } elseif {[info exists device_part] && [string equal $device_part "" ] == 0} {
+#     set_property "part"           $device_part     [current_project]
+# } else {
+#     puts "ERROR: Please set board_part or device_part."
+#     return 1
+# }
+WARNING: [Project 1-153] The current project device 'xc7vx485tffg1157-1' does not match with the device on the 'XILINX.COM:KV260_SOM:PART0:1.4' board part. A device change to match the device on 'XILINX.COM:KV260_SOM:PART0:1.4' board part is being done. Please upgrade the IP in the project via the upgrade_ip command or by selecting Reports => Reports IP Status.
+INFO: [Project 1-152] Project part set to zynquplus (xck26-sfvc784-2lv-c)
+# set_property "default_lib"        "xil_defaultlib" [current_project]
+# set_property "simulator_language" "Mixed"          [current_project]
+# set_property "target_language"    "VHDL"           [current_project]
+# if {[string equal [get_filesets -quiet sources_1] ""]} {
+#     create_fileset -srcset sources_1
+# }
+# if {[string equal [get_filesets -quiet constrs_1] ""]} {
+#     create_fileset -constrset constrs_1
+# }
+# if {[string equal [get_filesets -quiet sim_1] ""]} {
+#     create_fileset -simset sim_1
+# }
+# set synth_1_flow     "Vivado Synthesis 2020"
+# set synth_1_strategy "Vivado Synthesis Defaults"
+# if {[string equal [get_runs -quiet synth_1] ""]} {
+#     create_run -name synth_1 -flow $synth_1_flow -strategy $synth_1_strategy -constrset constrs_1
+# } else {
+#     set_property flow     $synth_1_flow     [get_runs synth_1]
+#     set_property strategy $synth_1_strategy [get_runs synth_1]
+# }
+# current_run -synthesis [get_runs synth_1]
+# set impl_1_flow      "Vivado Implementation 2020"
+# set impl_1_strategy  "Vivado Implementation Defaults"
+# if {[string equal [get_runs -quiet impl_1] ""]} {
+#     create_run -name impl_1 -flow $impl_1_flow -strategy $impl_1_strategy -constrset constrs_1 -parent_run synth_1
+# } else {
+#     set_property flow     $impl_1_flow      [get_runs impl_1]
+#     set_property strategy $impl_1_strategy  [get_runs impl_1]
+# }
+# current_run -implementation [get_runs impl_1]
+# if {[info exists ip_repo_path_list] && [llength $ip_repo_path_list] > 0 } {
+#     set_property ip_repo_paths $ip_repo_path_list [current_fileset]
+#     update_ip_catalog
+# }
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/mnt/d/ichiro/work/ArgSort-Kv260-Vivado-2023.1-Abort/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/mnt/d/ichiro/work/ArgSort-Kv260-Vivado-2023.1-Abort/ZynqMP-ACP-Adapter/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/ichiro/Xilinx/Vivado/2023.1/data/ip'.
+# if {[info exists design_bd_tcl_file]} {
+#     # 
+#     # Read block design file
+#     #
+#     source $design_bd_tcl_file
+#     #
+#     # Save block design
+#     #
+#     regenerate_bd_layout
+#     save_bd_design
+#     #
+#     # Generate wrapper files
+#     #
+#     set design_bd_name  [get_bd_designs]
+#     make_wrapper -files [get_files $design_bd_name.bd] -top -import
+# }
+## namespace eval _tcl {
+## proc get_script_folder {} {
+##    set script_path [file normalize [info script]]
+##    set script_folder [file dirname $script_path]
+##    return $script_folder
+## }
+## }
+## variable script_folder
+## set script_folder [_tcl::get_script_folder]
+## set scripts_vivado_version 2023.1
+## set current_vivado_version [version -short]
+## if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
+##    puts ""
+##    catch {common::send_gid_msg -ssname BD::TCL -id 2041 -severity "ERROR" "This script was generated using Vivado <$scripts_vivado_version> and is being run in <$current_vivado_version> of Vivado. Please run the script in Vivado <$scripts_vivado_version> then open the design in Vivado <$current_vivado_version>. Upgrade the design by running \"Tools => Report => Report IP Status...\", then run write_bd_tcl to create an updated script."}
+## 
+##    return 1
+## }
+## set list_projs [get_projects -quiet]
+## if { $list_projs eq "" } {
+##    create_project project_1 myproj -part xck26-sfvc784-2LV-c
+##    set_property BOARD_PART xilinx.com:kv260_som:part0:1.2 [current_project]
+## }
+## variable design_name
+## set design_name design_1
+## set errMsg ""
+## set nRet 0
+## set cur_design [current_bd_design -quiet]
+## set list_cells [get_bd_cells -quiet]
+## if { ${design_name} eq "" } {
+##    # USE CASES:
+##    #    1) Design_name not set
+## 
+##    set errMsg "Please set the variable <design_name> to a non-empty value."
+##    set nRet 1
+## 
+## } elseif { ${cur_design} ne "" && ${list_cells} eq "" } {
+##    # USE CASES:
+##    #    2): Current design opened AND is empty AND names same.
+##    #    3): Current design opened AND is empty AND names diff; design_name NOT in project.
+##    #    4): Current design opened AND is empty AND names diff; design_name exists in project.
+## 
+##    if { $cur_design ne $design_name } {
+##       common::send_gid_msg -ssname BD::TCL -id 2001 -severity "INFO" "Changing value of <design_name> from <$design_name> to <$cur_design> since current design is empty."
+##       set design_name [get_property NAME $cur_design]
+##    }
+##    common::send_gid_msg -ssname BD::TCL -id 2002 -severity "INFO" "Constructing design in IPI design <$cur_design>..."
+## 
+## } elseif { ${cur_design} ne "" && $list_cells ne "" && $cur_design eq $design_name } {
+##    # USE CASES:
+##    #    5) Current design opened AND has components AND same names.
+## 
+##    set errMsg "Design <$design_name> already exists in your project, please set the variable <design_name> to another value."
+##    set nRet 1
+## } elseif { [get_files -quiet ${design_name}.bd] ne "" } {
+##    # USE CASES: 
+##    #    6) Current opened design, has components, but diff names, design_name exists in project.
+##    #    7) No opened design, design_name exists in project.
+## 
+##    set errMsg "Design <$design_name> already exists in your project, please set the variable <design_name> to another value."
+##    set nRet 2
+## 
+## } else {
+##    # USE CASES:
+##    #    8) No opened design, design_name not in project.
+##    #    9) Current opened design, has components, but diff names, design_name not in project.
+## 
+##    common::send_gid_msg -ssname BD::TCL -id 2003 -severity "INFO" "Currently there is no design <$design_name> in project, so creating one..."
+## 
+##    create_bd_design $design_name
+## 
+##    common::send_gid_msg -ssname BD::TCL -id 2004 -severity "INFO" "Making design <$design_name> as current_bd_design."
+##    current_bd_design $design_name
+## 
+## }
+INFO: [BD::TCL 103-2003] Currently there is no design <design_1> in project, so creating one...
+Wrote  : </mnt/d/ichiro/work/ArgSort-Kv260-Vivado-2023.1-Abort/argsort_16_2_0/project.srcs/sources_1/bd/design_1/design_1.bd> 
+INFO: [BD::TCL 103-2004] Making design <design_1> as current_bd_design.
+## common::send_gid_msg -ssname BD::TCL -id 2005 -severity "INFO" "Currently the variable <design_name> is equal to \"$design_name\"."
+INFO: [BD::TCL 103-2005] Currently the variable <design_name> is equal to "design_1".
+## if { $nRet != 0 } {
+##    catch {common::send_gid_msg -ssname BD::TCL -id 2006 -severity "ERROR" $errMsg}
+##    return $nRet
+## }
+## set bCheckIPsPassed 1
+## set bCheckIPs 1
+## if { $bCheckIPs == 1 } {
+##    set list_check_ips "\ 
+## ikwzm:Merge_Sorter:ArgSort_AXI:1.5\
+## ikwzm:PIPEORK:ZYNQMP_ACP_ADAPTER:0.8\
+## xilinx.com:ip:clk_wiz:6.0\
+## xilinx.com:ip:proc_sys_reset:5.0\
+## xilinx.com:ip:zynq_ultra_ps_e:3.5\
+## "
+## 
+##    set list_ips_missing ""
+##    common::send_gid_msg -ssname BD::TCL -id 2011 -severity "INFO" "Checking if the following IPs exist in the project's IP catalog: $list_check_ips ."
+## 
+##    foreach ip_vlnv $list_check_ips {
+##       set ip_obj [get_ipdefs -all $ip_vlnv]
+##       if { $ip_obj eq "" } {
+##          lappend list_ips_missing $ip_vlnv
+##       }
+##    }
+## 
+##    if { $list_ips_missing ne "" } {
+##       catch {common::send_gid_msg -ssname BD::TCL -id 2012 -severity "ERROR" "The following IPs are not found in the IP Catalog:\n  $list_ips_missing\n\nResolution: Please add the repository containing the IP(s) to the project." }
+##       set bCheckIPsPassed 0
+##    }
+## 
+## }
+INFO: [BD::TCL 103-2011] Checking if the following IPs exist in the project's IP catalog:  
+ikwzm:Merge_Sorter:ArgSort_AXI:1.5 ikwzm:PIPEORK:ZYNQMP_ACP_ADAPTER:0.8 xilinx.com:ip:clk_wiz:6.0 xilinx.com:ip:proc_sys_reset:5.0 xilinx.com:ip:zynq_ultra_ps_e:3.5  .
+## if { $bCheckIPsPassed != 1 } {
+##   common::send_gid_msg -ssname BD::TCL -id 2023 -severity "WARNING" "Will not continue with creation of design due to the error(s) above."
+##   return 3
+## }
+## source [file join $project_directory "add_fan_enable.tcl"  ]
+### proc add_fan_enable { zynq_ultra_ps_e_0 port_name prefix} {
+### 
+###     variable slice_cell
+###     variable cell_name
+###     variable net_name_din
+###     variable net_name_dout
+### 
+###     if { $port_name eq "" } {
+###         set port_name FAN_EN
+###     }
+### 
+###     if { $prefix eq "" } {
+### 	set prefix ttc0
+###     }
+###     
+###     append cell_name     $prefix    "_slice"
+###     append net_name_din  $cell_name "_din"
+###     append net_name_dout $cell_name "_dout"
+### 
+###     set_property -dict [list CONFIG.PSU__TTC0__WAVEOUT__ENABLE {1} ] $zynq_ultra_ps_e_0
+###     set_property -dict [list CONFIG.PSU__TTC0__WAVEOUT__IO {EMIO}  ] $zynq_ultra_ps_e_0
+### 
+###     set slice_cell  [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 $cell_name ]
+### 
+###     set_property -dict [ list CONFIG.DIN_FROM {2} CONFIG.DIN_TO {2} CONFIG.DIN_WIDTH {3} ] $slice_cell
+### 
+###     create_bd_port -dir O -from 0 -to 0 $port_name
+###     connect_bd_net -net $net_name_dout [get_bd_pins $slice_cell/Dout] [get_bd_ports $port_name] 
+###     connect_bd_net -net $net_name_din  [get_bd_pins $slice_cell/Din ] [get_bd_pins $zynq_ultra_ps_e_0/emio_ttc0_wave_o]
+### }
+## proc create_root_design { parentCell } {
+## 
+##   variable script_folder
+##   variable design_name
+## 
+##   if { $parentCell eq "" } {
+##      set parentCell [get_bd_cells /]
+##   }
+## 
+##   # Get object for parentCell
+##   set parentObj [get_bd_cells $parentCell]
+##   if { $parentObj == "" } {
+##      catch {common::send_gid_msg -ssname BD::TCL -id 2090 -severity "ERROR" "Unable to find parent cell <$parentCell>!"}
+##      return
+##   }
+## 
+##   # Make sure parentObj is hier blk
+##   set parentType [get_property TYPE $parentObj]
+##   if { $parentType ne "hier" } {
+##      catch {common::send_gid_msg -ssname BD::TCL -id 2091 -severity "ERROR" "Parent <$parentObj> has TYPE = <$parentType>. Expected to be <hier>."}
+##      return
+##   }
+## 
+##   # Save current instance; Restore later
+##   set oldCurInst [current_bd_instance .]
+## 
+##   # Set parent object as current
+##   current_bd_instance $parentObj
+## 
+## 
+##   # Create interface ports
+## 
+##   # Create ports
+## 
+##   # Create instance: ArgSort_AXI_1, and set properties
+##   set ArgSort_AXI_1 [ create_bd_cell -type ip -vlnv ikwzm:Merge_Sorter:ArgSort_AXI:1.5 ArgSort_AXI_1 ]
+##   set_property -dict [ list \
+##    CONFIG.DEBUG_ENABLE {1} \
+##    CONFIG.MRG_AXI_ADDR_WIDTH {64} \
+##    CONFIG.MRG_AXI_DATA_WIDTH {128} \
+##    CONFIG.MRG_AXI_ID_BASE {2} \
+##    CONFIG.MRG_AXI_ID_WIDTH {2} \
+##    CONFIG.MRG_AXI_USER_WIDTH {1} \
+##    CONFIG.MRG_FIFO_SIZE {64} \
+##    CONFIG.MRG_RD_ARB_PIPELINE {0} \
+##    CONFIG.MRG_RD_AXI_XFER_SIZE {12} \
+##    CONFIG.MRG_WAYS {16} \
+##    CONFIG.MRG_WORDS {2} \
+##    CONFIG.MRG_WR_AXI_XFER_SIZE {12} \
+##    CONFIG.SORT_SIZE_BITS {28} \
+##    CONFIG.STM_AXI_ADDR_WIDTH {64} \
+##    CONFIG.STM_AXI_DATA_WIDTH {128} \
+##    CONFIG.STM_AXI_ID_BASE {0} \
+##    CONFIG.STM_AXI_ID_WIDTH {5} \
+##    CONFIG.STM_AXI_USER_WIDTH {2} \
+##    CONFIG.STM_FEEDBACK {0} \
+##    CONFIG.STM_RD_AXI_XFER_SIZE {12} \
+##    CONFIG.STM_WR_AXI_XFER_SIZE {12} \
+##  ] $ArgSort_AXI_1
+## 
+##   # Create instance: ZYNQMP_ACP_ADAPTER_0, and set properties
+##   set ZYNQMP_ACP_ADAPTER_0 [ create_bd_cell -type ip -vlnv ikwzm:PIPEORK:ZYNQMP_ACP_ADAPTER:0.8 ZYNQMP_ACP_ADAPTER_0 ]
+##   set_property -dict [ list \
+##    CONFIG.AXI_ID_WIDTH {5} \
+##    CONFIG.AXI_AUSER_WIDTH {2} \
+##    CONFIG.ARSHARE_TYPE {3} \
+##    CONFIG.AWSHARE_TYPE {3} \
+##  ] $ZYNQMP_ACP_ADAPTER_0
+## 
+##   # Create instance: axi_interconnect_0, and set properties
+##   set axi_interconnect_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 axi_interconnect_0 ]
+##   set_property -dict [ list \
+##    CONFIG.NUM_MI {1} \
+##  ] $axi_interconnect_0
+## 
+##   # Create instance: clk_wiz_0, and set properties
+##   set clk_wiz_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0 ]
+##   set_property -dict [ list \
+##    CONFIG.CLKOUT1_DRIVES {Buffer} \
+##    CONFIG.CLKOUT1_JITTER {110.210} \
+##    CONFIG.CLKOUT1_PHASE_ERROR {98.576} \
+##    CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {250.000} \
+##    CONFIG.CLKOUT2_DRIVES {Buffer} \
+##    CONFIG.CLKOUT3_DRIVES {Buffer} \
+##    CONFIG.CLKOUT4_DRIVES {Buffer} \
+##    CONFIG.CLKOUT5_DRIVES {Buffer} \
+##    CONFIG.CLKOUT6_DRIVES {Buffer} \
+##    CONFIG.CLKOUT7_DRIVES {Buffer} \
+##    CONFIG.MMCM_BANDWIDTH {OPTIMIZED} \
+##    CONFIG.MMCM_CLKFBOUT_MULT_F {10} \
+##    CONFIG.MMCM_CLKOUT0_DIVIDE_F {4} \
+##    CONFIG.MMCM_COMPENSATION {AUTO} \
+##    CONFIG.PRIMITIVE {PLL} \
+##    CONFIG.RESET_PORT {resetn} \
+##    CONFIG.RESET_TYPE {ACTIVE_LOW} \
+##  ] $clk_wiz_0
+## 
+##   # Create instance: rst_ps8_0_99M, and set properties
+##   set rst_ps8_0_99M [ create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 rst_ps8_0_99M ]
+## 
+##   # Create instance: zynq_ultra_ps_e_0, and set properties
+##   set zynq_ultra_ps_e_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:zynq_ultra_ps_e:3.5 zynq_ultra_ps_e_0 ]
+##   set_property -dict [ list \
+##    CONFIG.PSU_BANK_0_IO_STANDARD {LVCMOS18} \
+##    CONFIG.PSU_BANK_1_IO_STANDARD {LVCMOS18} \
+##    CONFIG.PSU_BANK_2_IO_STANDARD {LVCMOS18} \
+##    CONFIG.PSU_BANK_3_IO_STANDARD {LVCMOS18} \
+##    CONFIG.PSU_DDR_RAM_HIGHADDR {0xFFFFFFFF} \
+##    CONFIG.PSU_DDR_RAM_HIGHADDR_OFFSET {0x800000000} \
+##    CONFIG.PSU_DDR_RAM_LOWADDR_OFFSET {0x80000000} \
+##    CONFIG.PSU_DYNAMIC_DDR_CONFIG_EN {0} \
+##    CONFIG.PSU_MIO_0_DIRECTION {out} \
+##    CONFIG.PSU_MIO_0_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_0_INPUT_TYPE {cmos} \
+##    CONFIG.PSU_MIO_0_POLARITY {Default} \
+##    CONFIG.PSU_MIO_0_SLEW {slow} \
+##    CONFIG.PSU_MIO_10_DIRECTION {inout} \
+##    CONFIG.PSU_MIO_10_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_10_POLARITY {Default} \
+##    CONFIG.PSU_MIO_10_SLEW {slow} \
+##    CONFIG.PSU_MIO_11_DIRECTION {inout} \
+##    CONFIG.PSU_MIO_11_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_11_POLARITY {Default} \
+##    CONFIG.PSU_MIO_11_SLEW {slow} \
+##    CONFIG.PSU_MIO_12_DIRECTION {inout} \
+##    CONFIG.PSU_MIO_12_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_12_POLARITY {Default} \
+##    CONFIG.PSU_MIO_12_SLEW {slow} \
+##    CONFIG.PSU_MIO_13_DIRECTION {inout} \
+##    CONFIG.PSU_MIO_13_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_13_POLARITY {Default} \
+##    CONFIG.PSU_MIO_13_SLEW {slow} \
+##    CONFIG.PSU_MIO_14_DIRECTION {inout} \
+##    CONFIG.PSU_MIO_14_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_14_POLARITY {Default} \
+##    CONFIG.PSU_MIO_14_SLEW {slow} \
+##    CONFIG.PSU_MIO_15_DIRECTION {inout} \
+##    CONFIG.PSU_MIO_15_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_15_POLARITY {Default} \
+##    CONFIG.PSU_MIO_15_SLEW {slow} \
+##    CONFIG.PSU_MIO_16_DIRECTION {inout} \
+##    CONFIG.PSU_MIO_16_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_16_POLARITY {Default} \
+##    CONFIG.PSU_MIO_16_SLEW {slow} \
+##    CONFIG.PSU_MIO_17_DIRECTION {inout} \
+##    CONFIG.PSU_MIO_17_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_17_POLARITY {Default} \
+##    CONFIG.PSU_MIO_17_SLEW {slow} \
+##    CONFIG.PSU_MIO_18_DIRECTION {inout} \
+##    CONFIG.PSU_MIO_18_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_18_POLARITY {Default} \
+##    CONFIG.PSU_MIO_18_SLEW {slow} \
+##    CONFIG.PSU_MIO_19_DIRECTION {inout} \
+##    CONFIG.PSU_MIO_19_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_19_POLARITY {Default} \
+##    CONFIG.PSU_MIO_19_SLEW {slow} \
+##    CONFIG.PSU_MIO_1_DIRECTION {inout} \
+##    CONFIG.PSU_MIO_1_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_1_POLARITY {Default} \
+##    CONFIG.PSU_MIO_1_SLEW {slow} \
+##    CONFIG.PSU_MIO_20_DIRECTION {inout} \
+##    CONFIG.PSU_MIO_20_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_20_POLARITY {Default} \
+##    CONFIG.PSU_MIO_20_SLEW {slow} \
+##    CONFIG.PSU_MIO_21_DIRECTION {inout} \
+##    CONFIG.PSU_MIO_21_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_21_POLARITY {Default} \
+##    CONFIG.PSU_MIO_21_SLEW {slow} \
+##    CONFIG.PSU_MIO_22_DIRECTION {inout} \
+##    CONFIG.PSU_MIO_22_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_22_POLARITY {Default} \
+##    CONFIG.PSU_MIO_22_SLEW {slow} \
+##    CONFIG.PSU_MIO_23_DIRECTION {inout} \
+##    CONFIG.PSU_MIO_23_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_23_POLARITY {Default} \
+##    CONFIG.PSU_MIO_23_SLEW {slow} \
+##    CONFIG.PSU_MIO_24_DIRECTION {inout} \
+##    CONFIG.PSU_MIO_24_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_24_POLARITY {Default} \
+##    CONFIG.PSU_MIO_24_SLEW {slow} \
+##    CONFIG.PSU_MIO_25_DIRECTION {inout} \
+##    CONFIG.PSU_MIO_25_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_25_POLARITY {Default} \
+##    CONFIG.PSU_MIO_25_SLEW {slow} \
+##    CONFIG.PSU_MIO_26_DIRECTION {in} \
+##    CONFIG.PSU_MIO_26_DRIVE_STRENGTH {12} \
+##    CONFIG.PSU_MIO_26_POLARITY {Default} \
+##    CONFIG.PSU_MIO_26_SLEW {fast} \
+##    CONFIG.PSU_MIO_27_DIRECTION {inout} \
+##    CONFIG.PSU_MIO_27_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_27_POLARITY {Default} \
+##    CONFIG.PSU_MIO_27_SLEW {slow} \
+##    CONFIG.PSU_MIO_28_DIRECTION {inout} \
+##    CONFIG.PSU_MIO_28_POLARITY {Default} \
+##    CONFIG.PSU_MIO_29_DIRECTION {inout} \
+##    CONFIG.PSU_MIO_29_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_29_POLARITY {Default} \
+##    CONFIG.PSU_MIO_29_SLEW {slow} \
+##    CONFIG.PSU_MIO_2_DIRECTION {inout} \
+##    CONFIG.PSU_MIO_2_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_2_POLARITY {Default} \
+##    CONFIG.PSU_MIO_2_SLEW {slow} \
+##    CONFIG.PSU_MIO_30_DIRECTION {inout} \
+##    CONFIG.PSU_MIO_30_DRIVE_STRENGTH {12} \
+##    CONFIG.PSU_MIO_30_POLARITY {Default} \
+##    CONFIG.PSU_MIO_30_SLEW {fast} \
+##    CONFIG.PSU_MIO_31_DIRECTION {in} \
+##    CONFIG.PSU_MIO_31_DRIVE_STRENGTH {12} \
+##    CONFIG.PSU_MIO_31_POLARITY {Default} \
+##    CONFIG.PSU_MIO_31_SLEW {fast} \
+##    CONFIG.PSU_MIO_32_DIRECTION {out} \
+##    CONFIG.PSU_MIO_32_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_32_INPUT_TYPE {cmos} \
+##    CONFIG.PSU_MIO_32_POLARITY {Default} \
+##    CONFIG.PSU_MIO_32_SLEW {slow} \
+##    CONFIG.PSU_MIO_33_DIRECTION {out} \
+##    CONFIG.PSU_MIO_33_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_33_INPUT_TYPE {cmos} \
+##    CONFIG.PSU_MIO_33_POLARITY {Default} \
+##    CONFIG.PSU_MIO_33_SLEW {slow} \
+##    CONFIG.PSU_MIO_34_DIRECTION {out} \
+##    CONFIG.PSU_MIO_34_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_34_INPUT_TYPE {cmos} \
+##    CONFIG.PSU_MIO_34_POLARITY {Default} \
+##    CONFIG.PSU_MIO_34_SLEW {slow} \
+##    CONFIG.PSU_MIO_35_DIRECTION {out} \
+##    CONFIG.PSU_MIO_35_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_35_INPUT_TYPE {cmos} \
+##    CONFIG.PSU_MIO_35_POLARITY {Default} \
+##    CONFIG.PSU_MIO_35_SLEW {slow} \
+##    CONFIG.PSU_MIO_36_DIRECTION {inout} \
+##    CONFIG.PSU_MIO_36_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_36_POLARITY {Default} \
+##    CONFIG.PSU_MIO_36_SLEW {slow} \
+##    CONFIG.PSU_MIO_37_DIRECTION {inout} \
+##    CONFIG.PSU_MIO_37_POLARITY {Default} \
+##    CONFIG.PSU_MIO_38_DIRECTION {inout} \
+##    CONFIG.PSU_MIO_38_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_38_POLARITY {Default} \
+##    CONFIG.PSU_MIO_38_SLEW {slow} \
+##    CONFIG.PSU_MIO_39_DIRECTION {inout} \
+##    CONFIG.PSU_MIO_39_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_39_POLARITY {Default} \
+##    CONFIG.PSU_MIO_39_SLEW {slow} \
+##    CONFIG.PSU_MIO_3_DIRECTION {inout} \
+##    CONFIG.PSU_MIO_3_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_3_POLARITY {Default} \
+##    CONFIG.PSU_MIO_3_SLEW {slow} \
+##    CONFIG.PSU_MIO_40_DIRECTION {inout} \
+##    CONFIG.PSU_MIO_40_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_40_POLARITY {Default} \
+##    CONFIG.PSU_MIO_40_SLEW {slow} \
+##    CONFIG.PSU_MIO_41_DIRECTION {inout} \
+##    CONFIG.PSU_MIO_41_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_41_POLARITY {Default} \
+##    CONFIG.PSU_MIO_41_SLEW {slow} \
+##    CONFIG.PSU_MIO_42_DIRECTION {inout} \
+##    CONFIG.PSU_MIO_42_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_42_POLARITY {Default} \
+##    CONFIG.PSU_MIO_42_SLEW {slow} \
+##    CONFIG.PSU_MIO_43_DIRECTION {inout} \
+##    CONFIG.PSU_MIO_43_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_43_POLARITY {Default} \
+##    CONFIG.PSU_MIO_43_SLEW {slow} \
+##    CONFIG.PSU_MIO_44_DIRECTION {inout} \
+##    CONFIG.PSU_MIO_44_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_44_POLARITY {Default} \
+##    CONFIG.PSU_MIO_44_SLEW {slow} \
+##    CONFIG.PSU_MIO_45_DIRECTION {inout} \
+##    CONFIG.PSU_MIO_45_POLARITY {Default} \
+##    CONFIG.PSU_MIO_46_DIRECTION {inout} \
+##    CONFIG.PSU_MIO_46_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_46_POLARITY {Default} \
+##    CONFIG.PSU_MIO_46_SLEW {slow} \
+##    CONFIG.PSU_MIO_47_DIRECTION {inout} \
+##    CONFIG.PSU_MIO_47_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_47_POLARITY {Default} \
+##    CONFIG.PSU_MIO_47_SLEW {slow} \
+##    CONFIG.PSU_MIO_48_DIRECTION {inout} \
+##    CONFIG.PSU_MIO_48_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_48_POLARITY {Default} \
+##    CONFIG.PSU_MIO_48_SLEW {slow} \
+##    CONFIG.PSU_MIO_49_DIRECTION {inout} \
+##    CONFIG.PSU_MIO_49_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_49_POLARITY {Default} \
+##    CONFIG.PSU_MIO_49_SLEW {slow} \
+##    CONFIG.PSU_MIO_4_DIRECTION {inout} \
+##    CONFIG.PSU_MIO_4_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_4_POLARITY {Default} \
+##    CONFIG.PSU_MIO_4_SLEW {slow} \
+##    CONFIG.PSU_MIO_50_DIRECTION {inout} \
+##    CONFIG.PSU_MIO_50_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_50_POLARITY {Default} \
+##    CONFIG.PSU_MIO_50_SLEW {slow} \
+##    CONFIG.PSU_MIO_51_DIRECTION {inout} \
+##    CONFIG.PSU_MIO_51_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_51_POLARITY {Default} \
+##    CONFIG.PSU_MIO_51_SLEW {slow} \
+##    CONFIG.PSU_MIO_54_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_54_SLEW {slow} \
+##    CONFIG.PSU_MIO_56_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_56_SLEW {slow} \
+##    CONFIG.PSU_MIO_57_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_57_SLEW {slow} \
+##    CONFIG.PSU_MIO_58_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_58_SLEW {slow} \
+##    CONFIG.PSU_MIO_59_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_59_SLEW {slow} \
+##    CONFIG.PSU_MIO_5_DIRECTION {out} \
+##    CONFIG.PSU_MIO_5_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_5_INPUT_TYPE {cmos} \
+##    CONFIG.PSU_MIO_5_POLARITY {Default} \
+##    CONFIG.PSU_MIO_5_SLEW {slow} \
+##    CONFIG.PSU_MIO_60_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_60_SLEW {slow} \
+##    CONFIG.PSU_MIO_61_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_61_SLEW {slow} \
+##    CONFIG.PSU_MIO_62_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_62_SLEW {slow} \
+##    CONFIG.PSU_MIO_63_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_63_SLEW {slow} \
+##    CONFIG.PSU_MIO_64_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_64_SLEW {slow} \
+##    CONFIG.PSU_MIO_65_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_65_SLEW {slow} \
+##    CONFIG.PSU_MIO_66_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_66_SLEW {slow} \
+##    CONFIG.PSU_MIO_67_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_67_SLEW {slow} \
+##    CONFIG.PSU_MIO_68_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_68_SLEW {slow} \
+##    CONFIG.PSU_MIO_69_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_69_SLEW {slow} \
+##    CONFIG.PSU_MIO_6_DIRECTION {inout} \
+##    CONFIG.PSU_MIO_6_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_6_POLARITY {Default} \
+##    CONFIG.PSU_MIO_6_SLEW {slow} \
+##    CONFIG.PSU_MIO_76_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_76_SLEW {slow} \
+##    CONFIG.PSU_MIO_77_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_77_SLEW {slow} \
+##    CONFIG.PSU_MIO_7_DIRECTION {inout} \
+##    CONFIG.PSU_MIO_7_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_7_POLARITY {Default} \
+##    CONFIG.PSU_MIO_7_SLEW {slow} \
+##    CONFIG.PSU_MIO_8_DIRECTION {inout} \
+##    CONFIG.PSU_MIO_8_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_8_POLARITY {Default} \
+##    CONFIG.PSU_MIO_8_SLEW {slow} \
+##    CONFIG.PSU_MIO_9_DIRECTION {inout} \
+##    CONFIG.PSU_MIO_9_DRIVE_STRENGTH {4} \
+##    CONFIG.PSU_MIO_9_POLARITY {Default} \
+##    CONFIG.PSU_MIO_9_SLEW {slow} \
+##    CONFIG.PSU_MIO_TREE_PERIPHERALS {\
+## Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad\
+## SPI Flash#SPI 1#GPIO0 MIO#GPIO0 MIO#SPI 1#SPI 1#SPI 1#GPIO0 MIO#GPIO0 MIO#GPIO0\
+## MIO#GPIO0 MIO#GPIO0 MIO#GPIO0 MIO#GPIO0 MIO#GPIO0 MIO#GPIO0 MIO#GPIO0 MIO#GPIO0\
+## MIO#GPIO0 MIO#I2C 1#I2C 1#PMU GPI 0#GPIO1 MIO#GPIO1 MIO#GPIO1 MIO#GPIO1 MIO#PMU\
+## GPI 5#PMU GPO 0#PMU GPO 1#PMU GPO 2#PMU GPO 3#GPIO1 MIO#GPIO1 MIO#GPIO1\
+## MIO#GPIO1 MIO#GPIO1 MIO#GPIO1 MIO#GPIO1 MIO#GPIO1 MIO#GPIO1 MIO#GPIO1 MIO#GPIO1\
+## MIO#GPIO1 MIO#GPIO1 MIO#GPIO1 MIO#GPIO1 MIO#GPIO1 MIO##########################} \
+##    CONFIG.PSU_MIO_TREE_SIGNALS {\
+## sclk_out#miso_mo1#mo2#mo3#mosi_mi0#n_ss_out#sclk_out#gpio0[7]#gpio0[8]#n_ss_out[0]#miso#mosi#gpio0[12]#gpio0[13]#gpio0[14]#gpio0[15]#gpio0[16]#gpio0[17]#gpio0[18]#gpio0[19]#gpio0[20]#gpio0[21]#gpio0[22]#gpio0[23]#scl_out#sda_out#gpi[0]#gpio1[27]#gpio1[28]#gpio1[29]#gpio1[30]#gpi[5]#gpo[0]#gpo[1]#gpo[2]#gpo[3]#gpio1[36]#gpio1[37]#gpio1[38]#gpio1[39]#gpio1[40]#gpio1[41]#gpio1[42]#gpio1[43]#gpio1[44]#gpio1[45]#gpio1[46]#gpio1[47]#gpio1[48]#gpio1[49]#gpio1[50]#gpio1[51]##########################} \
+##    CONFIG.PSU__ACT_DDR_FREQ_MHZ {1066.656006} \
+##    CONFIG.PSU__CAN1__GRP_CLK__ENABLE {0} \
+##    CONFIG.PSU__CAN1__PERIPHERAL__ENABLE {0} \
+##    CONFIG.PSU__CRF_APB__ACPU_CTRL__ACT_FREQMHZ {1333.333008} \
+##    CONFIG.PSU__CRF_APB__ACPU_CTRL__DIVISOR0 {1} \
+##    CONFIG.PSU__CRF_APB__ACPU_CTRL__FREQMHZ {1333.333} \
+##    CONFIG.PSU__CRF_APB__ACPU_CTRL__SRCSEL {APLL} \
+##    CONFIG.PSU__CRF_APB__ACPU__FRAC_ENABLED {1} \
+##    CONFIG.PSU__CRF_APB__APLL_CTRL__DIV2 {1} \
+##    CONFIG.PSU__CRF_APB__APLL_CTRL__FBDIV {80} \
+##    CONFIG.PSU__CRF_APB__APLL_CTRL__FRACDATA {0.000778} \
+##    CONFIG.PSU__CRF_APB__APLL_CTRL__FRACFREQ {1333.333} \
+##    CONFIG.PSU__CRF_APB__APLL_CTRL__SRCSEL {PSS_REF_CLK} \
+##    CONFIG.PSU__CRF_APB__APLL_FRAC_CFG__ENABLED {1} \
+##    CONFIG.PSU__CRF_APB__APLL_TO_LPD_CTRL__DIVISOR0 {3} \
+##    CONFIG.PSU__CRF_APB__DBG_FPD_CTRL__ACT_FREQMHZ {249.997498} \
+##    CONFIG.PSU__CRF_APB__DBG_FPD_CTRL__DIVISOR0 {2} \
+##    CONFIG.PSU__CRF_APB__DBG_FPD_CTRL__FREQMHZ {250} \
+##    CONFIG.PSU__CRF_APB__DBG_FPD_CTRL__SRCSEL {IOPLL} \
+##    CONFIG.PSU__CRF_APB__DBG_TRACE_CTRL__DIVISOR0 {5} \
+##    CONFIG.PSU__CRF_APB__DBG_TRACE_CTRL__FREQMHZ {250} \
+##    CONFIG.PSU__CRF_APB__DBG_TRACE_CTRL__SRCSEL {IOPLL} \
+##    CONFIG.PSU__CRF_APB__DBG_TSTMP_CTRL__ACT_FREQMHZ {249.997498} \
+##    CONFIG.PSU__CRF_APB__DBG_TSTMP_CTRL__DIVISOR0 {2} \
+##    CONFIG.PSU__CRF_APB__DBG_TSTMP_CTRL__FREQMHZ {250} \
+##    CONFIG.PSU__CRF_APB__DBG_TSTMP_CTRL__SRCSEL {IOPLL} \
+##    CONFIG.PSU__CRF_APB__DDR_CTRL__ACT_FREQMHZ {533.328003} \
+##    CONFIG.PSU__CRF_APB__DDR_CTRL__DIVISOR0 {2} \
+##    CONFIG.PSU__CRF_APB__DDR_CTRL__FREQMHZ {1200} \
+##    CONFIG.PSU__CRF_APB__DDR_CTRL__SRCSEL {DPLL} \
+##    CONFIG.PSU__CRF_APB__DPDMA_REF_CTRL__ACT_FREQMHZ {444.444336} \
+##    CONFIG.PSU__CRF_APB__DPDMA_REF_CTRL__DIVISOR0 {3} \
+##    CONFIG.PSU__CRF_APB__DPDMA_REF_CTRL__FREQMHZ {600} \
+##    CONFIG.PSU__CRF_APB__DPDMA_REF_CTRL__SRCSEL {APLL} \
+##    CONFIG.PSU__CRF_APB__DPLL_CTRL__DIV2 {1} \
+##    CONFIG.PSU__CRF_APB__DPLL_CTRL__FBDIV {64} \
+##    CONFIG.PSU__CRF_APB__DPLL_CTRL__FRACDATA {0.000000} \
+##    CONFIG.PSU__CRF_APB__DPLL_CTRL__SRCSEL {PSS_REF_CLK} \
+##    CONFIG.PSU__CRF_APB__DPLL_FRAC_CFG__ENABLED {0} \
+##    CONFIG.PSU__CRF_APB__DPLL_TO_LPD_CTRL__DIVISOR0 {2} \
+##    CONFIG.PSU__CRF_APB__DP_AUDIO_REF_CTRL__DIVISOR0 {63} \
+##    CONFIG.PSU__CRF_APB__DP_AUDIO_REF_CTRL__DIVISOR1 {1} \
+##    CONFIG.PSU__CRF_APB__DP_AUDIO_REF_CTRL__SRCSEL {RPLL} \
+##    CONFIG.PSU__CRF_APB__DP_STC_REF_CTRL__DIVISOR0 {6} \
+##    CONFIG.PSU__CRF_APB__DP_STC_REF_CTRL__DIVISOR1 {10} \
+##    CONFIG.PSU__CRF_APB__DP_STC_REF_CTRL__SRCSEL {RPLL} \
+##    CONFIG.PSU__CRF_APB__DP_VIDEO_REF_CTRL__DIVISOR0 {5} \
+##    CONFIG.PSU__CRF_APB__DP_VIDEO_REF_CTRL__DIVISOR1 {1} \
+##    CONFIG.PSU__CRF_APB__DP_VIDEO_REF_CTRL__SRCSEL {VPLL} \
+##    CONFIG.PSU__CRF_APB__GDMA_REF_CTRL__ACT_FREQMHZ {533.328003} \
+##    CONFIG.PSU__CRF_APB__GDMA_REF_CTRL__DIVISOR0 {2} \
+##    CONFIG.PSU__CRF_APB__GDMA_REF_CTRL__FREQMHZ {600} \
+##    CONFIG.PSU__CRF_APB__GDMA_REF_CTRL__SRCSEL {DPLL} \
+##    CONFIG.PSU__CRF_APB__GPU_REF_CTRL__ACT_FREQMHZ {499.994995} \
+##    CONFIG.PSU__CRF_APB__GPU_REF_CTRL__DIVISOR0 {1} \
+##    CONFIG.PSU__CRF_APB__GPU_REF_CTRL__FREQMHZ {600} \
+##    CONFIG.PSU__CRF_APB__GPU_REF_CTRL__SRCSEL {IOPLL} \
+##    CONFIG.PSU__CRF_APB__PCIE_REF_CTRL__DIVISOR0 {6} \
+##    CONFIG.PSU__CRF_APB__PCIE_REF_CTRL__FREQMHZ {250} \
+##    CONFIG.PSU__CRF_APB__PCIE_REF_CTRL__SRCSEL {IOPLL} \
+##    CONFIG.PSU__CRF_APB__SATA_REF_CTRL__DIVISOR0 {5} \
+##    CONFIG.PSU__CRF_APB__SATA_REF_CTRL__FREQMHZ {250} \
+##    CONFIG.PSU__CRF_APB__SATA_REF_CTRL__SRCSEL {IOPLL} \
+##    CONFIG.PSU__CRF_APB__TOPSW_LSBUS_CTRL__ACT_FREQMHZ {99.999001} \
+##    CONFIG.PSU__CRF_APB__TOPSW_LSBUS_CTRL__DIVISOR0 {5} \
+##    CONFIG.PSU__CRF_APB__TOPSW_LSBUS_CTRL__FREQMHZ {100} \
+##    CONFIG.PSU__CRF_APB__TOPSW_LSBUS_CTRL__SRCSEL {IOPLL} \
+##    CONFIG.PSU__CRF_APB__TOPSW_MAIN_CTRL__ACT_FREQMHZ {533.328003} \
+##    CONFIG.PSU__CRF_APB__TOPSW_MAIN_CTRL__DIVISOR0 {2} \
+##    CONFIG.PSU__CRF_APB__TOPSW_MAIN_CTRL__FREQMHZ {533.33} \
+##    CONFIG.PSU__CRF_APB__TOPSW_MAIN_CTRL__SRCSEL {DPLL} \
+##    CONFIG.PSU__CRF_APB__VPLL_CTRL__DIV2 {1} \
+##    CONFIG.PSU__CRF_APB__VPLL_CTRL__FBDIV {90} \
+##    CONFIG.PSU__CRF_APB__VPLL_CTRL__FRACDATA {0.000000} \
+##    CONFIG.PSU__CRF_APB__VPLL_CTRL__SRCSEL {PSS_REF_CLK} \
+##    CONFIG.PSU__CRF_APB__VPLL_FRAC_CFG__ENABLED {0} \
+##    CONFIG.PSU__CRF_APB__VPLL_TO_LPD_CTRL__DIVISOR0 {3} \
+##    CONFIG.PSU__CRL_APB__ADMA_REF_CTRL__ACT_FREQMHZ {499.994995} \
+##    CONFIG.PSU__CRL_APB__ADMA_REF_CTRL__DIVISOR0 {2} \
+##    CONFIG.PSU__CRL_APB__ADMA_REF_CTRL__FREQMHZ {500} \
+##    CONFIG.PSU__CRL_APB__ADMA_REF_CTRL__SRCSEL {IOPLL} \
+##    CONFIG.PSU__CRL_APB__AFI6_REF_CTRL__DIVISOR0 {3} \
+##    CONFIG.PSU__CRL_APB__AMS_REF_CTRL__ACT_FREQMHZ {49.999500} \
+##    CONFIG.PSU__CRL_APB__AMS_REF_CTRL__DIVISOR0 {20} \
+##    CONFIG.PSU__CRL_APB__AMS_REF_CTRL__DIVISOR1 {1} \
+##    CONFIG.PSU__CRL_APB__CAN0_REF_CTRL__DIVISOR0 {15} \
+##    CONFIG.PSU__CRL_APB__CAN0_REF_CTRL__DIVISOR1 {1} \
+##    CONFIG.PSU__CRL_APB__CAN1_REF_CTRL__DIVISOR0 {15} \
+##    CONFIG.PSU__CRL_APB__CAN1_REF_CTRL__DIVISOR1 {1} \
+##    CONFIG.PSU__CRL_APB__CAN1_REF_CTRL__FREQMHZ {100} \
+##    CONFIG.PSU__CRL_APB__CAN1_REF_CTRL__SRCSEL {IOPLL} \
+##    CONFIG.PSU__CRL_APB__CPU_R5_CTRL__ACT_FREQMHZ {533.328003} \
+##    CONFIG.PSU__CRL_APB__CPU_R5_CTRL__DIVISOR0 {2} \
+##    CONFIG.PSU__CRL_APB__CPU_R5_CTRL__FREQMHZ {533.333} \
+##    CONFIG.PSU__CRL_APB__CPU_R5_CTRL__SRCSEL {RPLL} \
+##    CONFIG.PSU__CRL_APB__DBG_LPD_CTRL__ACT_FREQMHZ {249.997498} \
+##    CONFIG.PSU__CRL_APB__DBG_LPD_CTRL__DIVISOR0 {4} \
+##    CONFIG.PSU__CRL_APB__DBG_LPD_CTRL__FREQMHZ {250} \
+##    CONFIG.PSU__CRL_APB__DBG_LPD_CTRL__SRCSEL {IOPLL} \
+##    CONFIG.PSU__CRL_APB__DLL_REF_CTRL__ACT_FREQMHZ {999.989990} \
+##    CONFIG.PSU__CRL_APB__GEM0_REF_CTRL__DIVISOR0 {12} \
+##    CONFIG.PSU__CRL_APB__GEM0_REF_CTRL__DIVISOR1 {1} \
+##    CONFIG.PSU__CRL_APB__GEM1_REF_CTRL__DIVISOR0 {12} \
+##    CONFIG.PSU__CRL_APB__GEM1_REF_CTRL__DIVISOR1 {1} \
+##    CONFIG.PSU__CRL_APB__GEM2_REF_CTRL__DIVISOR0 {12} \
+##    CONFIG.PSU__CRL_APB__GEM2_REF_CTRL__DIVISOR1 {1} \
+##    CONFIG.PSU__CRL_APB__GEM3_REF_CTRL__DIVISOR0 {12} \
+##    CONFIG.PSU__CRL_APB__GEM3_REF_CTRL__DIVISOR1 {1} \
+##    CONFIG.PSU__CRL_APB__GEM3_REF_CTRL__FREQMHZ {125} \
+##    CONFIG.PSU__CRL_APB__GEM3_REF_CTRL__SRCSEL {IOPLL} \
+##    CONFIG.PSU__CRL_APB__GEM_TSU_REF_CTRL__DIVISOR0 {4} \
+##    CONFIG.PSU__CRL_APB__GEM_TSU_REF_CTRL__DIVISOR1 {1} \
+##    CONFIG.PSU__CRL_APB__I2C0_REF_CTRL__DIVISOR0 {15} \
+##    CONFIG.PSU__CRL_APB__I2C0_REF_CTRL__DIVISOR1 {1} \
+##    CONFIG.PSU__CRL_APB__I2C0_REF_CTRL__FREQMHZ {100} \
+##    CONFIG.PSU__CRL_APB__I2C0_REF_CTRL__SRCSEL {IOPLL} \
+##    CONFIG.PSU__CRL_APB__I2C1_REF_CTRL__ACT_FREQMHZ {99.999001} \
+##    CONFIG.PSU__CRL_APB__I2C1_REF_CTRL__DIVISOR0 {10} \
+##    CONFIG.PSU__CRL_APB__I2C1_REF_CTRL__DIVISOR1 {1} \
+##    CONFIG.PSU__CRL_APB__I2C1_REF_CTRL__FREQMHZ {100} \
+##    CONFIG.PSU__CRL_APB__I2C1_REF_CTRL__SRCSEL {IOPLL} \
+##    CONFIG.PSU__CRL_APB__IOPLL_CTRL__DIV2 {1} \
+##    CONFIG.PSU__CRL_APB__IOPLL_CTRL__FBDIV {60} \
+##    CONFIG.PSU__CRL_APB__IOPLL_CTRL__FRACDATA {0.000000} \
+##    CONFIG.PSU__CRL_APB__IOPLL_CTRL__SRCSEL {PSS_REF_CLK} \
+##    CONFIG.PSU__CRL_APB__IOPLL_FRAC_CFG__ENABLED {0} \
+##    CONFIG.PSU__CRL_APB__IOPLL_TO_FPD_CTRL__DIVISOR0 {2} \
+##    CONFIG.PSU__CRL_APB__IOU_SWITCH_CTRL__ACT_FREQMHZ {249.997498} \
+##    CONFIG.PSU__CRL_APB__IOU_SWITCH_CTRL__DIVISOR0 {4} \
+##    CONFIG.PSU__CRL_APB__IOU_SWITCH_CTRL__FREQMHZ {250} \
+##    CONFIG.PSU__CRL_APB__IOU_SWITCH_CTRL__SRCSEL {IOPLL} \
+##    CONFIG.PSU__CRL_APB__LPD_LSBUS_CTRL__ACT_FREQMHZ {99.999001} \
+##    CONFIG.PSU__CRL_APB__LPD_LSBUS_CTRL__DIVISOR0 {10} \
+##    CONFIG.PSU__CRL_APB__LPD_LSBUS_CTRL__FREQMHZ {100} \
+##    CONFIG.PSU__CRL_APB__LPD_LSBUS_CTRL__SRCSEL {IOPLL} \
+##    CONFIG.PSU__CRL_APB__LPD_SWITCH_CTRL__ACT_FREQMHZ {499.994995} \
+##    CONFIG.PSU__CRL_APB__LPD_SWITCH_CTRL__DIVISOR0 {2} \
+##    CONFIG.PSU__CRL_APB__LPD_SWITCH_CTRL__FREQMHZ {500} \
+##    CONFIG.PSU__CRL_APB__LPD_SWITCH_CTRL__SRCSEL {IOPLL} \
+##    CONFIG.PSU__CRL_APB__NAND_REF_CTRL__DIVISOR0 {15} \
+##    CONFIG.PSU__CRL_APB__NAND_REF_CTRL__DIVISOR1 {1} \
+##    CONFIG.PSU__CRL_APB__PCAP_CTRL__ACT_FREQMHZ {199.998001} \
+##    CONFIG.PSU__CRL_APB__PCAP_CTRL__DIVISOR0 {5} \
+##    CONFIG.PSU__CRL_APB__PCAP_CTRL__FREQMHZ {200} \
+##    CONFIG.PSU__CRL_APB__PCAP_CTRL__SRCSEL {IOPLL} \
+##    CONFIG.PSU__CRL_APB__PL0_REF_CTRL__ACT_FREQMHZ {99.999001} \
+##    CONFIG.PSU__CRL_APB__PL0_REF_CTRL__DIVISOR0 {10} \
+##    CONFIG.PSU__CRL_APB__PL0_REF_CTRL__DIVISOR1 {1} \
+##    CONFIG.PSU__CRL_APB__PL0_REF_CTRL__FREQMHZ {100} \
+##    CONFIG.PSU__CRL_APB__PL0_REF_CTRL__SRCSEL {IOPLL} \
+##    CONFIG.PSU__CRL_APB__PL1_REF_CTRL__ACT_FREQMHZ {99.999001} \
+##    CONFIG.PSU__CRL_APB__PL1_REF_CTRL__DIVISOR0 {4} \
+##    CONFIG.PSU__CRL_APB__PL1_REF_CTRL__DIVISOR1 {1} \
+##    CONFIG.PSU__CRL_APB__PL1_REF_CTRL__FREQMHZ {100} \
+##    CONFIG.PSU__CRL_APB__PL1_REF_CTRL__SRCSEL {RPLL} \
+##    CONFIG.PSU__CRL_APB__PL2_REF_CTRL__DIVISOR0 {4} \
+##    CONFIG.PSU__CRL_APB__PL2_REF_CTRL__DIVISOR1 {1} \
+##    CONFIG.PSU__CRL_APB__PL3_REF_CTRL__DIVISOR0 {4} \
+##    CONFIG.PSU__CRL_APB__PL3_REF_CTRL__DIVISOR1 {1} \
+##    CONFIG.PSU__CRL_APB__QSPI_REF_CTRL__ACT_FREQMHZ {124.998749} \
+##    CONFIG.PSU__CRL_APB__QSPI_REF_CTRL__DIVISOR0 {8} \
+##    CONFIG.PSU__CRL_APB__QSPI_REF_CTRL__DIVISOR1 {1} \
+##    CONFIG.PSU__CRL_APB__QSPI_REF_CTRL__FREQMHZ {125} \
+##    CONFIG.PSU__CRL_APB__QSPI_REF_CTRL__SRCSEL {IOPLL} \
+##    CONFIG.PSU__CRL_APB__RPLL_CTRL__DIV2 {1} \
+##    CONFIG.PSU__CRL_APB__RPLL_CTRL__FBDIV {64} \
+##    CONFIG.PSU__CRL_APB__RPLL_CTRL__FRACDATA {0.000000} \
+##    CONFIG.PSU__CRL_APB__RPLL_CTRL__SRCSEL {PSS_REF_CLK} \
+##    CONFIG.PSU__CRL_APB__RPLL_FRAC_CFG__ENABLED {0} \
+##    CONFIG.PSU__CRL_APB__RPLL_TO_FPD_CTRL__DIVISOR0 {2} \
+##    CONFIG.PSU__CRL_APB__SDIO0_REF_CTRL__DIVISOR0 {7} \
+##    CONFIG.PSU__CRL_APB__SDIO0_REF_CTRL__DIVISOR1 {1} \
+##    CONFIG.PSU__CRL_APB__SDIO1_REF_CTRL__DIVISOR0 {7} \
+##    CONFIG.PSU__CRL_APB__SDIO1_REF_CTRL__DIVISOR1 {1} \
+##    CONFIG.PSU__CRL_APB__SDIO1_REF_CTRL__FREQMHZ {200} \
+##    CONFIG.PSU__CRL_APB__SDIO1_REF_CTRL__SRCSEL {IOPLL} \
+##    CONFIG.PSU__CRL_APB__SPI0_REF_CTRL__DIVISOR0 {7} \
+##    CONFIG.PSU__CRL_APB__SPI0_REF_CTRL__DIVISOR1 {1} \
+##    CONFIG.PSU__CRL_APB__SPI1_REF_CTRL__ACT_FREQMHZ {199.998001} \
+##    CONFIG.PSU__CRL_APB__SPI1_REF_CTRL__DIVISOR0 {5} \
+##    CONFIG.PSU__CRL_APB__SPI1_REF_CTRL__DIVISOR1 {1} \
+##    CONFIG.PSU__CRL_APB__SPI1_REF_CTRL__SRCSEL {IOPLL} \
+##    CONFIG.PSU__CRL_APB__TIMESTAMP_REF_CTRL__ACT_FREQMHZ {99.999001} \
+##    CONFIG.PSU__CRL_APB__TIMESTAMP_REF_CTRL__DIVISOR0 {10} \
+##    CONFIG.PSU__CRL_APB__TIMESTAMP_REF_CTRL__FREQMHZ {100} \
+##    CONFIG.PSU__CRL_APB__TIMESTAMP_REF_CTRL__SRCSEL {IOPLL} \
+##    CONFIG.PSU__CRL_APB__UART0_REF_CTRL__DIVISOR0 {15} \
+##    CONFIG.PSU__CRL_APB__UART0_REF_CTRL__DIVISOR1 {1} \
+##    CONFIG.PSU__CRL_APB__UART0_REF_CTRL__FREQMHZ {100} \
+##    CONFIG.PSU__CRL_APB__UART0_REF_CTRL__SRCSEL {IOPLL} \
+##    CONFIG.PSU__CRL_APB__UART1_REF_CTRL__DIVISOR0 {15} \
+##    CONFIG.PSU__CRL_APB__UART1_REF_CTRL__DIVISOR1 {1} \
+##    CONFIG.PSU__CRL_APB__UART1_REF_CTRL__FREQMHZ {100} \
+##    CONFIG.PSU__CRL_APB__UART1_REF_CTRL__SRCSEL {IOPLL} \
+##    CONFIG.PSU__CRL_APB__USB0_BUS_REF_CTRL__DIVISOR0 {6} \
+##    CONFIG.PSU__CRL_APB__USB0_BUS_REF_CTRL__DIVISOR1 {1} \
+##    CONFIG.PSU__CRL_APB__USB0_BUS_REF_CTRL__FREQMHZ {250} \
+##    CONFIG.PSU__CRL_APB__USB0_BUS_REF_CTRL__SRCSEL {IOPLL} \
+##    CONFIG.PSU__CRL_APB__USB1_BUS_REF_CTRL__DIVISOR0 {6} \
+##    CONFIG.PSU__CRL_APB__USB1_BUS_REF_CTRL__DIVISOR1 {1} \
+##    CONFIG.PSU__CRL_APB__USB3_DUAL_REF_CTRL__DIVISOR0 {5} \
+##    CONFIG.PSU__CRL_APB__USB3_DUAL_REF_CTRL__DIVISOR1 {15} \
+##    CONFIG.PSU__CRL_APB__USB3_DUAL_REF_CTRL__FREQMHZ {20} \
+##    CONFIG.PSU__CRL_APB__USB3_DUAL_REF_CTRL__SRCSEL {IOPLL} \
+##    CONFIG.PSU__CSUPMU__PERIPHERAL__VALID {1} \
+##    CONFIG.PSU__DDRC__ADDR_MIRROR {0} \
+##    CONFIG.PSU__DDRC__BANK_ADDR_COUNT {2} \
+##    CONFIG.PSU__DDRC__BG_ADDR_COUNT {1} \
+##    CONFIG.PSU__DDRC__BRC_MAPPING {ROW_BANK_COL} \
+##    CONFIG.PSU__DDRC__BUS_WIDTH {64 Bit} \
+##    CONFIG.PSU__DDRC__CL {16} \
+##    CONFIG.PSU__DDRC__CLOCK_STOP_EN {0} \
+##    CONFIG.PSU__DDRC__COL_ADDR_COUNT {10} \
+##    CONFIG.PSU__DDRC__COMPONENTS {Components} \
+##    CONFIG.PSU__DDRC__CWL {14} \
+##    CONFIG.PSU__DDRC__DDR3L_T_REF_RANGE {NA} \
+##    CONFIG.PSU__DDRC__DDR3_T_REF_RANGE {NA} \
+##    CONFIG.PSU__DDRC__DDR4_ADDR_MAPPING {0} \
+##    CONFIG.PSU__DDRC__DDR4_CAL_MODE_ENABLE {0} \
+##    CONFIG.PSU__DDRC__DDR4_CRC_CONTROL {0} \
+##    CONFIG.PSU__DDRC__DDR4_T_REF_MODE {0} \
+##    CONFIG.PSU__DDRC__DDR4_T_REF_RANGE {Normal (0-85)} \
+##    CONFIG.PSU__DDRC__DEEP_PWR_DOWN_EN {0} \
+##    CONFIG.PSU__DDRC__DEVICE_CAPACITY {8192 MBits} \
+##    CONFIG.PSU__DDRC__DIMM_ADDR_MIRROR {0} \
+##    CONFIG.PSU__DDRC__DM_DBI {DM_NO_DBI} \
+##    CONFIG.PSU__DDRC__DQMAP_0_3 {0} \
+##    CONFIG.PSU__DDRC__DQMAP_12_15 {0} \
+##    CONFIG.PSU__DDRC__DQMAP_16_19 {0} \
+##    CONFIG.PSU__DDRC__DQMAP_20_23 {0} \
+##    CONFIG.PSU__DDRC__DQMAP_24_27 {0} \
+##    CONFIG.PSU__DDRC__DQMAP_28_31 {0} \
+##    CONFIG.PSU__DDRC__DQMAP_32_35 {0} \
+##    CONFIG.PSU__DDRC__DQMAP_36_39 {0} \
+##    CONFIG.PSU__DDRC__DQMAP_40_43 {0} \
+##    CONFIG.PSU__DDRC__DQMAP_44_47 {0} \
+##    CONFIG.PSU__DDRC__DQMAP_48_51 {0} \
+##    CONFIG.PSU__DDRC__DQMAP_4_7 {0} \
+##    CONFIG.PSU__DDRC__DQMAP_52_55 {0} \
+##    CONFIG.PSU__DDRC__DQMAP_56_59 {0} \
+##    CONFIG.PSU__DDRC__DQMAP_60_63 {0} \
+##    CONFIG.PSU__DDRC__DQMAP_64_67 {0} \
+##    CONFIG.PSU__DDRC__DQMAP_68_71 {0} \
+##    CONFIG.PSU__DDRC__DQMAP_8_11 {0} \
+##    CONFIG.PSU__DDRC__DRAM_WIDTH {16 Bits} \
+##    CONFIG.PSU__DDRC__ECC {Disabled} \
+##    CONFIG.PSU__DDRC__ENABLE_LP4_HAS_ECC_COMP {0} \
+##    CONFIG.PSU__DDRC__ENABLE_LP4_SLOWBOOT {0} \
+##    CONFIG.PSU__DDRC__FGRM {1X} \
+##    CONFIG.PSU__DDRC__LPDDR3_T_REF_RANGE {NA} \
+##    CONFIG.PSU__DDRC__LPDDR4_T_REF_RANGE {NA} \
+##    CONFIG.PSU__DDRC__LP_ASR {manual normal} \
+##    CONFIG.PSU__DDRC__MEMORY_TYPE {DDR 4} \
+##    CONFIG.PSU__DDRC__PARITY_ENABLE {0} \
+##    CONFIG.PSU__DDRC__PER_BANK_REFRESH {0} \
+##    CONFIG.PSU__DDRC__PHY_DBI_MODE {0} \
+##    CONFIG.PSU__DDRC__RANK_ADDR_COUNT {0} \
+##    CONFIG.PSU__DDRC__ROW_ADDR_COUNT {16} \
+##    CONFIG.PSU__DDRC__SB_TARGET {16-16-16} \
+##    CONFIG.PSU__DDRC__SELF_REF_ABORT {0} \
+##    CONFIG.PSU__DDRC__SPEED_BIN {DDR4_2400R} \
+##    CONFIG.PSU__DDRC__STATIC_RD_MODE {0} \
+##    CONFIG.PSU__DDRC__TRAIN_DATA_EYE {1} \
+##    CONFIG.PSU__DDRC__TRAIN_READ_GATE {1} \
+##    CONFIG.PSU__DDRC__TRAIN_WRITE_LEVEL {1} \
+##    CONFIG.PSU__DDRC__T_FAW {30.0} \
+##    CONFIG.PSU__DDRC__T_RAS_MIN {33} \
+##    CONFIG.PSU__DDRC__T_RC {47.06} \
+##    CONFIG.PSU__DDRC__T_RCD {16} \
+##    CONFIG.PSU__DDRC__T_RP {16} \
+##    CONFIG.PSU__DDRC__VENDOR_PART {OTHERS} \
+##    CONFIG.PSU__DDRC__VREF {1} \
+##    CONFIG.PSU__DDR_HIGH_ADDRESS_GUI_ENABLE {1} \
+##    CONFIG.PSU__DDR__INTERFACE__FREQMHZ {600.000} \
+##    CONFIG.PSU__DP__REF_CLK_FREQ {<Select>} \
+##    CONFIG.PSU__DP__REF_CLK_SEL {<Select>} \
+##    CONFIG.PSU__FPD_SLCR__WDT1__ACT_FREQMHZ {99.999001} \
+##    CONFIG.PSU__FPD_SLCR__WDT1__FREQMHZ {99.999001} \
+##    CONFIG.PSU__FPD_SLCR__WDT_CLK_SEL__SELECT {APB} \
+##    CONFIG.PSU__FPGA_PL0_ENABLE {1} \
+##    CONFIG.PSU__FPGA_PL1_ENABLE {0} \
+##    CONFIG.PSU__GPIO0_MIO__IO {MIO 0 .. 25} \
+##    CONFIG.PSU__GPIO0_MIO__PERIPHERAL__ENABLE {1} \
+##    CONFIG.PSU__GPIO1_MIO__IO {MIO 26 .. 51} \
+##    CONFIG.PSU__GPIO1_MIO__PERIPHERAL__ENABLE {1} \
+##    CONFIG.PSU__HIGH_ADDRESS__ENABLE {1} \
+##    CONFIG.PSU__I2C0__PERIPHERAL__ENABLE {0} \
+##    CONFIG.PSU__I2C1__PERIPHERAL__ENABLE {1} \
+##    CONFIG.PSU__I2C1__PERIPHERAL__IO {MIO 24 .. 25} \
+##    CONFIG.PSU__IOU_SLCR__IOU_TTC_APB_CLK__TTC0_SEL {APB} \
+##    CONFIG.PSU__IOU_SLCR__IOU_TTC_APB_CLK__TTC1_SEL {APB} \
+##    CONFIG.PSU__IOU_SLCR__IOU_TTC_APB_CLK__TTC2_SEL {APB} \
+##    CONFIG.PSU__IOU_SLCR__IOU_TTC_APB_CLK__TTC3_SEL {APB} \
+##    CONFIG.PSU__IOU_SLCR__TTC0__ACT_FREQMHZ {100.000000} \
+##    CONFIG.PSU__IOU_SLCR__TTC0__FREQMHZ {100.000000} \
+##    CONFIG.PSU__IOU_SLCR__TTC1__ACT_FREQMHZ {100.000000} \
+##    CONFIG.PSU__IOU_SLCR__TTC1__FREQMHZ {100.000000} \
+##    CONFIG.PSU__IOU_SLCR__TTC2__ACT_FREQMHZ {100.000000} \
+##    CONFIG.PSU__IOU_SLCR__TTC2__FREQMHZ {100.000000} \
+##    CONFIG.PSU__IOU_SLCR__TTC3__ACT_FREQMHZ {100.000000} \
+##    CONFIG.PSU__IOU_SLCR__TTC3__FREQMHZ {100.000000} \
+##    CONFIG.PSU__IOU_SLCR__WDT0__ACT_FREQMHZ {99.999001} \
+##    CONFIG.PSU__IOU_SLCR__WDT0__FREQMHZ {99.999001} \
+##    CONFIG.PSU__IOU_SLCR__WDT_CLK_SEL__SELECT {APB} \
+##    CONFIG.PSU__LPD_SLCR__CSUPMU__ACT_FREQMHZ {100.000000} \
+##    CONFIG.PSU__LPD_SLCR__CSUPMU__FREQMHZ {100.000000} \
+##    CONFIG.PSU__MAXIGP0__DATA_WIDTH {128} \
+##    CONFIG.PSU__MAXIGP1__DATA_WIDTH {128} \
+##    CONFIG.PSU__MAXIGP2__DATA_WIDTH {32} \
+##    CONFIG.PSU__OVERRIDE__BASIC_CLOCK {0} \
+##    CONFIG.PSU__PL_CLK0_BUF {TRUE} \
+##    CONFIG.PSU__PL_CLK1_BUF {FALSE} \
+##    CONFIG.PSU__PMU_COHERENCY {0} \
+##    CONFIG.PSU__PMU__AIBACK__ENABLE {0} \
+##    CONFIG.PSU__PMU__EMIO_GPI__ENABLE {0} \
+##    CONFIG.PSU__PMU__EMIO_GPO__ENABLE {0} \
+##    CONFIG.PSU__PMU__GPI0__ENABLE {1} \
+##    CONFIG.PSU__PMU__GPI0__IO {MIO 26} \
+##    CONFIG.PSU__PMU__GPI1__ENABLE {0} \
+##    CONFIG.PSU__PMU__GPI2__ENABLE {0} \
+##    CONFIG.PSU__PMU__GPI3__ENABLE {0} \
+##    CONFIG.PSU__PMU__GPI4__ENABLE {0} \
+##    CONFIG.PSU__PMU__GPI5__ENABLE {1} \
+##    CONFIG.PSU__PMU__GPI5__IO {MIO 31} \
+##    CONFIG.PSU__PMU__GPO0__ENABLE {1} \
+##    CONFIG.PSU__PMU__GPO0__IO {MIO 32} \
+##    CONFIG.PSU__PMU__GPO1__ENABLE {1} \
+##    CONFIG.PSU__PMU__GPO1__IO {MIO 33} \
+##    CONFIG.PSU__PMU__GPO2__ENABLE {1} \
+##    CONFIG.PSU__PMU__GPO2__IO {MIO 34} \
+##    CONFIG.PSU__PMU__GPO2__POLARITY {high} \
+##    CONFIG.PSU__PMU__GPO3__ENABLE {1} \
+##    CONFIG.PSU__PMU__GPO3__IO {MIO 35} \
+##    CONFIG.PSU__PMU__GPO3__POLARITY {low} \
+##    CONFIG.PSU__PMU__GPO4__ENABLE {0} \
+##    CONFIG.PSU__PMU__GPO5__ENABLE {0} \
+##    CONFIG.PSU__PMU__PERIPHERAL__ENABLE {1} \
+##    CONFIG.PSU__PMU__PLERROR__ENABLE {0} \
+##    CONFIG.PSU__PRESET_APPLIED {1} \
+##    CONFIG.PSU__PROTECTION__MASTERS {\
+## USB1:NonSecure;0|USB0:NonSecure;0|S_AXI_LPD:NA;0|S_AXI_HPC1_FPD:NA;0|S_AXI_HPC0_FPD:NA;0|S_AXI_HP3_FPD:NA;0|S_AXI_HP2_FPD:NA;0|S_AXI_HP1_FPD:NA;0|S_AXI_HP0_FPD:NA;1|S_AXI_ACP:NA;1|S_AXI_ACE:NA;0|SD1:NonSecure;0|SD0:NonSecure;0|SATA1:NonSecure;0|SATA0:NonSecure;0|RPU1:Secure;1|RPU0:Secure;1|QSPI:NonSecure;1|PMU:NA;1|PCIe:NonSecure;0|NAND:NonSecure;0|LDMA:NonSecure;1|GPU:NonSecure;1|GEM3:NonSecure;0|GEM2:NonSecure;0|GEM1:NonSecure;0|GEM0:NonSecure;0|FDMA:NonSecure;1|DP:NonSecure;0|DAP:NA;1|Coresight:NA;1|CSU:NA;1|APU:NA;1} \
+##    CONFIG.PSU__PROTECTION__SLAVES {\
+## LPD;USB3_1_XHCI;FE300000;FE3FFFFF;0|LPD;USB3_1;FF9E0000;FF9EFFFF;0|LPD;USB3_0_XHCI;FE200000;FE2FFFFF;0|LPD;USB3_0;FF9D0000;FF9DFFFF;0|LPD;UART1;FF010000;FF01FFFF;0|LPD;UART0;FF000000;FF00FFFF;0|LPD;TTC3;FF140000;FF14FFFF;1|LPD;TTC2;FF130000;FF13FFFF;1|LPD;TTC1;FF120000;FF12FFFF;1|LPD;TTC0;FF110000;FF11FFFF;1|FPD;SWDT1;FD4D0000;FD4DFFFF;1|LPD;SWDT0;FF150000;FF15FFFF;1|LPD;SPI1;FF050000;FF05FFFF;1|LPD;SPI0;FF040000;FF04FFFF;0|FPD;SMMU_REG;FD5F0000;FD5FFFFF;1|FPD;SMMU;FD800000;FDFFFFFF;1|FPD;SIOU;FD3D0000;FD3DFFFF;1|FPD;SERDES;FD400000;FD47FFFF;1|LPD;SD1;FF170000;FF17FFFF;0|LPD;SD0;FF160000;FF16FFFF;0|FPD;SATA;FD0C0000;FD0CFFFF;0|LPD;RTC;FFA60000;FFA6FFFF;1|LPD;RSA_CORE;FFCE0000;FFCEFFFF;1|LPD;RPU;FF9A0000;FF9AFFFF;1|LPD;R5_TCM_RAM_GLOBAL;FFE00000;FFE3FFFF;1|LPD;R5_1_Instruction_Cache;FFEC0000;FFECFFFF;1|LPD;R5_1_Data_Cache;FFED0000;FFEDFFFF;1|LPD;R5_1_BTCM_GLOBAL;FFEB0000;FFEBFFFF;1|LPD;R5_1_ATCM_GLOBAL;FFE90000;FFE9FFFF;1|LPD;R5_0_Instruction_Cache;FFE40000;FFE4FFFF;1|LPD;R5_0_Data_Cache;FFE50000;FFE5FFFF;1|LPD;R5_0_BTCM_GLOBAL;FFE20000;FFE2FFFF;1|LPD;R5_0_ATCM_GLOBAL;FFE00000;FFE0FFFF;1|LPD;QSPI_Linear_Address;C0000000;DFFFFFFF;1|LPD;QSPI;FF0F0000;FF0FFFFF;1|LPD;PMU_RAM;FFDC0000;FFDDFFFF;1|LPD;PMU_GLOBAL;FFD80000;FFDBFFFF;1|FPD;PCIE_MAIN;FD0E0000;FD0EFFFF;0|FPD;PCIE_LOW;E0000000;EFFFFFFF;0|FPD;PCIE_HIGH2;8000000000;BFFFFFFFFF;0|FPD;PCIE_HIGH1;600000000;7FFFFFFFF;0|FPD;PCIE_DMA;FD0F0000;FD0FFFFF;0|FPD;PCIE_ATTRIB;FD480000;FD48FFFF;0|LPD;OCM_XMPU_CFG;FFA70000;FFA7FFFF;1|LPD;OCM_SLCR;FF960000;FF96FFFF;1|OCM;OCM;FFFC0000;FFFFFFFF;1|LPD;NAND;FF100000;FF10FFFF;0|LPD;MBISTJTAG;FFCF0000;FFCFFFFF;1|LPD;LPD_XPPU_SINK;FF9C0000;FF9CFFFF;1|LPD;LPD_XPPU;FF980000;FF98FFFF;1|LPD;LPD_SLCR_SECURE;FF4B0000;FF4DFFFF;1|LPD;LPD_SLCR;FF410000;FF4AFFFF;1|LPD;LPD_GPV;FE100000;FE1FFFFF;1|LPD;LPD_DMA_7;FFAF0000;FFAFFFFF;1|LPD;LPD_DMA_6;FFAE0000;FFAEFFFF;1|LPD;LPD_DMA_5;FFAD0000;FFADFFFF;1|LPD;LPD_DMA_4;FFAC0000;FFACFFFF;1|LPD;LPD_DMA_3;FFAB0000;FFABFFFF;1|LPD;LPD_DMA_2;FFAA0000;FFAAFFFF;1|LPD;LPD_DMA_1;FFA90000;FFA9FFFF;1|LPD;LPD_DMA_0;FFA80000;FFA8FFFF;1|LPD;IPI_CTRL;FF380000;FF3FFFFF;1|LPD;IOU_SLCR;FF180000;FF23FFFF;1|LPD;IOU_SECURE_SLCR;FF240000;FF24FFFF;1|LPD;IOU_SCNTRS;FF260000;FF26FFFF;1|LPD;IOU_SCNTR;FF250000;FF25FFFF;1|LPD;IOU_GPV;FE000000;FE0FFFFF;1|LPD;I2C1;FF030000;FF03FFFF;1|LPD;I2C0;FF020000;FF02FFFF;0|FPD;GPU;FD4B0000;FD4BFFFF;1|LPD;GPIO;FF0A0000;FF0AFFFF;1|LPD;GEM3;FF0E0000;FF0EFFFF;0|LPD;GEM2;FF0D0000;FF0DFFFF;0|LPD;GEM1;FF0C0000;FF0CFFFF;0|LPD;GEM0;FF0B0000;FF0BFFFF;0|FPD;FPD_XMPU_SINK;FD4F0000;FD4FFFFF;1|FPD;FPD_XMPU_CFG;FD5D0000;FD5DFFFF;1|FPD;FPD_SLCR_SECURE;FD690000;FD6CFFFF;1|FPD;FPD_SLCR;FD610000;FD68FFFF;1|FPD;FPD_DMA_CH7;FD570000;FD57FFFF;1|FPD;FPD_DMA_CH6;FD560000;FD56FFFF;1|FPD;FPD_DMA_CH5;FD550000;FD55FFFF;1|FPD;FPD_DMA_CH4;FD540000;FD54FFFF;1|FPD;FPD_DMA_CH3;FD530000;FD53FFFF;1|FPD;FPD_DMA_CH2;FD520000;FD52FFFF;1|FPD;FPD_DMA_CH1;FD510000;FD51FFFF;1|FPD;FPD_DMA_CH0;FD500000;FD50FFFF;1|LPD;EFUSE;FFCC0000;FFCCFFFF;1|FPD;Display\
+## Port;FD4A0000;FD4AFFFF;0|FPD;DPDMA;FD4C0000;FD4CFFFF;0|FPD;DDR_XMPU5_CFG;FD050000;FD05FFFF;1|FPD;DDR_XMPU4_CFG;FD040000;FD04FFFF;1|FPD;DDR_XMPU3_CFG;FD030000;FD03FFFF;1|FPD;DDR_XMPU2_CFG;FD020000;FD02FFFF;1|FPD;DDR_XMPU1_CFG;FD010000;FD01FFFF;1|FPD;DDR_XMPU0_CFG;FD000000;FD00FFFF;1|FPD;DDR_QOS_CTRL;FD090000;FD09FFFF;1|FPD;DDR_PHY;FD080000;FD08FFFF;1|DDR;DDR_LOW;0;7FFFFFFF;1|DDR;DDR_HIGH;800000000;87FFFFFFF;1|FPD;DDDR_CTRL;FD070000;FD070FFF;1|LPD;Coresight;FE800000;FEFFFFFF;1|LPD;CSU_DMA;FFC80000;FFC9FFFF;1|LPD;CSU;FFCA0000;FFCAFFFF;1|LPD;CRL_APB;FF5E0000;FF85FFFF;1|FPD;CRF_APB;FD1A0000;FD2DFFFF;1|FPD;CCI_REG;FD5E0000;FD5EFFFF;1|LPD;CAN1;FF070000;FF07FFFF;0|LPD;CAN0;FF060000;FF06FFFF;0|FPD;APU;FD5C0000;FD5CFFFF;1|LPD;APM_INTC_IOU;FFA20000;FFA2FFFF;1|LPD;APM_FPD_LPD;FFA30000;FFA3FFFF;1|FPD;APM_5;FD490000;FD49FFFF;1|FPD;APM_0;FD0B0000;FD0BFFFF;1|LPD;APM2;FFA10000;FFA1FFFF;1|LPD;APM1;FFA00000;FFA0FFFF;1|LPD;AMS;FFA50000;FFA5FFFF;1|FPD;AFI_5;FD3B0000;FD3BFFFF;1|FPD;AFI_4;FD3A0000;FD3AFFFF;1|FPD;AFI_3;FD390000;FD39FFFF;1|FPD;AFI_2;FD380000;FD38FFFF;1|FPD;AFI_1;FD370000;FD37FFFF;1|FPD;AFI_0;FD360000;FD36FFFF;1|LPD;AFIFM6;FF9B0000;FF9BFFFF;1|FPD;ACPU_GIC;F9010000;F907FFFF;1} \
+##    CONFIG.PSU__PSS_REF_CLK__FREQMHZ {33.333} \
+##    CONFIG.PSU__QSPI_COHERENCY {0} \
+##    CONFIG.PSU__QSPI_ROUTE_THROUGH_FPD {0} \
+##    CONFIG.PSU__QSPI__GRP_FBCLK__ENABLE {0} \
+##    CONFIG.PSU__QSPI__PERIPHERAL__DATA_MODE {x4} \
+##    CONFIG.PSU__QSPI__PERIPHERAL__ENABLE {1} \
+##    CONFIG.PSU__QSPI__PERIPHERAL__IO {MIO 0 .. 5} \
+##    CONFIG.PSU__QSPI__PERIPHERAL__MODE {Single} \
+##    CONFIG.PSU__SATA__REF_CLK_FREQ {<Select>} \
+##    CONFIG.PSU__SATA__REF_CLK_SEL {<Select>} \
+##    CONFIG.PSU__SAXIGP2__DATA_WIDTH {128} \
+##    CONFIG.PSU__SAXIGP3__DATA_WIDTH {128} \
+##    CONFIG.PSU__SPI1__GRP_SS0__ENABLE {1} \
+##    CONFIG.PSU__SPI1__GRP_SS0__IO {MIO 9} \
+##    CONFIG.PSU__SPI1__GRP_SS1__ENABLE {0} \
+##    CONFIG.PSU__SPI1__GRP_SS2__ENABLE {0} \
+##    CONFIG.PSU__SPI1__PERIPHERAL__ENABLE {1} \
+##    CONFIG.PSU__SPI1__PERIPHERAL__IO {MIO 6 .. 11} \
+##    CONFIG.PSU__SWDT0__CLOCK__ENABLE {0} \
+##    CONFIG.PSU__SWDT0__PERIPHERAL__ENABLE {1} \
+##    CONFIG.PSU__SWDT0__RESET__ENABLE {0} \
+##    CONFIG.PSU__SWDT1__CLOCK__ENABLE {0} \
+##    CONFIG.PSU__SWDT1__PERIPHERAL__ENABLE {1} \
+##    CONFIG.PSU__SWDT1__RESET__ENABLE {0} \
+##    CONFIG.PSU__TTC0__CLOCK__ENABLE {0} \
+##    CONFIG.PSU__TTC0__PERIPHERAL__ENABLE {1} \
+##    CONFIG.PSU__TTC0__WAVEOUT__ENABLE {0} \
+##    CONFIG.PSU__TTC1__CLOCK__ENABLE {0} \
+##    CONFIG.PSU__TTC1__PERIPHERAL__ENABLE {1} \
+##    CONFIG.PSU__TTC1__WAVEOUT__ENABLE {0} \
+##    CONFIG.PSU__TTC2__CLOCK__ENABLE {0} \
+##    CONFIG.PSU__TTC2__PERIPHERAL__ENABLE {1} \
+##    CONFIG.PSU__TTC2__WAVEOUT__ENABLE {0} \
+##    CONFIG.PSU__TTC3__CLOCK__ENABLE {0} \
+##    CONFIG.PSU__TTC3__PERIPHERAL__ENABLE {1} \
+##    CONFIG.PSU__TTC3__WAVEOUT__ENABLE {0} \
+##    CONFIG.PSU__USB0__REF_CLK_FREQ {<Select>} \
+##    CONFIG.PSU__USB0__REF_CLK_SEL {<Select>} \
+##    CONFIG.PSU__USE__IRQ0 {1} \
+##    CONFIG.PSU__USE__M_AXI_GP0 {1} \
+##    CONFIG.PSU__USE__M_AXI_GP1 {0} \
+##    CONFIG.PSU__USE__M_AXI_GP2 {0} \
+##    CONFIG.PSU__USE__S_AXI_ACP {1} \
+##    CONFIG.PSU__USE__S_AXI_GP2 {1} \
+##    CONFIG.PSU__USE__S_AXI_GP3 {0} \
+##  ] $zynq_ultra_ps_e_0
+## 
+##   # Add FAN_EN
+##   add_fan_enable $zynq_ultra_ps_e_0 FAN_EN ttc0
+## 
+##   # Create interface connections
+##   connect_bd_intf_net -intf_net ArgSort_AXI_1_MRG_AXI [get_bd_intf_pins ArgSort_AXI_1/MRG_AXI] [get_bd_intf_pins zynq_ultra_ps_e_0/S_AXI_HP0_FPD]
+##   connect_bd_intf_net -intf_net ArgSort_AXI_1_STM_AXI [get_bd_intf_pins ArgSort_AXI_1/STM_AXI] [get_bd_intf_pins ZYNQMP_ACP_ADAPTER_0/AXI]
+##   connect_bd_intf_net -intf_net ZYNQMP_ACP_ADAPTER_0_ACP [get_bd_intf_pins ZYNQMP_ACP_ADAPTER_0/ACP] [get_bd_intf_pins zynq_ultra_ps_e_0/S_AXI_ACP_FPD]
+##   connect_bd_intf_net -intf_net axi_interconnect_0_M00_AXI [get_bd_intf_pins ArgSort_AXI_1/CSR_AXI] [get_bd_intf_pins axi_interconnect_0/M00_AXI]
+##   connect_bd_intf_net -intf_net zynq_ultra_ps_e_0_M_AXI_HPM0_FPD [get_bd_intf_pins axi_interconnect_0/S00_AXI] [get_bd_intf_pins zynq_ultra_ps_e_0/M_AXI_HPM0_FPD]
+## 
+##   # Create port connections
+##   connect_bd_net -net ArgSort_AXI_1_INTERRUPT [get_bd_pins ArgSort_AXI_1/INTERRUPT] [get_bd_pins zynq_ultra_ps_e_0/pl_ps_irq0]
+##   connect_bd_net -net clk_wiz_0_clk_out1 [get_bd_pins ArgSort_AXI_1/ACLK] [get_bd_pins ZYNQMP_ACP_ADAPTER_0/ACLK] [get_bd_pins axi_interconnect_0/ACLK] [get_bd_pins axi_interconnect_0/M00_ACLK] [get_bd_pins axi_interconnect_0/S00_ACLK] [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins rst_ps8_0_99M/slowest_sync_clk] [get_bd_pins zynq_ultra_ps_e_0/maxihpm0_fpd_aclk] [get_bd_pins zynq_ultra_ps_e_0/saxiacp_fpd_aclk] [get_bd_pins zynq_ultra_ps_e_0/saxihp0_fpd_aclk]
+##   connect_bd_net -net clk_wiz_0_locked [get_bd_pins clk_wiz_0/locked] [get_bd_pins rst_ps8_0_99M/dcm_locked]
+##   connect_bd_net -net rst_ps8_0_99M_peripheral_aresetn [get_bd_pins ArgSort_AXI_1/ARESETn] [get_bd_pins ZYNQMP_ACP_ADAPTER_0/ARESETn] [get_bd_pins axi_interconnect_0/ARESETN] [get_bd_pins axi_interconnect_0/M00_ARESETN] [get_bd_pins axi_interconnect_0/S00_ARESETN] [get_bd_pins rst_ps8_0_99M/peripheral_aresetn]
+##   connect_bd_net -net zynq_ultra_ps_e_0_pl_clk0 [get_bd_pins clk_wiz_0/clk_in1] [get_bd_pins zynq_ultra_ps_e_0/pl_clk0]
+##   connect_bd_net -net zynq_ultra_ps_e_0_pl_resetn0 [get_bd_pins clk_wiz_0/resetn] [get_bd_pins rst_ps8_0_99M/ext_reset_in] [get_bd_pins zynq_ultra_ps_e_0/pl_resetn0]
+## 
+##   # Create address segments
+##   assign_bd_address -offset 0x00000000 -range 0x00010000000000000000 -target_address_space [get_bd_addr_spaces ArgSort_AXI_1/STM_AXI] [get_bd_addr_segs ZYNQMP_ACP_ADAPTER_0/AXI/reg0] -force
+##   assign_bd_address -offset 0x000800000000 -range 0x000800000000 -target_address_space [get_bd_addr_spaces ArgSort_AXI_1/MRG_AXI] [get_bd_addr_segs zynq_ultra_ps_e_0/SAXIGP2/HP0_DDR_HIGH] -force
+##   assign_bd_address -offset 0x00000000 -range 0x80000000 -target_address_space [get_bd_addr_spaces ArgSort_AXI_1/MRG_AXI] [get_bd_addr_segs zynq_ultra_ps_e_0/SAXIGP2/HP0_DDR_LOW] -force
+##   assign_bd_address -offset 0xFF000000 -range 0x01000000 -target_address_space [get_bd_addr_spaces ArgSort_AXI_1/MRG_AXI] [get_bd_addr_segs zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM] -force
+##   assign_bd_address -offset 0xC0000000 -range 0x20000000 -target_address_space [get_bd_addr_spaces ArgSort_AXI_1/MRG_AXI] [get_bd_addr_segs zynq_ultra_ps_e_0/SAXIGP2/HP0_QSPI] -force
+##   assign_bd_address -offset 0x000800000000 -range 0x000800000000 -target_address_space [get_bd_addr_spaces ZYNQMP_ACP_ADAPTER_0/ACP] [get_bd_addr_segs zynq_ultra_ps_e_0/SAXIACP/ACP_DDR_HIGH] -force
+##   assign_bd_address -offset 0x00000000 -range 0x80000000 -target_address_space [get_bd_addr_spaces ZYNQMP_ACP_ADAPTER_0/ACP] [get_bd_addr_segs zynq_ultra_ps_e_0/SAXIACP/ACP_DDR_LOW] -force
+##   assign_bd_address -offset 0xFF000000 -range 0x01000000 -target_address_space [get_bd_addr_spaces ZYNQMP_ACP_ADAPTER_0/ACP] [get_bd_addr_segs zynq_ultra_ps_e_0/SAXIACP/ACP_LPS_OCM] -force
+##   assign_bd_address -offset 0xC0000000 -range 0x20000000 -target_address_space [get_bd_addr_spaces ZYNQMP_ACP_ADAPTER_0/ACP] [get_bd_addr_segs zynq_ultra_ps_e_0/SAXIACP/ACP_QSPI] -force
+##   assign_bd_address -offset 0xA0001000 -range 0x00001000 -target_address_space [get_bd_addr_spaces zynq_ultra_ps_e_0/Data] [get_bd_addr_segs ArgSort_AXI_1/CSR_AXI/reg0] -force
+## 
+## 
+##   # Restore current instance
+##   current_bd_instance $oldCurInst
+## 
+##   save_bd_design
+## }
+## create_root_design ""
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+create_bd_cell: Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 23121 ; free virtual = 121501
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+Slave segment '/ZYNQMP_ACP_ADAPTER_0/AXI/reg0' is being assigned into address space '/ArgSort_AXI_1/STM_AXI' at <0x0_0000_0000_0000_0000 [ 16E ]>.
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP2/HP0_DDR_HIGH' is being assigned into address space '/ArgSort_AXI_1/MRG_AXI' at <0x8_0000_0000 [ 32G ]>.
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP2/HP0_DDR_LOW' is being assigned into address space '/ArgSort_AXI_1/MRG_AXI' at <0x0000_0000 [ 2G ]>.
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM' is being assigned into address space '/ArgSort_AXI_1/MRG_AXI' at <0xFF00_0000 [ 16M ]>.
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP2/HP0_QSPI' is being assigned into address space '/ArgSort_AXI_1/MRG_AXI' at <0xC000_0000 [ 512M ]>.
+Slave segment '/zynq_ultra_ps_e_0/SAXIACP/ACP_DDR_HIGH' is being assigned into address space '/ZYNQMP_ACP_ADAPTER_0/ACP' at <0x8_0000_0000 [ 32G ]>.
+Slave segment '/zynq_ultra_ps_e_0/SAXIACP/ACP_DDR_LOW' is being assigned into address space '/ZYNQMP_ACP_ADAPTER_0/ACP' at <0x0000_0000 [ 2G ]>.
+Slave segment '/zynq_ultra_ps_e_0/SAXIACP/ACP_LPS_OCM' is being assigned into address space '/ZYNQMP_ACP_ADAPTER_0/ACP' at <0xFF00_0000 [ 16M ]>.
+Slave segment '/zynq_ultra_ps_e_0/SAXIACP/ACP_QSPI' is being assigned into address space '/ZYNQMP_ACP_ADAPTER_0/ACP' at <0xC000_0000 [ 512M ]>.
+Slave segment '/ArgSort_AXI_1/CSR_AXI/reg0' is being assigned into address space '/zynq_ultra_ps_e_0/Data' at <0xA000_1000 [ 4K ]>.
+Wrote  : </mnt/d/ichiro/work/ArgSort-Kv260-Vivado-2023.1-Abort/argsort_16_2_0/project.srcs/sources_1/bd/design_1/design_1.bd> 
+## common::send_gid_msg -ssname BD::TCL -id 2053 -severity "WARNING" "This Tcl script was generated from a block design that has not been validated. It is possible that design <$design_name> may result in errors during validation."
+WARNING: [BD::TCL 103-2053] This Tcl script was generated from a block design that has not been validated. It is possible that design <design_1> may result in errors during validation.
+WARNING: [BD 17-144] The ACP interface on Zynq only supports 16 and 64 bit INCR commands. For any other commands, a SLVERR will be generated. If the master generates any other kind of transaction, you may require an additional adapter before connecting your master to the Zynq UltraScale+ IP. For more details refer to Answer Record 66643
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_interconnect_0/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /axi_interconnect_0/s00_couplers/auto_ds/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
+Wrote  : </mnt/d/ichiro/work/ArgSort-Kv260-Vivado-2023.1-Abort/argsort_16_2_0/project.srcs/sources_1/bd/design_1/design_1.bd> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/zynq_ultra_ps_e_0/saxigp2_awid'(6) to pin: '/ArgSort_AXI_1/MRG_AXI_AWID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ArgSort_AXI_1/MRG_AXI_BID'(2) to pin: '/zynq_ultra_ps_e_0/saxigp2_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/zynq_ultra_ps_e_0/saxigp2_arid'(6) to pin: '/ArgSort_AXI_1/MRG_AXI_ARID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ArgSort_AXI_1/MRG_AXI_RID'(2) to pin: '/zynq_ultra_ps_e_0/saxigp2_rid'(6) - Only lower order bits will be connected.
+VHDL Output written to : /mnt/d/ichiro/work/ArgSort-Kv260-Vivado-2023.1-Abort/argsort_16_2_0/project.gen/sources_1/bd/design_1/synth/design_1.vhd
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/zynq_ultra_ps_e_0/saxigp2_awid'(6) to pin: '/ArgSort_AXI_1/MRG_AXI_AWID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ArgSort_AXI_1/MRG_AXI_BID'(2) to pin: '/zynq_ultra_ps_e_0/saxigp2_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/zynq_ultra_ps_e_0/saxigp2_arid'(6) to pin: '/ArgSort_AXI_1/MRG_AXI_ARID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ArgSort_AXI_1/MRG_AXI_RID'(2) to pin: '/zynq_ultra_ps_e_0/saxigp2_rid'(6) - Only lower order bits will be connected.
+VHDL Output written to : /mnt/d/ichiro/work/ArgSort-Kv260-Vivado-2023.1-Abort/argsort_16_2_0/project.gen/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : /mnt/d/ichiro/work/ArgSort-Kv260-Vivado-2023.1-Abort/argsort_16_2_0/project.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+# if {[info exists constrs_file_list] && [llength $constrs_file_list] > 0 } {
+#     add_files    -fileset constrs_1 -norecurse $constrs_file_list
+# }
+INFO: [Common 17-206] Exiting Vivado at Tue May 20 14:02:19 2025...
 ```
 
-#### Implementation
-
-```
-Vivado > Tools > Run Tcl Script... > argsort_32_2_1/implementation.tcl
-```
-
-#### Convert from Bitstream File to Binary File
+#### Implementation (but abnormal program termination)
 
 ```console
-vivado% cd argsort_32_2_1
-vivado% bootgen -image design_1.bif -arch zynqmp -w -o ../argsort_32_2_1.bin
-vivado% cd ..
+shell$ make binary
+vivado -mode batch -source implementation.tcl
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source implementation.tcl
+# set project_directory       [file dirname [info script]]
+# set project_name            "project"
+# if {[info exists project_name     ] == 0} {
+#     set project_name        "project"
+# }
+# if {[info exists project_directory] == 0} {
+#     set project_directory   [pwd]
+# }
+# open_project [file join $project_directory $project_name]
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/mnt/d/ichiro/work/ArgSort-Kv260-Vivado-2023.1-Abort/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/mnt/d/ichiro/work/ArgSort-Kv260-Vivado-2023.1-Abort/ZynqMP-ACP-Adapter/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/ichiro/Xilinx/Vivado/2023.1/data/ip'.
+open_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 0.000 ; gain = 0.000 ; free physical = 24391 ; free virtual = 122772
+# launch_runs synth_1 -job 4
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/zynq_ultra_ps_e_0/saxigp2_awid'(6) to pin: '/ArgSort_AXI_1/MRG_AXI_AWID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ArgSort_AXI_1/MRG_AXI_BID'(2) to pin: '/zynq_ultra_ps_e_0/saxigp2_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/zynq_ultra_ps_e_0/saxigp2_arid'(6) to pin: '/ArgSort_AXI_1/MRG_AXI_ARID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ArgSort_AXI_1/MRG_AXI_RID'(2) to pin: '/zynq_ultra_ps_e_0/saxigp2_rid'(6) - Only lower order bits will be connected.
+VHDL Output written to : /mnt/d/ichiro/work/ArgSort-Kv260-Vivado-2023.1-Abort/argsort_16_2_0/project.gen/sources_1/bd/design_1/synth/design_1.vhd
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/zynq_ultra_ps_e_0/saxigp2_awid'(6) to pin: '/ArgSort_AXI_1/MRG_AXI_AWID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ArgSort_AXI_1/MRG_AXI_BID'(2) to pin: '/zynq_ultra_ps_e_0/saxigp2_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/zynq_ultra_ps_e_0/saxigp2_arid'(6) to pin: '/ArgSort_AXI_1/MRG_AXI_ARID'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/ArgSort_AXI_1/MRG_AXI_RID'(2) to pin: '/zynq_ultra_ps_e_0/saxigp2_rid'(6) - Only lower order bits will be connected.
+VHDL Output written to : /mnt/d/ichiro/work/ArgSort-Kv260-Vivado-2023.1-Abort/argsort_16_2_0/project.gen/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : /mnt/d/ichiro/work/ArgSort-Kv260-Vivado-2023.1-Abort/argsort_16_2_0/project.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ArgSort_AXI_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ZYNQMP_ACP_ADAPTER_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/mnt/d/ichiro/work/ArgSort-Kv260-Vivado-2023.1-Abort/argsort_16_2_0/project.gen/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/mnt/d/ichiro/work/ArgSort-Kv260-Vivado-2023.1-Abort/argsort_16_2_0/project.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps8_0_99M .
+INFO: [xilinx.com:ip:zynq_ultra_ps_e:3.5-0] design_1_zynq_ultra_ps_e_0_0: 
+Changes in your design (including the PCW configuration settings) are not automatically exported from Vivado to Xilinx's SDK, Petalinux or Yocto.
+This is by design to avoid disrupting existing embedded development efforts. To have any changes of your design taking effect in the embedded software flow please export your
+design by going through Vivado's main menu, click on File, then Export finally select Export Hardware, please ensure you click on the Include BitStream option.
+The auto-generated HDF file is all you need to import in Xilinx's SDK, Petalinux or Yocto for your changes to be reflected in the Embedded Software Flow.
+For more information, please consult PG201, section: Exporting PCW Settings to Embedded Software Flows
+INFO: [PSU-0] Address Range of DDR (0x7ff00000 to 0x7fffffff) is reserved by PMU for internal purpose.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_HPM0_FPD'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_ACP_FPD'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP0_FPD'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block zynq_ultra_ps_e_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ttc0_slice .
+Exporting to file /mnt/d/ichiro/work/ArgSort-Kv260-Vivado-2023.1-Abort/argsort_16_2_0/project.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File /mnt/d/ichiro/work/ArgSort-Kv260-Vivado-2023.1-Abort/argsort_16_2_0/project.gen/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-6930] IPCACHE: runCacheChecks() number of threads = 8
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_ArgSort_AXI_1_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_ZYNQMP_ACP_ADAPTER_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_auto_ds_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_auto_pc_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_clk_wiz_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_rst_ps8_0_99M_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_zynq_ultra_ps_e_0_0
+INFO: [IP_Flow 19-8020] IPCACHE: runCacheChecks() calling threadPool finishWork()
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_ArgSort_AXI_1_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_ZYNQMP_ACP_ADAPTER_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_auto_ds_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_auto_pc_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_clk_wiz_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_rst_ps8_0_99M_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_zynq_ultra_ps_e_0_0
+WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run synth_1. Auto-incremental flow will not be run, the standard flow will be run instead.
+realloc(): invalid old size
+Abnormal program termination (6)
+Please check '/mnt/d/ichiro/work/ArgSort-Kv260-Vivado-2023.1-Abort/argsort_16_2_0/hs_err_pid16815.log' for details
+make: *** [../argsort_template/common.mk:41: project.runs/impl_1/design_1_wrapper.bit] Error 134
 ```
 
-#### Compress argsort_32_2_1.bin to argsort_32_2_1.bin.gz
+hs_err_pid16815.log
 
-```console
-vivado% gzip argsort_32_2_1.bin
+```text:hs_err_pid16815.log
+#
+# An unexpected error has occurred (6)
+#
+Stack:
+/lib/x86_64-linux-gnu/libc.so.6(+0x43090) [0x7f1780063090]
+/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xcb) [0x7f178006300b]
+/lib/x86_64-linux-gnu/libc.so.6(abort+0x12b) [0x7f1780042859]
+/lib/x86_64-linux-gnu/libc.so.6(+0x8d26e) [0x7f17800ad26e]
+/lib/x86_64-linux-gnu/libc.so.6(+0x952fc) [0x7f17800b52fc]
+/lib/x86_64-linux-gnu/libc.so.6(+0x98f9c) [0x7f17800b8f9c]
+/lib/x86_64-linux-gnu/libc.so.6(+0x9ad86) [0x7f17800bad86]
+/lib/x86_64-linux-gnu/libudev.so.1(+0x7836) [0x7f1743c17836]
+/lib/x86_64-linux-gnu/libudev.so.1(+0xf06d) [0x7f1743c1f06d]
+/lib/x86_64-linux-gnu/libudev.so.1(+0x134bb) [0x7f1743c234bb]
+/lib/x86_64-linux-gnu/libudev.so.1(+0x13c64) [0x7f1743c23c64]
+/lib/x86_64-linux-gnu/libudev.so.1(+0x1b0d0) [0x7f1743c2b0d0]
+/lib/x86_64-linux-gnu/libudev.so.1(+0x1b4bb) [0x7f1743c2b4bb]
+/lib/x86_64-linux-gnu/libudev.so.1(udev_enumerate_scan_devices+0x294) [0x7f1743c2dd84]
+/home/ichiro/Xilinx/Vivado/2023.1/lib/lnx64.o/libXil_lmgr11.so(+0x10f927) [0x7f177924f927]
+/home/ichiro/Xilinx/Vivado/2023.1/lib/lnx64.o/libXil_lmgr11.so(xilinxd_52bd858d5acf2fc4+0x9) [0x7f177924fd89]
+/home/ichiro/Xilinx/Vivado/2023.1/lib/lnx64.o/libXil_lmgr11.so(+0xc6566) [0x7f1779206566]
+/home/ichiro/Xilinx/Vivado/2023.1/lib/lnx64.o/libXil_lmgr11.so(xilinxd_52bd853912de43c2+0xc8) [0x7f1779206098]
+/home/ichiro/Xilinx/Vivado/2023.1/lib/lnx64.o/libXil_lmgr11.so(+0xb33a2) [0x7f17791f33a2]
+/home/ichiro/Xilinx/Vivado/2023.1/lib/lnx64.o/libXil_lmgr11.so(xilinxd_52bd995765656b48+0x2a) [0x7f17791fd5da]
+/home/ichiro/Xilinx/Vivado/2023.1/lib/lnx64.o/libXil_lmgr11.so(xilinxd_52bd700d1bd3c616+0x73) [0x7f17791fd6c3]
+/home/ichiro/Xilinx/Vivado/2023.1/lib/lnx64.o/librdi_commonxillic.so(XilReg::Utils::GetHostInfo[abi:cxx11](XilReg::Utils::HostInfoType, bool) const+0x1a0) [0x7f177cf9fe10]
+/home/ichiro/Xilinx/Vivado/2023.1/lib/lnx64.o/librdi_commonxillic.so(XilReg::Utils::GetHostInfoFormatted[abi:cxx11](XilReg::Utils::HostInfoType, bool) const+0x59) [0x7f177cfa2d29]
+/home/ichiro/Xilinx/Vivado/2023.1/lib/lnx64.o/librdi_commonxillic.so(XilReg::Utils::GetHostInfo[abi:cxx11]() const+0x103) [0x7f177cfa2fe3]
+/home/ichiro/Xilinx/Vivado/2023.1/lib/lnx64.o/librdi_commonxillic.so(XilReg::Utils::GetRegInfo(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, bool)+0x96) [0x7f177cfaa066]
+/home/ichiro/Xilinx/Vivado/2023.1/lib/lnx64.o/librdi_commonxillic.so(XilReg::Utils::GetRegInfoWebTalk(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x60) [0x7f177cfaa290]
+/home/ichiro/Xilinx/Vivado/2023.1/lib/lnx64.o/librdi_project.so(HAPRWebtalkHelper::getRegistrationId[abi:cxx11]() const+0x3d) [0x7f175d5774fd]
+/home/ichiro/Xilinx/Vivado/2023.1/lib/lnx64.o/librdi_project.so(HAPRWebtalkHelper::HAPRWebtalkHelper(HAPRProject*, HAPRDesign*, HWEWebtalkMgr*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)+0x178) [0x7f175d579bf8]
+/home/ichiro/Xilinx/Vivado/2023.1/lib/lnx64.o/librdi_tcltasks.so(+0x1db7ab5) [0x7f17740a7ab5]
+/home/ichiro/Xilinx/Vivado/2023.1/lib/lnx64.o/librdi_tcltasks.so(+0x1dc0454) [0x7f17740b0454]
+/home/ichiro/Xilinx/Vivado/2023.1/lib/lnx64.o/librdi_common.so(+0xbcfbcf) [0x7f178123fbcf]
+/home/ichiro/Xilinx/Vivado/2023.1/lib/lnx64.o/libtcl8.5.so(+0x3356f) [0x7f177c7d356f]
+/home/ichiro/Xilinx/Vivado/2023.1/lib/lnx64.o/libtcl8.5.so(+0x34bf8) [0x7f177c7d4bf8]
+/home/ichiro/Xilinx/Vivado/2023.1/lib/lnx64.o/libtcl8.5.so(Tcl_EvalEx+0x13) [0x7f177c7d5163]
+/home/ichiro/Xilinx/Vivado/2023.1/lib/lnx64.o/libtcl8.5.so(Tcl_FSEvalFileEx+0x1da) [0x7f177c839d2a]
+/home/ichiro/Xilinx/Vivado/2023.1/lib/lnx64.o/librdi_commontasks.so(+0x27cfb0) [0x7f177650cfb0]
+/home/ichiro/Xilinx/Vivado/2023.1/lib/lnx64.o/librdi_common.so(+0xbcfbcf) [0x7f178123fbcf]
+/home/ichiro/Xilinx/Vivado/2023.1/lib/lnx64.o/libtcl8.5.so(+0x3356f) [0x7f177c7d356f]
+/home/ichiro/Xilinx/Vivado/2023.1/lib/lnx64.o/libtcl8.5.so(Tcl_EvalObjv+0x32) [0x7f177c7d36a2]
+/home/ichiro/Xilinx/Vivado/2023.1/lib/lnx64.o/libtcl8.5.so(TclEvalObjEx+0x322) [0x7f177c7d54c2]
+/home/ichiro/Xilinx/Vivado/2023.1/lib/lnx64.o/librdi_commontasks.so(+0x2c3538) [0x7f1776553538]
+/home/ichiro/Xilinx/Vivado/2023.1/lib/lnx64.o/librdi_commontasks.so(+0x2c4b3f) [0x7f1776554b3f]
+/home/ichiro/Xilinx/Vivado/2023.1/lib/lnx64.o/librdi_common.so(+0xbcfbcf) [0x7f178123fbcf]
+/home/ichiro/Xilinx/Vivado/2023.1/lib/lnx64.o/libtcl8.5.so(+0x3356f) [0x7f177c7d356f]
+/home/ichiro/Xilinx/Vivado/2023.1/lib/lnx64.o/libtcl8.5.so(Tcl_EvalObjv+0x32) [0x7f177c7d36a2]
+/home/ichiro/Xilinx/Vivado/2023.1/lib/lnx64.o/libtcl8.5.so(TclEvalObjEx+0x322) [0x7f177c7d54c2]
+/home/ichiro/Xilinx/Vivado/2023.1/lib/lnx64.o/librdi_commonmain.so(+0xc5b8) [0x7f178065c5b8]
+/home/ichiro/Xilinx/Vivado/2023.1/lib/lnx64.o/libtcl8.5.so(Tcl_Main+0x1d0) [0x7f177c8402f0]
+/home/ichiro/Xilinx/Vivado/2023.1/lib/lnx64.o/librdi_common.so(+0xbfd38b) [0x7f178126d38b]
+/lib/x86_64-linux-gnu/libpthread.so.0(+0x8609) [0x7f1780005609]
+/lib/x86_64-linux-gnu/libc.so.6(clone+0x43) [0x7f178013f353]
 ```
 
