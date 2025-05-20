@@ -8,7 +8,7 @@ set board_part              [get_board_parts -quiet -latest_file_version "*kv260
 lappend constrs_file_list   [file join $project_directory "design_1_pin.xdc" ]
 lappend ip_repo_path_list   [file join $project_directory ".." "ip"]
 lappend ip_repo_path_list   [file join $project_directory ".." "ZynqMP-ACP-Adapter" "ip"]
-set design_bd_tcl_file      [file join $project_directory "design_1_bd_2021.2.tcl"  ]
+set design_bd_tcl_file      [file join $project_directory "design_1_bd_[version -short].tcl"  ]
 #
 # Create project
 #
