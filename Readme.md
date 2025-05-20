@@ -33,6 +33,7 @@ Build Bitstream file (but abnormal program termination)
 
 ### Requirement
 
+* Windows 10 + WSL + Ubuntu 20.04.6 LTS
 * Xilinx Vivado 2021.2
 
 ### Download ArgSort-Kv260
