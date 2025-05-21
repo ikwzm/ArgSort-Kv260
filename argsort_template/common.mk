@@ -12,7 +12,7 @@ DESIGN_FILE   ?= design_1_bd_2023.1.tcl
 
 all    : $(BIN_FILE)
 
-scripts: $(VIVADO_FILES) $(DESIGN_FILE)
+scripts: $(DESIGN_FILE) $(VIVADO_FILES)
 
 project: project.xpr
 
@@ -26,10 +26,17 @@ $(1) : $(addprefix $(TEMPLATE_PATH)/,$(1))
 	$(COPY) $(addprefix $(TEMPLATE_PATH)/,$(1)) $(1)
 endef
 
-$(DESIGN_FILE) : $(addprefix $(TEMPLATE_PATH)/,$(DESIGN_FILE))
-	$(SED) -e 's/\(.*CONFIG.MRG_WAYS\).*/\1 {$(MRG_WAYS)} \\/'         \
-               -e 's/\(.*CONFIG.MRG_WORDS\).*/\1 {$(MRG_WORDS)} \\/'       \
-               -e 's/\(.*CONFIG.STM_FEEDBACK\).*/\1 {$(STM_FEEDBACK)} \\/' \
+REQUIRED_VARS := MRG_WAYS MRG_WORDS STM_FEEDBACK CLK_FREQ
+check-required-vars:
+	@$(foreach var,$(REQUIRED_VARS), \
+		$(if $(value $(var)),,    \
+			$(error Required variable "$(var)" is not defined)))
+
+$(DESIGN_FILE) : $(addprefix $(TEMPLATE_PATH)/,$(DESIGN_FILE)) check-required-vars
+	$(SED) -e 's/\(.*CONFIG.MRG_WAYS\).*/\1 {$(MRG_WAYS)} \\/'                   \
+               -e 's/\(.*CONFIG.MRG_WORDS\).*/\1 {$(MRG_WORDS)} \\/'                 \
+               -e 's/\(.*CONFIG.STM_FEEDBACK\).*/\1 {$(STM_FEEDBACK)} \\/'           \
+               -e 's/\(.*CONFIG.CLKOUT1_REQUESTED_OUT_FREQ\).*/\1 {$(CLK_FREQ)} \\/' \
                $< > $@
 
 $(foreach FILE, $(VIVADO_FILES), $(eval $(call GET_VIVADO_FILES, $(FILE))))
