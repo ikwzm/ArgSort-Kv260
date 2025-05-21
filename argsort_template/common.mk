@@ -8,7 +8,7 @@ BIN_FILE      ?= $(BIN_FILE_PATH)/argsort_$(MRG_WAYS)_$(MRG_WORDS)_$(STM_FEEDBAC
 BIT_FILE      ?= project.runs/impl_1/design_1_wrapper.bit
 TEMPLATE_PATH ?= $(dir $(lastword $(MAKEFILE_LIST)))
 VIVADO_FILES  ?= create_project.tcl implementation.tcl add_fan_enable.tcl design_1_pin.xdc design_1.bif 
-DESIGN_FILE   ?= design_1_bd_2023.1.tcl
+DESIGN_FILE   ?= design_1_bd_2021.2.tcl
 
 all    : $(BIN_FILE)
 
