@@ -10,6 +10,8 @@ TEMPLATE_PATH ?= $(dir $(lastword $(MAKEFILE_LIST)))
 VIVADO_FILES  ?= create_project.tcl implementation.tcl add_fan_enable.tcl design_1_pin.xdc design_1.bif 
 DESIGN_FILES  ?= design_1_bd_2021.2.tcl design_1_bd_2023.1.tcl
 
+IMPL_STRATEGY ?= "Vivado Implementation Defaults"
+
 all    : $(BIN_FILE)
 
 scripts: check-required-vars $(DESIGN_FILES) $(VIVADO_FILES)
@@ -43,7 +45,11 @@ $(1) : $(addprefix $(TEMPLATE_PATH)/,$(1))
 	$(COPY) $(addprefix $(TEMPLATE_PATH)/,$(1)) $(1)
 endef
 
-$(foreach FILE, $(VIVADO_FILES), $(eval $(call GET_VIVADO_FILE,$(FILE))))
+create_project.tcl: $(addprefix $(TEMPLATE_PATH)/,create_project.tcl)
+	$(SED) -e 's/\(.*set impl_1_strategy\).*/\1  $(IMPL_STRATEGY)/'        \
+               $(addprefix $(TEMPLATE_PATH)/,create_project.tcl) > create_project.tcl
+
+$(foreach FILE, $(filter-out create_project.tcl,$(VIVADO_FILES)), $(eval $(call GET_VIVADO_FILE,$(FILE))))
 
 project.xpr : $(VIVADO_FILES) $(DESIGN_FILES)
 	$(VIVADO) -mode batch -source create_project.tcl
