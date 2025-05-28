@@ -56,8 +56,8 @@ Table.2 Utilization
     <td align="center">16</td>
     <td align="center">1</td>
     <td align="center">0</td>
-    <td align="right">42507</td>
-    <td align="right">27176</td>
+    <td align="right">37746</td>
+    <td align="right">27256</td>
     <td align="right">38</td>
     <td align="right">0</td>
     <td align="right">0</td>
@@ -68,8 +68,8 @@ Table.2 Utilization
     <td align="center">16</td>
     <td align="center">1</td>
     <td align="center">1</td>
-    <td align="right">42714</td>
-    <td align="right">27843</td>
+    <td align="right">38994</td>
+    <td align="right">27942</td>
     <td align="right">38</td>
     <td align="right">0</td>
     <td align="right">0</td>
@@ -80,8 +80,8 @@ Table.2 Utilization
     <td align="center">16</td>
     <td align="center">1</td>
     <td align="center">2</td>
-    <td align="right">42859</td>
-    <td align="right">27014</td>
+    <td align="right">37969</td>
+    <td align="right">27092</td>
     <td align="right">54</td>
     <td align="right">0</td>
     <td align="right">0</td>
@@ -92,8 +92,8 @@ Table.2 Utilization
     <td align="center">16</td>
     <td align="center">2</td>
     <td align="center">0</td>
-    <td align="right">59239</td>
-    <td align="right">55627</td>
+    <td align="right">59579</td>
+    <td align="right">55807</td>
     <td align="right">38</td>
     <td align="right">0</td>
     <td align="right">0</td>
@@ -104,8 +104,8 @@ Table.2 Utilization
     <td align="center">16</td>
     <td align="center">2</td>
     <td align="center">1</td>
-    <td align="right">60491</td>
-    <td align="right">56881</td>
+    <td align="right">60825</td>
+    <td align="right">57091</td>
     <td align="right">38</td>
     <td align="right">0</td>
     <td align="right">0</td>
@@ -116,8 +116,8 @@ Table.2 Utilization
     <td align="center">16</td>
     <td align="center">2</td>
     <td align="center">2</td>
-    <td align="right">58363</td>
-    <td align="right">54870</td>
+    <td align="right">58764</td>
+    <td align="right">55117</td>
     <td align="right">70</td>
     <td align="right">0</td>
     <td align="right">0</td>
@@ -128,8 +128,8 @@ Table.2 Utilization
     <td align="center">32</td>
     <td align="center">1</td>
     <td align="center">0</td>
-    <td align="right">66648</td>
-    <td align="right">46134</td>
+    <td align="right">65061</td>
+    <td align="right">46392</td>
     <td align="right">70</td>
     <td align="right">0</td>
     <td align="right">15</td>
@@ -140,8 +140,8 @@ Table.2 Utilization
     <td align="center">32</td>
     <td align="center">1</td>
     <td align="center">1</td>
-    <td align="right">69430</td>
-    <td align="right">47579</td>
+    <td align="right">67923</td>
+    <td align="right">47922</td>
     <td align="right">70</td>
     <td align="right">0</td>
     <td align="right">15</td>
@@ -152,8 +152,8 @@ Table.2 Utilization
     <td align="center">32</td>
     <td align="center">1</td>
     <td align="center">2</td>
-    <td align="right">68064</td>
-    <td align="right">46136</td>
+    <td align="right">66473</td>
+    <td align="right">46318</td>
     <td align="right">70</td>
     <td align="right">32</td>
     <td align="right">15</td>
@@ -164,8 +164,8 @@ Table.2 Utilization
     <td align="center">32</td>
     <td align="center">2</td>
     <td align="center">0</td>
-    <td align="right">106793</td>
-    <td align="right">103907</td>
+    <td align="right">107350</td>
+    <td align="right">103847</td>
     <td align="right">70</td>
     <td align="right">0</td>
     <td align="right">0</td>
@@ -176,8 +176,8 @@ Table.2 Utilization
     <td align="center">32</td>
     <td align="center">2</td>
     <td align="center">1</td>
-    <td align="right">109295</td>
-    <td align="right">106776</td>
+    <td align="right">109923</td>
+    <td align="right">106646</td>
     <td align="right">70</td>
     <td align="right">0</td>
     <td align="right">0</td>
@@ -188,8 +188,8 @@ Table.2 Utilization
     <td align="center">32</td>
     <td align="center">2</td>
     <td align="center">2</td>
-    <td align="right">103651</td>
-    <td align="right">103225</td>
+    <td align="right">104040</td>
+    <td align="right">102986</td>
     <td align="right">70</td>
     <td align="right">64</td>
     <td align="right">0</td>
@@ -237,127 +237,127 @@ Fig.2 Utlization(LUTs %)
     <td align="center">16</td>
     <td align="center">1</td>
     <td align="center">0</td>
-    <td align="right">0.445</td>
-    <td align="right">3.277</td>
-    <td align="right">34.805</td>
-    <td align="right">28.59</td>
+    <td align="right">0.428</td>
+    <td align="right">3.267</td>
+    <td align="right">34.686</td>
+    <td align="right">28.83</td>
   </tr>
   <tr>
     <td>argsort_16_1_1</td>
     <td align="center">16</td>
     <td align="center">1</td>
     <td align="center">1</td>
-    <td align="right">0.347</td>
-    <td align="right">2.364</td>
-    <td align="right">22.136</td>
-    <td align="right">43.87</td>
+    <td align="right">0.350</td>
+    <td align="right">2.386</td>
+    <td align="right">22.1676</td>
+    <td align="right">45.11</td>
   </tr>
   <tr>
     <td>argsort_16_1_2</td>
     <td align="center">16</td>
     <td align="center">1</td>
     <td align="center">2</td>
-    <td align="right">0.353</td>
-    <td align="right">2.270</td>
-    <td align="right">21.287</td>
-    <td align="right">45.67</td>
+    <td align="right">0.343</td>
+    <td align="right">2.265</td>
+    <td align="right">21.265</td>
+    <td align="right">47.03</td>
   </tr>
   <tr>
     <td>argsort_16_2_0</td>
     <td align="center">16</td>
     <td align="center">2</td>
     <td align="center">0</td>
-    <td align="right">0.328</td>
-    <td align="right">2.004</td>
-    <td align="right">24.568</td>
-    <td align="right">40.87</td>
+    <td align="right">0.340</td>
+    <td align="right">1.788</td>
+    <td align="right">24.493</td>
+    <td align="right">40.83</td>
   </tr>
   <tr>
     <td>argsort_16_2_1</td>
     <td align="center">16</td>
     <td align="center">2</td>
     <td align="center">1</td>
-    <td align="right">0.274</td>
-    <td align="right">1.214</td>
-    <td align="right">17.030</td>
-    <td align="right">59.95</td>
+    <td align="right">0.267</td>
+    <td align="right">1.196</td>
+    <td align="right">16.887</td>
+    <td align="right">59.22</td>
   </tr>
   <tr>
     <td>argsort_16_2_2</td>
     <td align="center">16</td>
     <td align="center">2</td>
     <td align="center">2</td>
-    <td align="right">0.292</td>
-    <td align="right">1.092</td>
-    <td align="right">15.289</td>
-    <td align="right">66.27</td>
+    <td align="right">0.285</td>
+    <td align="right">1.129</td>
+    <td align="right">15.259</td>
+    <td align="right">65.54</td>
   </tr>
   <tr>
     <td>argsort_32_1_0</td>
     <td align="center">32</td>
     <td align="center">1</td>
     <td align="center">0</td>
-    <td align="right">0.338</td>
-    <td align="right">2.393</td>
-    <td align="right">24.882</td>
-    <td align="right">39.59</td>
+    <td align="right">0.329</td>
+    <td align="right">2.304</td>
+    <td align="right">24.744</td>
+    <td align="right">40.41</td>
   </tr>
   <tr>
     <td>argsort_32_1_1</td>
     <td align="center">32</td>
     <td align="center">1</td>
     <td align="center">1</td>
-    <td align="right">0.297</td>
-    <td align="right">1.898</td>
-    <td align="right">17.478</td>
-    <td align="right">54.79</td>
+    <td align="right">0.289</td>
+    <td align="right">1.877</td>
+    <td align="right">17.446</td>
+    <td align="right">57.32</td>
   </tr>
   <tr>
     <td>argsort_32_1_2</td>
     <td align="center">32</td>
     <td align="center">1</td>
     <td align="center">2</td>
-    <td align="right">0.566</td>
-    <td align="right">2.285</td>
-    <td align="right">19.921</td>
-    <td align="right">47.65</td>
+    <td align="right">0.544</td>
+    <td align="right">2.157</td>
+    <td align="right">19.901</td>
+    <td align="right">50.25</td>
   </tr>
   <tr>
     <td>argsort_32_2_0</td>
     <td align="center">32</td>
     <td align="center">2</td>
     <td align="center">0</td>
-    <td align="right">0.280</td>
-    <td align="right">1.489</td>
-    <td align="right">19.003</td>
-    <td align="right">53.62</td>
+    <td align="right">0.276</td>
+    <td align="right">1.545</td>
+    <td align="right">18.835</td>
+    <td align="right">53.09</td>
   </tr>
   <tr>
     <td>argsort_32_2_1</td>
     <td align="center">32</td>
     <td align="center">2</td>
     <td align="center">1</td>
-    <td align="right">0.239</td>
-    <td align="right">1.184</td>
-    <td align="right">13.765</td>
-    <td align="right">72.11</td>
+    <td align="right">0.231</td>
+    <td align="right">1.332</td>
+    <td align="right">13.847</td>
+    <td align="right">72.22</td>
   </tr>
   <tr>
     <td>argsort_32_2_2</td>
     <td align="center">32</td>
     <td align="center">2</td>
     <td align="center">2</td>
-    <td align="right">0.619</td>
-    <td align="right">1.526</td>
-    <td align="right">15.389</td>
-    <td align="right">63.20</td>
+    <td align="right">0.655</td>
+    <td align="right">1.343</td>
+    <td align="right">15.500</td>
+    <td align="right">64.52</td>
   </tr>
   <tr>
     <td colspan="4">ZynqMP(arm64) numpy.argsort()</td>
     <td align="right">1.551</td>
     <td align="right">26.107</td>
     <td align="right">840.246</td>
-    <td align="right">2.11</td>
+    <td align="right">1.18</td>
   </tr>
 </table>
 

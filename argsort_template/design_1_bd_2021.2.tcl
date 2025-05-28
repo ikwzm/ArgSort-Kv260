@@ -124,8 +124,8 @@ set bCheckIPsPassed 1
 set bCheckIPs 1
 if { $bCheckIPs == 1 } {
    set list_check_ips "\ 
-ikwzm:Merge_Sorter:ArgSort_AXI:1.2\
-ikwzm:PIPEORK:ZYNQMP_ACP_ADAPTER:0.6\
+ikwzm:Merge_Sorter:ArgSort_AXI:1.6\
+ikwzm:PIPEORK:ZYNQMP_ACP_ADAPTER:0.8\
 xilinx.com:ip:clk_wiz:6.0\
 xilinx.com:ip:proc_sys_reset:5.0\
 xilinx.com:ip:zynq_ultra_ps_e:3.3\
@@ -157,7 +157,7 @@ if { $bCheckIPsPassed != 1 } {
 # DESIGN PROCs
 ##################################################################
 
-
+source [file join $project_directory "add_fan_enable.tcl"  ]
 
 # Procedure to create entire design; Provide argument to make
 # procedure reusable. If parentCell is "", will use root.
@@ -196,13 +196,14 @@ proc create_root_design { parentCell } {
   # Create ports
 
   # Create instance: ArgSort_AXI_1, and set properties
-  set ArgSort_AXI_1 [ create_bd_cell -type ip -vlnv ikwzm:Merge_Sorter:ArgSort_AXI:1.2 ArgSort_AXI_1 ]
+  set ArgSort_AXI_1 [ create_bd_cell -type ip -vlnv ikwzm:Merge_Sorter:ArgSort_AXI:1.6 ArgSort_AXI_1 ]
   set_property -dict [ list \
    CONFIG.DEBUG_ENABLE {1} \
    CONFIG.MRG_AXI_ADDR_WIDTH {64} \
    CONFIG.MRG_AXI_DATA_WIDTH {128} \
    CONFIG.MRG_AXI_ID_BASE {2} \
    CONFIG.MRG_AXI_ID_WIDTH {2} \
+   CONFIG.MRG_AXI_USER_WIDTH {1} \
    CONFIG.MRG_FIFO_SIZE {64} \
    CONFIG.MRG_RD_ARB_PIPELINE {0} \
    CONFIG.MRG_RD_AXI_XFER_SIZE {12} \
@@ -214,16 +215,19 @@ proc create_root_design { parentCell } {
    CONFIG.STM_AXI_DATA_WIDTH {128} \
    CONFIG.STM_AXI_ID_BASE {0} \
    CONFIG.STM_AXI_ID_WIDTH {5} \
-   CONFIG.STM_AXI_USER_WIDTH {1} \
+   CONFIG.STM_AXI_USER_WIDTH {2} \
    CONFIG.STM_FEEDBACK {1} \
    CONFIG.STM_RD_AXI_XFER_SIZE {12} \
    CONFIG.STM_WR_AXI_XFER_SIZE {12} \
  ] $ArgSort_AXI_1
 
   # Create instance: ZYNQMP_ACP_ADAPTER_0, and set properties
-  set ZYNQMP_ACP_ADAPTER_0 [ create_bd_cell -type ip -vlnv ikwzm:PIPEORK:ZYNQMP_ACP_ADAPTER:0.6 ZYNQMP_ACP_ADAPTER_0 ]
+  set ZYNQMP_ACP_ADAPTER_0 [ create_bd_cell -type ip -vlnv ikwzm:PIPEORK:ZYNQMP_ACP_ADAPTER:0.8 ZYNQMP_ACP_ADAPTER_0 ]
   set_property -dict [ list \
    CONFIG.AXI_ID_WIDTH {5} \
+   CONFIG.AXI_AUSER_WIDTH {2} \
+   CONFIG.ARSHARE_TYPE {3} \
+   CONFIG.AWSHARE_TYPE {3} \
  ] $ZYNQMP_ACP_ADAPTER_0
 
   # Create instance: axi_interconnect_0, and set properties
@@ -910,6 +914,9 @@ Port;FD4A0000;FD4AFFFF;0|FPD;DPDMA;FD4C0000;FD4CFFFF;0|FPD;DDR_XMPU5_CFG;FD05000
    CONFIG.PSU__USE__S_AXI_GP2 {1} \
    CONFIG.PSU__USE__S_AXI_GP3 {0} \
  ] $zynq_ultra_ps_e_0
+
+  # Add FAN_EN
+  add_fan_enable $zynq_ultra_ps_e_0 FAN_EN ttc0
 
   # Create interface connections
   connect_bd_intf_net -intf_net ArgSort_AXI_1_MRG_AXI [get_bd_intf_pins ArgSort_AXI_1/MRG_AXI] [get_bd_intf_pins zynq_ultra_ps_e_0/S_AXI_HP0_FPD]

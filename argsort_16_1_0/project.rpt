@@ -1,14 +1,14 @@
-Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
-------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2021.2 (lin64) Build 3367213 Tue Oct 19 02:47:39 MDT 2021
-| Date         : Fri Mar 11 13:09:58 2022
-| Host         : Jabberwock running 64-bit Ubuntu 18.04.4 LTS
-| Command      : report_utilization -file ./project.rpt
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Tue May 27 06:40:09 2025
+| Host         : Jabberwock running 64-bit major release  (build 9200)
+| Command      : report_utilization -file D:/ichiro/work/ArgSort-Kv260/argsort_16_1_0/project.rpt
 | Design       : design_1_wrapper
 | Device       : xck26-sfvc784-2LV-c
 | Speed File   : -2LV
 | Design State : Routed
-------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------
 
 Utilization Design Information
 
@@ -33,19 +33,20 @@ Table of Contents
 +----------------------------+-------+-------+------------+-----------+-------+
 |          Site Type         |  Used | Fixed | Prohibited | Available | Util% |
 +----------------------------+-------+-------+------------+-----------+-------+
-| CLB LUTs                   | 42507 |     0 |          0 |    117120 | 36.29 |
-|   LUT as Logic             | 40996 |     0 |          0 |    117120 | 35.00 |
-|   LUT as Memory            |  1511 |     0 |          0 |     57600 |  2.62 |
-|     LUT as Distributed RAM |  1468 |     0 |            |           |       |
+| CLB LUTs                   | 37746 |     0 |          0 |    117120 | 32.23 |
+|   LUT as Logic             | 36239 |     0 |          0 |    117120 | 30.94 |
+|   LUT as Memory            |  1507 |     0 |          0 |     57600 |  2.62 |
+|     LUT as Distributed RAM |  1464 |     0 |            |           |       |
 |     LUT as Shift Register  |    43 |     0 |            |           |       |
-| CLB Registers              | 27176 |     0 |          0 |    234240 | 11.60 |
-|   Register as Flip Flop    | 27176 |     0 |          0 |    234240 | 11.60 |
+| CLB Registers              | 27256 |     0 |          0 |    234240 | 11.64 |
+|   Register as Flip Flop    | 27256 |     0 |          0 |    234240 | 11.64 |
 |   Register as Latch        |     0 |     0 |          0 |    234240 |  0.00 |
-| CARRY8                     |  1004 |     0 |          0 |     14640 |  6.86 |
-| F7 Muxes                   |   131 |     0 |          0 |     58560 |  0.22 |
+| CARRY8                     |   987 |     0 |          0 |     14640 |  6.74 |
+| F7 Muxes                   |   146 |     0 |          0 |     58560 |  0.25 |
 | F8 Muxes                   |     0 |     0 |          0 |     29280 |  0.00 |
 | F9 Muxes                   |     0 |     0 |          0 |     14640 |  0.00 |
 +----------------------------+-------+-------+------------+-----------+-------+
+* Warning! LUT value is adjusted to account for LUT combining.
 
 
 1.1 Summary of Registers by Type
@@ -61,7 +62,7 @@ Table of Contents
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
 | 168   |          Yes |           - |          Set |
-| 24837 |          Yes |           - |        Reset |
+| 24917 |          Yes |           - |        Reset |
 | 24    |          Yes |         Set |            - |
 | 2147  |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
@@ -73,28 +74,28 @@ Table of Contents
 +--------------------------------------------+-------+-------+------------+-----------+-------+
 |                  Site Type                 |  Used | Fixed | Prohibited | Available | Util% |
 +--------------------------------------------+-------+-------+------------+-----------+-------+
-| CLB                                        |  7354 |     0 |          0 |     14640 | 50.23 |
-|   CLBL                                     |  3715 |     0 |            |           |       |
-|   CLBM                                     |  3639 |     0 |            |           |       |
-| LUT as Logic                               | 40996 |     0 |          0 |    117120 | 35.00 |
-|   using O5 output only                     |   238 |       |            |           |       |
-|   using O6 output only                     | 31945 |       |            |           |       |
-|   using O5 and O6                          |  8813 |       |            |           |       |
-| LUT as Memory                              |  1511 |     0 |          0 |     57600 |  2.62 |
-|   LUT as Distributed RAM                   |  1468 |     0 |            |           |       |
+| CLB                                        |  6867 |     0 |          0 |     14640 | 46.91 |
+|   CLBL                                     |  3329 |     0 |            |           |       |
+|   CLBM                                     |  3538 |     0 |            |           |       |
+| LUT as Logic                               | 36239 |     0 |          0 |    117120 | 30.94 |
+|   using O5 output only                     |   218 |       |            |           |       |
+|   using O6 output only                     | 25932 |       |            |           |       |
+|   using O5 and O6                          | 10089 |       |            |           |       |
+| LUT as Memory                              |  1507 |     0 |          0 |     57600 |  2.62 |
+|   LUT as Distributed RAM                   |  1464 |     0 |            |           |       |
 |     using O5 output only                   |     0 |       |            |           |       |
 |     using O6 output only                   |  1284 |       |            |           |       |
-|     using O5 and O6                        |   184 |       |            |           |       |
+|     using O5 and O6                        |   180 |       |            |           |       |
 |   LUT as Shift Register                    |    43 |     0 |            |           |       |
 |     using O5 output only                   |     0 |       |            |           |       |
 |     using O6 output only                   |    43 |       |            |           |       |
 |     using O5 and O6                        |     0 |       |            |           |       |
-| CLB Registers                              | 27176 |     0 |          0 |    234240 | 11.60 |
-|   Register driven from within the CLB      | 24279 |       |            |           |       |
-|   Register driven from outside the CLB     |  2897 |       |            |           |       |
-|     LUT in front of the register is unused |  1585 |       |            |           |       |
-|     LUT in front of the register is used   |  1312 |       |            |           |       |
-| Unique Control Sets                        |   456 |       |          0 |     29280 |  1.56 |
+| CLB Registers                              | 27256 |     0 |          0 |    234240 | 11.64 |
+|   Register driven from within the CLB      | 24416 |       |            |           |       |
+|   Register driven from outside the CLB     |  2840 |       |            |           |       |
+|     LUT in front of the register is unused |  1597 |       |            |           |       |
+|     LUT in front of the register is used   |  1243 |       |            |           |       |
+| Unique Control Sets                        |   460 |       |          0 |     29280 |  1.57 |
 +--------------------------------------------+-------+-------+------------+-----------+-------+
 * * Note: Available Control Sets calculated as Slices * 2, Review the Control Sets Report for more information regarding control sets.
 
@@ -130,10 +131,13 @@ Table of Contents
 +------------------+------+-------+------------+-----------+-------+
 |     Site Type    | Used | Fixed | Prohibited | Available | Util% |
 +------------------+------+-------+------------+-----------+-------+
-| Bonded IOB       |    0 |     0 |          0 |       189 |  0.00 |
+| Bonded IOB       |    1 |     1 |          0 |       189 |  0.53 |
 | HPIOB_M          |    0 |     0 |          0 |        58 |  0.00 |
 | HPIOB_S          |    0 |     0 |          0 |        58 |  0.00 |
-| HDIOB_M          |    0 |     0 |          0 |        35 |  0.00 |
+| HDIOB_M          |    1 |     1 |          0 |        35 |  2.86 |
+|   INPUT          |    0 |       |            |           |       |
+|   OUTPUT         |    1 |       |            |           |       |
+|   BIDIR          |    0 |       |            |           |       |
 | HDIOB_S          |    0 |     0 |          0 |        35 |  0.00 |
 | HPIOB_SNGL       |    0 |     0 |          0 |         3 |  0.00 |
 | HPIOBDIFFINBUF   |    0 |     0 |          0 |        82 |  0.00 |
@@ -203,19 +207,19 @@ Table of Contents
 +-----------+-------+---------------------+
 |  Ref Name |  Used | Functional Category |
 +-----------+-------+---------------------+
-| FDCE      | 24837 |            Register |
-| LUT6      | 19599 |                 CLB |
-| LUT3      | 10155 |                 CLB |
-| LUT4      |  7185 |                 CLB |
-| LUT5      |  6862 |                 CLB |
-| LUT2      |  5592 |                 CLB |
+| FDCE      | 24917 |            Register |
+| LUT6      | 14090 |                 CLB |
+| LUT3      |  9838 |                 CLB |
+| LUT4      |  8740 |                 CLB |
+| LUT2      |  6626 |                 CLB |
+| LUT5      |  6618 |                 CLB |
 | FDRE      |  2147 |            Register |
 | RAMD64E   |  1280 |                 CLB |
-| CARRY8    |  1004 |                 CLB |
+| CARRY8    |   987 |                 CLB |
 | LUT1      |   416 |                 CLB |
-| RAMD32    |   362 |                 CLB |
+| RAMD32    |   354 |                 CLB |
 | FDPE      |   168 |            Register |
-| MUXF7     |   131 |                 CLB |
+| MUXF7     |   146 |                 CLB |
 | RAMB36E2  |    38 |            BLOCKRAM |
 | SRLC32E   |    33 |                 CLB |
 | FDSE      |    24 |            Register |
@@ -224,6 +228,7 @@ Table of Contents
 | BUFGCE    |     2 |               Clock |
 | PS8       |     1 |            Advanced |
 | PLLE4_ADV |     1 |               Clock |
+| OBUF      |     1 |                 I/O |
 | BUFG_PS   |     1 |               Clock |
 +-----------+-------+---------------------+
 
@@ -252,40 +257,41 @@ Table of Contents
 +---------------------------------+------+
 
 
-Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
------------------------------------------------------------------------------------------
-| Tool Version      : Vivado v.2021.2 (lin64) Build 3367213 Tue Oct 19 02:47:39 MDT 2021
-| Date              : Fri Mar 11 13:10:03 2022
-| Host              : Jabberwock running 64-bit Ubuntu 18.04.4 LTS
-| Command           : report_timing -file ./project.rpt -append
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version      : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date              : Tue May 27 06:40:21 2025
+| Host              : Jabberwock running 64-bit major release  (build 9200)
+| Command           : report_timing -file D:/ichiro/work/ArgSort-Kv260/argsort_16_1_0/project.rpt -append
 | Design            : design_1_wrapper
 | Device            : xck26-sfvc784
-| Speed File        : -2LV  PRODUCTION 1.29 08-03-2020
+| Speed File        : -2LV  PRODUCTION 1.30 05-15-2022
+| Design State      : Routed
 | Temperature Grade : C
------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------
 
 Timing Report
 
-Slack (MET) :             0.037ns  (required time - arrival time)
-  Source:                 design_1_i/ArgSort_AXI_1/U0/ARGSORT_IF/STM_RD/READER/CTRL/O_SIDE.O_PORT/ADJ_ALIGN.QUEUE/o_valid_reg/C
+Slack (MET) :             0.008ns  (required time - arrival time)
+  Source:                 design_1_i/ArgSort_AXI_1/U0/ARGSORT_IF/MRG_RD/MRG[1].READER/FSM_onehot_REQ.curr_state_reg[2]/C
                             (rising edge-triggered cell FDCE clocked by clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@2.000ns period=4.000ns})
-  Destination:            design_1_i/ArgSort_AXI_1/U0/CORE/STM_INTAKE.QUEUE/SINGLE_WORD.INTAKE_QUEUE/Q__0/curr_queue_reg[6][DATA][49]/D
+  Destination:            design_1_i/ArgSort_AXI_1/U0/ARGSORT_IF/MRG_RD/REQ.req_addr_reg[32]/D
                             (rising edge-triggered cell FDCE clocked by clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@2.000ns period=4.000ns})
   Path Group:             clk_out1_design_1_clk_wiz_0_0
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            4.000ns  (clk_out1_design_1_clk_wiz_0_0 rise@4.000ns - clk_out1_design_1_clk_wiz_0_0 rise@0.000ns)
-  Data Path Delay:        3.789ns  (logic 0.270ns (7.126%)  route 3.519ns (92.874%))
-  Logic Levels:           1  (LUT6=1)
-  Clock Path Skew:        -0.152ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    4.619ns = ( 8.619 - 4.000 ) 
-    Source Clock Delay      (SCD):    4.591ns
-    Clock Pessimism Removal (CPR):    -0.180ns
+  Data Path Delay:        3.836ns  (logic 1.227ns (31.989%)  route 2.609ns (68.011%))
+  Logic Levels:           8  (LUT2=1 LUT4=1 LUT6=6)
+  Clock Path Skew:        -0.134ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.722ns = ( 8.722 - 4.000 ) 
+    Source Clock Delay      (SCD):    4.745ns
+    Clock Pessimism Removal (CPR):    -0.111ns
   Clock Uncertainty:      0.066ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
     Discrete Jitter          (DJ):    0.111ns
     Phase Error              (PE):    0.000ns
-  Clock Net Delay (Source):      1.594ns (routing 0.246ns, distribution 1.348ns)
-  Clock Net Delay (Destination): 1.427ns (routing 0.231ns, distribution 1.196ns)
+  Clock Net Delay (Source):      1.748ns (routing 0.246ns, distribution 1.502ns)
+  Clock Net Delay (Destination): 1.530ns (routing 0.231ns, distribution 1.299ns)
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
@@ -298,16 +304,37 @@ Slack (MET) :             0.037ns  (required time - arrival time)
                          net (fo=1, routed)           0.378     2.953    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
     BUFGCE_X0Y39         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
                                                       0.044     2.997 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
-    X1Y1 (CLOCK_ROOT)    net (fo=28951, routed)       1.594     4.591    design_1_i/ArgSort_AXI_1/U0/ARGSORT_IF/STM_RD/READER/CTRL/O_SIDE.O_PORT/ADJ_ALIGN.QUEUE/ACLK
-    SLICE_X31Y107        FDCE                                         r  design_1_i/ArgSort_AXI_1/U0/ARGSORT_IF/STM_RD/READER/CTRL/O_SIDE.O_PORT/ADJ_ALIGN.QUEUE/o_valid_reg/C
+    X1Y1 (CLOCK_ROOT)    net (fo=29023, routed)       1.748     4.745    design_1_i/ArgSort_AXI_1/U0/ARGSORT_IF/MRG_RD/MRG[1].READER/ACLK
+    SLICE_X48Y75         FDCE                                         r  design_1_i/ArgSort_AXI_1/U0/ARGSORT_IF/MRG_RD/MRG[1].READER/FSM_onehot_REQ.curr_state_reg[2]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X31Y107        FDCE (Prop_EFF2_SLICEM_C_Q)
-                                                      0.118     4.709 r  design_1_i/ArgSort_AXI_1/U0/ARGSORT_IF/STM_RD/READER/CTRL/O_SIDE.O_PORT/ADJ_ALIGN.QUEUE/o_valid_reg/Q
-                         net (fo=1021, routed)        3.452     8.161    design_1_i/ArgSort_AXI_1/U0/CORE/STM_INTAKE.QUEUE/SINGLE_WORD.INTAKE_QUEUE/Q__0/PORT_VAL
-    SLICE_X27Y5          LUT6 (Prop_D6LUT_SLICEL_I2_O)
-                                                      0.152     8.313 r  design_1_i/ArgSort_AXI_1/U0/CORE/STM_INTAKE.QUEUE/SINGLE_WORD.INTAKE_QUEUE/Q__0/curr_queue[6][DATA][49]_i_1/O
-                         net (fo=1, routed)           0.067     8.380    design_1_i/ArgSort_AXI_1/U0/CORE/STM_INTAKE.QUEUE/SINGLE_WORD.INTAKE_QUEUE/Q__0/curr_queue[6][DATA][49]_i_1_n_0
-    SLICE_X27Y5          FDCE                                         r  design_1_i/ArgSort_AXI_1/U0/CORE/STM_INTAKE.QUEUE/SINGLE_WORD.INTAKE_QUEUE/Q__0/curr_queue_reg[6][DATA][49]/D
+    SLICE_X48Y75         FDCE (Prop_FFF_SLICEL_C_Q)
+                                                      0.113     4.858 r  design_1_i/ArgSort_AXI_1/U0/ARGSORT_IF/MRG_RD/MRG[1].READER/FSM_onehot_REQ.curr_state_reg[2]/Q
+                         net (fo=36, routed)          0.646     5.504    design_1_i/ArgSort_AXI_1/U0/ARGSORT_IF/MRG_RD/REQ.ARB/TREE.NODE[1].ARB/ARB/curr_queue_reg[0][0]_0[0]
+    SLICE_X51Y77         LUT6 (Prop_G6LUT_SLICEL_I5_O)
+                                                      0.137     5.641 f  design_1_i/ArgSort_AXI_1/U0/ARGSORT_IF/MRG_RD/REQ.ARB/TREE.NODE[1].ARB/ARB/curr_queue[0][1]_i_4/O
+                         net (fo=1, routed)           0.107     5.748    design_1_i/ArgSort_AXI_1/U0/ARGSORT_IF/MRG_RD/REQ.ARB/TREE.NODE[1].ARB/ARB/req_select__5[1]
+    SLICE_X51Y77         LUT6 (Prop_D6LUT_SLICEL_I5_O)
+                                                      0.185     5.933 f  design_1_i/ArgSort_AXI_1/U0/ARGSORT_IF/MRG_RD/REQ.ARB/TREE.NODE[1].ARB/ARB/curr_queue[0][1]_i_3/O
+                         net (fo=6, routed)           0.285     6.218    design_1_i/ArgSort_AXI_1/U0/ARGSORT_IF/MRG_RD/REQ.ARB/ARB/arb_request[1]
+    SLICE_X52Y77         LUT6 (Prop_G6LUT_SLICEL_I3_O)
+                                                      0.082     6.299 r  design_1_i/ArgSort_AXI_1/U0/ARGSORT_IF/MRG_RD/REQ.ARB/ARB/curr_queue[0][3]_i_2/O
+                         net (fo=6, routed)           0.105     6.404    design_1_i/ArgSort_AXI_1/U0/ARGSORT_IF/MRG_RD/REQ.ARB/ARB/req_select__5_0[3]
+    SLICE_X52Y77         LUT2 (Prop_E6LUT_SLICEL_I0_O)
+                                                      0.083     6.487 r  design_1_i/ArgSort_AXI_1/U0/ARGSORT_IF/MRG_RD/REQ.ARB/ARB/REQ.curr_val[15]_i_3/O
+                         net (fo=109, routed)         0.182     6.670    design_1_i/ArgSort_AXI_1/U0/ARGSORT_IF/MRG_RD/REQ.ARB/TREE.NODE[3].ARB/ARB/REQ.curr_val_reg[3]
+    SLICE_X52Y78         LUT6 (Prop_H6LUT_SLICEL_I5_O)
+                                                      0.153     6.823 r  design_1_i/ArgSort_AXI_1/U0/ARGSORT_IF/MRG_RD/REQ.ARB/TREE.NODE[3].ARB/ARB/REQ.curr_val[3]_i_2/O
+                         net (fo=105, routed)         0.810     7.633    design_1_i/ArgSort_AXI_1/U0/ARGSORT_IF/MRG_RD/REQ.ARB/TREE.NODE[0].ARB/ARB/REQ.flow_stop_i_3[3]
+    SLICE_X48Y82         LUT4 (Prop_E6LUT_SLICEL_I3_O)
+                                                      0.187     7.820 r  design_1_i/ArgSort_AXI_1/U0/ARGSORT_IF/MRG_RD/REQ.ARB/TREE.NODE[0].ARB/ARB/REQ.req_addr[32]_i_8/O
+                         net (fo=1, routed)           0.310     8.130    design_1_i/ArgSort_AXI_1/U0/ARGSORT_IF/MRG_RD/REQ.ARB/TREE.NODE[3].ARB/ARB/REQ.req_addr_reg[32]_2
+    SLICE_X46Y85         LUT6 (Prop_G6LUT_SLICEL_I5_O)
+                                                      0.151     8.281 r  design_1_i/ArgSort_AXI_1/U0/ARGSORT_IF/MRG_RD/REQ.ARB/TREE.NODE[3].ARB/ARB/REQ.req_addr[32]_i_3/O
+                         net (fo=1, routed)           0.097     8.378    design_1_i/ArgSort_AXI_1/U0/ARGSORT_IF/MRG_RD/REQ.ARB/TREE.NODE[3].ARB/ARB/REQ.req_addr[32]_i_3_n_0
+    SLICE_X46Y85         LUT6 (Prop_D6LUT_SLICEL_I1_O)
+                                                      0.136     8.514 r  design_1_i/ArgSort_AXI_1/U0/ARGSORT_IF/MRG_RD/REQ.ARB/TREE.NODE[3].ARB/ARB/REQ.req_addr[32]_i_1/O
+                         net (fo=1, routed)           0.067     8.581    design_1_i/ArgSort_AXI_1/U0/ARGSORT_IF/MRG_RD/REQ.ARB_n_61
+    SLICE_X46Y85         FDCE                                         r  design_1_i/ArgSort_AXI_1/U0/ARGSORT_IF/MRG_RD/REQ.req_addr_reg[32]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_out1_design_1_clk_wiz_0_0 rise edge)
@@ -319,17 +346,17 @@ Slack (MET) :             0.037ns  (required time - arrival time)
                          net (fo=1, routed)           0.332     7.153    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
     BUFGCE_X0Y39         BUFGCE (Prop_BUFCE_BUFGCE_I_O)
                                                       0.039     7.192 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
-    X1Y1 (CLOCK_ROOT)    net (fo=28951, routed)       1.427     8.619    design_1_i/ArgSort_AXI_1/U0/CORE/STM_INTAKE.QUEUE/SINGLE_WORD.INTAKE_QUEUE/Q__0/ACLK
-    SLICE_X27Y5          FDCE                                         r  design_1_i/ArgSort_AXI_1/U0/CORE/STM_INTAKE.QUEUE/SINGLE_WORD.INTAKE_QUEUE/Q__0/curr_queue_reg[6][DATA][49]/C
-                         clock pessimism             -0.180     8.439    
-                         clock uncertainty           -0.066     8.373    
-    SLICE_X27Y5          FDCE (Setup_DFF_SLICEL_C_D)
-                                                      0.044     8.417    design_1_i/ArgSort_AXI_1/U0/CORE/STM_INTAKE.QUEUE/SINGLE_WORD.INTAKE_QUEUE/Q__0/curr_queue_reg[6][DATA][49]
+    X1Y1 (CLOCK_ROOT)    net (fo=29023, routed)       1.530     8.722    design_1_i/ArgSort_AXI_1/U0/ARGSORT_IF/MRG_RD/ACLK
+    SLICE_X46Y85         FDCE                                         r  design_1_i/ArgSort_AXI_1/U0/ARGSORT_IF/MRG_RD/REQ.req_addr_reg[32]/C
+                         clock pessimism             -0.111     8.611    
+                         clock uncertainty           -0.066     8.545    
+    SLICE_X46Y85         FDCE (Setup_DFF_SLICEL_C_D)
+                                                      0.044     8.589    design_1_i/ArgSort_AXI_1/U0/ARGSORT_IF/MRG_RD/REQ.req_addr_reg[32]
   -------------------------------------------------------------------
-                         required time                          8.417    
-                         arrival time                          -8.380    
+                         required time                          8.589    
+                         arrival time                          -8.581    
   -------------------------------------------------------------------
-                         slack                                  0.037    
+                         slack                                  0.008    
 
 
 
