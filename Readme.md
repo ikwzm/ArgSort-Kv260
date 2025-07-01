@@ -410,6 +410,22 @@ TARGET: argsort_32_2_1
 ```
 Specify the base name of the Bitstream file you want to execute in place of TARGET:.
 
+#### Set BASE_DTS to Rakefile.env (for ZynwMP-FPGA-Linux-Kernel-6.6)
+
+```console
+fpga@debian-fpga:~/ArgSort-Kv260$ cat Rakefile.env
+---
+TARGET: argsort_32_2_1
+BASE_DTS: argsort_axi_v2.dts
+```
+
+The following changes have been made since ZynqMP-FPGA-Linux-Kernel-6.6(or later).
+
+  * The node name of "fpga-full" has been changed to "fpga-region".
+  * The fclk kernel driver is no longer built in by default.
+
+so a new device tree is required.
+
 #### Install Bitstream file to PL and Device Tree
 
 ```console
