@@ -475,7 +475,7 @@ crw----rw- 1 root root 243, 2 Mar 14 05:08 /dev/udmabuf-argsort-tmp
 ```console
 fpga@debian-fpga:~/ArgSort-Kv260$ rake info
 python3 argsort_info.py
-ArgSort_AXI Version      : 1.2
+ArgSort_AXI Version      : 1.6
 ArgSort_AXI Ways         : 32
 ArgSort_AXI Words        : 2
 ArgSort_AXI Feedback     : 1
@@ -500,10 +500,10 @@ python3 generate_expect.py --sample sample_0000005000.npy --expect expect_000000
 generate_expect: sample_file  : sample_0000005000.npy
 generate_expect: expect_file  : expect_0000005000.npy
 generate_expect: size         : 5000
-generate_expect: average_time :    0.868 # [msec]
-generate_expect: throughput   :    5.758 # [mwords/sec]
-python3 argsort_test.py --sample sample_0000005000.npy --result result_0000005000.npy -n 10 -d 2 --log argsort_32_2_1.log
-argsort_test   : Version      : 1.2
+generate_expect: average_time :    5.710 # [msec]
+generate_expect: throughput   :    0.876 # [mwords/sec]
+python3 argsort_test.py --sample sample_0000005000.npy --result result_0000005000.npy -n 10 -d 2 --log argsort_32_2_1.log 
+argsort_test   : Version      : 1.6
 argsort_test   : Ways         : 32
 argsort_test   : Words        : 2
 argsort_test   : Feedback     : 1
@@ -517,22 +517,22 @@ argsort_test   : sample_file  : sample_0000005000.npy
 argsort_test   : size         : 5000
 argsort_test   : debug_mode   : 2
 argsort_test   : loops        : 10
-argsort_test   : time         :    0.290 # [msec]
-argsort_test   : time         :    0.203 # [msec]
-argsort_test   : time         :    0.194 # [msec]
-argsort_test   : time         :    0.193 # [msec]
-argsort_test   : time         :    0.194 # [msec]
-argsort_test   : time         :    0.226 # [msec]
-argsort_test   : time         :    0.194 # [msec]
-argsort_test   : time         :    0.195 # [msec]
-argsort_test   : time         :    0.194 # [msec]
-argsort_test   : time         :    0.194 # [msec]
+argsort_test   : time         :    0.281 # [msec]
+argsort_test   : time         :    0.190 # [msec]
+argsort_test   : time         :    0.184 # [msec]
+argsort_test   : time         :    0.184 # [msec]
+argsort_test   : time         :    0.184 # [msec]
+argsort_test   : time         :    0.182 # [msec]
+argsort_test   : time         :    0.180 # [msec]
+argsort_test   : time         :    0.197 # [msec]
+argsort_test   : time         :    0.168 # [msec]
+argsort_test   : time         :    0.165 # [msec]
 argsort_test   : result_file  : result_0000005000.npy
-argsort_test   : average_time :    0.208 # [msec]
-argsort_test   : throughput   :   24.094 # [mwords/sec]
-argsort_test   : Debug_Time(0):    0.046 # [msec]
-argsort_test   : Debug_Time(1):    0.030 # [msec]
-argsort_test   : Debug_Time(2):    0.016 # [msec]
+argsort_test   : average_time :    0.191 # [msec]
+argsort_test   : throughput   :   26.120 # [mwords/sec]
+argsort_test   : Debug_Time(0):    0.100 # [msec]
+argsort_test   : Debug_Time(1):    0.066 # [msec]
+argsort_test   : Debug_Time(2):    0.034 # [msec]
 python3 check_result.py --sample sample_0000005000.npy --result result_0000005000.npy --expect expect_0000005000.npy
 check_result: sample file : sample_0000005000.npy
 check_result: expect file : expect_0000005000.npy
@@ -545,10 +545,10 @@ python3 generate_expect.py --sample sample_0001000000.npy --expect expect_000100
 generate_expect: sample_file  : sample_0001000000.npy
 generate_expect: expect_file  : expect_0001000000.npy
 generate_expect: size         : 1000000
-generate_expect: average_time :  839.076 # [msec]
-generate_expect: throughput   :    1.192 # [mwords/sec]
-python3 argsort_test.py --sample sample_0001000000.npy --result result_0001000000.npy -n 10 -d 2 --log argsort_32_2_1.log
-argsort_test   : Version      : 1.2
+generate_expect: average_time :  849.691 # [msec]
+generate_expect: throughput   :    1.177 # [mwords/sec]
+python3 argsort_test.py --sample sample_0001000000.npy --result result_0001000000.npy -n 10 -d 2 --log argsort_32_2_1.log 
+argsort_test   : Version      : 1.6
 argsort_test   : Ways         : 32
 argsort_test   : Words        : 2
 argsort_test   : Feedback     : 1
@@ -562,23 +562,23 @@ argsort_test   : sample_file  : sample_0001000000.npy
 argsort_test   : size         : 1000000
 argsort_test   : debug_mode   : 2
 argsort_test   : loops        : 10
-argsort_test   : time         :   13.931 # [msec]
-argsort_test   : time         :   13.877 # [msec]
-argsort_test   : time         :   13.888 # [msec]
-argsort_test   : time         :   13.875 # [msec]
-argsort_test   : time         :   13.870 # [msec]
-argsort_test   : time         :   13.796 # [msec]
-argsort_test   : time         :   13.894 # [msec]
-argsort_test   : time         :   13.908 # [msec]
-argsort_test   : time         :   13.908 # [msec]
-argsort_test   : time         :   13.910 # [msec]
+argsort_test   : time         :   14.034 # [msec]
+argsort_test   : time         :   13.845 # [msec]
+argsort_test   : time         :   13.832 # [msec]
+argsort_test   : time         :   13.924 # [msec]
+argsort_test   : time         :   13.716 # [msec]
+argsort_test   : time         :   13.852 # [msec]
+argsort_test   : time         :   13.858 # [msec]
+argsort_test   : time         :   13.855 # [msec]
+argsort_test   : time         :   13.869 # [msec]
+argsort_test   : time         :   13.839 # [msec]
 argsort_test   : result_file  : result_0001000000.npy
-argsort_test   : average_time :   13.886 # [msec]
-argsort_test   : throughput   :   72.017 # [mwords/sec]
-argsort_test   : Debug_Time(0):   13.622 # [msec]
-argsort_test   : Debug_Time(1):    8.104 # [msec]
-argsort_test   : Debug_Time(2):    2.882 # [msec]
-argsort_test   : Debug_Time(3):    2.637 # [msec]
+argsort_test   : average_time :   13.862 # [msec]
+argsort_test   : throughput   :   72.138 # [mwords/sec]
+argsort_test   : Debug_Time(0):   29.925 # [msec]
+argsort_test   : Debug_Time(1):   17.764 # [msec]
+argsort_test   : Debug_Time(2):    6.324 # [msec]
+argsort_test   : Debug_Time(3):    5.837 # [msec]
 python3 check_result.py --sample sample_0001000000.npy --result result_0001000000.npy --expect expect_0001000000.npy
 check_result: sample file : sample_0001000000.npy
 check_result: expect file : expect_0001000000.npy
@@ -607,12 +607,12 @@ Build Bitstream file
 
 ### Requirement
 
-* Xilinx Vivado 2021.2
+* Xilinx Vivado 2021.2 or 2023.1
 
 ### Download ArgSort-Kv260
 
 ```console
-shell$ git clone --branch 1.2.0 git://github.com/ikwzm/ArgSort-Kv260.git
+shell$ git clone --branch 1.6.0 git://github.com/ikwzm/ArgSort-Kv260.git
 shell$ cd ArgSort-Kv260
 shell$ git submodule update --init --recursive
 ```
