@@ -124,8 +124,8 @@ set bCheckIPsPassed 1
 set bCheckIPs 1
 if { $bCheckIPs == 1 } {
    set list_check_ips "\ 
-ikwzm:Merge_Sorter:ArgSort_AXI:1.6\
-ikwzm:PIPEORK:ZYNQMP_ACP_ADAPTER:0.8\
+ikwzm:Merge_Sorter:ArgSort_AXI:1.7\
+ikwzm:PIPEWORK:ZYNQMP_ACP_ADAPTER:1.1\
 xilinx.com:ip:clk_wiz:6.0\
 xilinx.com:ip:proc_sys_reset:5.0\
 xilinx.com:ip:zynq_ultra_ps_e:3.3\
@@ -196,7 +196,7 @@ proc create_root_design { parentCell } {
   # Create ports
 
   # Create instance: ArgSort_AXI_1, and set properties
-  set ArgSort_AXI_1 [ create_bd_cell -type ip -vlnv ikwzm:Merge_Sorter:ArgSort_AXI:1.6 ArgSort_AXI_1 ]
+  set ArgSort_AXI_1 [ create_bd_cell -type ip -vlnv ikwzm:Merge_Sorter:ArgSort_AXI:1.7 ArgSort_AXI_1 ]
   set_property -dict [ list \
    CONFIG.DEBUG_ENABLE {1} \
    CONFIG.MRG_AXI_ADDR_WIDTH {64} \
@@ -222,7 +222,7 @@ proc create_root_design { parentCell } {
  ] $ArgSort_AXI_1
 
   # Create instance: ZYNQMP_ACP_ADAPTER_0, and set properties
-  set ZYNQMP_ACP_ADAPTER_0 [ create_bd_cell -type ip -vlnv ikwzm:PIPEORK:ZYNQMP_ACP_ADAPTER:0.8 ZYNQMP_ACP_ADAPTER_0 ]
+  set ZYNQMP_ACP_ADAPTER_0 [ create_bd_cell -type ip -vlnv ikwzm:PIPEWORK:ZYNQMP_ACP_ADAPTER:1.1 ZYNQMP_ACP_ADAPTER_0 ]
   set_property -dict [ list \
    CONFIG.AXI_ID_WIDTH {5} \
    CONFIG.AXI_AUSER_WIDTH {2} \
