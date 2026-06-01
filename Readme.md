@@ -9,8 +9,8 @@ Overvier
 * Board: any of the following
   - Kv260
 * OS: any of the following
-  - https://github.com/ikwzm/ZynqMP-FPGA-Linux
-  - https://github.com/ikwzm/ZynqMP-FPGA-Ubuntu20.04
+  - https://github.com/ikwzm/ZynqMP-FPGA-Debian13
+  - https://github.com/ikwzm/ZynqMP-FPGA-Debian12
 
 ### Licensing
 
@@ -56,8 +56,8 @@ Table.2 Utilization
     <td align="center">16</td>
     <td align="center">1</td>
     <td align="center">0</td>
-    <td align="right">37746</td>
-    <td align="right">27256</td>
+    <td align="right">38233</td>
+    <td align="right">26731</td>
     <td align="right">38</td>
     <td align="right">0</td>
     <td align="right">0</td>
@@ -68,8 +68,8 @@ Table.2 Utilization
     <td align="center">16</td>
     <td align="center">1</td>
     <td align="center">1</td>
-    <td align="right">38994</td>
-    <td align="right">27942</td>
+    <td align="right">39478</td>
+    <td align="right">27395</td>
     <td align="right">38</td>
     <td align="right">0</td>
     <td align="right">0</td>
@@ -80,8 +80,8 @@ Table.2 Utilization
     <td align="center">16</td>
     <td align="center">1</td>
     <td align="center">2</td>
-    <td align="right">37969</td>
-    <td align="right">27092</td>
+    <td align="right">38461</td>
+    <td align="right">26572</td>
     <td align="right">54</td>
     <td align="right">0</td>
     <td align="right">0</td>
@@ -92,8 +92,8 @@ Table.2 Utilization
     <td align="center">16</td>
     <td align="center">2</td>
     <td align="center">0</td>
-    <td align="right">59579</td>
-    <td align="right">55807</td>
+    <td align="right">59402</td>
+    <td align="right">55429</td>
     <td align="right">38</td>
     <td align="right">0</td>
     <td align="right">0</td>
@@ -104,8 +104,8 @@ Table.2 Utilization
     <td align="center">16</td>
     <td align="center">2</td>
     <td align="center">1</td>
-    <td align="right">60825</td>
-    <td align="right">57091</td>
+    <td align="right">60713</td>
+    <td align="right">56885</td>
     <td align="right">38</td>
     <td align="right">0</td>
     <td align="right">0</td>
@@ -116,8 +116,8 @@ Table.2 Utilization
     <td align="center">16</td>
     <td align="center">2</td>
     <td align="center">2</td>
-    <td align="right">58764</td>
-    <td align="right">55117</td>
+    <td align="right">58661</td>
+    <td align="right">54993</td>
     <td align="right">70</td>
     <td align="right">0</td>
     <td align="right">0</td>
@@ -128,8 +128,8 @@ Table.2 Utilization
     <td align="center">32</td>
     <td align="center">1</td>
     <td align="center">0</td>
-    <td align="right">65061</td>
-    <td align="right">46392</td>
+    <td align="right">66475</td>
+    <td align="right">45702</td>
     <td align="right">70</td>
     <td align="right">0</td>
     <td align="right">15</td>
@@ -140,8 +140,8 @@ Table.2 Utilization
     <td align="center">32</td>
     <td align="center">1</td>
     <td align="center">1</td>
-    <td align="right">67923</td>
-    <td align="right">47922</td>
+    <td align="right">69083</td>
+    <td align="right">47209</td>
     <td align="right">70</td>
     <td align="right">0</td>
     <td align="right">15</td>
@@ -152,8 +152,8 @@ Table.2 Utilization
     <td align="center">32</td>
     <td align="center">1</td>
     <td align="center">2</td>
-    <td align="right">66473</td>
-    <td align="right">46318</td>
+    <td align="right">67880</td>
+    <td align="right">45818</td>
     <td align="right">70</td>
     <td align="right">32</td>
     <td align="right">15</td>
@@ -164,8 +164,8 @@ Table.2 Utilization
     <td align="center">32</td>
     <td align="center">2</td>
     <td align="center">0</td>
-    <td align="right">107350</td>
-    <td align="right">103847</td>
+    <td align="right">106874</td>
+    <td align="right">103345</td>
     <td align="right">70</td>
     <td align="right">0</td>
     <td align="right">0</td>
@@ -176,8 +176,8 @@ Table.2 Utilization
     <td align="center">32</td>
     <td align="center">2</td>
     <td align="center">1</td>
-    <td align="right">109923</td>
-    <td align="right">106646</td>
+    <td align="right">109377</td>
+    <td align="right">106233</td>
     <td align="right">70</td>
     <td align="right">0</td>
     <td align="right">0</td>
@@ -188,8 +188,8 @@ Table.2 Utilization
     <td align="center">32</td>
     <td align="center">2</td>
     <td align="center">2</td>
-    <td align="right">104040</td>
-    <td align="right">102986</td>
+    <td align="right">105601</td>
+    <td align="right">102625</td>
     <td align="right">70</td>
     <td align="right">64</td>
     <td align="right">0</td>
@@ -237,19 +237,19 @@ Fig.2 Utlization(LUTs %)
     <td align="center">16</td>
     <td align="center">1</td>
     <td align="center">0</td>
-    <td align="right">0.428</td>
-    <td align="right">3.267</td>
-    <td align="right">34.686</td>
-    <td align="right">28.83</td>
+    <td align="right">0.452</td>
+    <td align="right">3.696</td>
+    <td align="right">34.947</td>
+    <td align="right">28.61</td>
   </tr>
   <tr>
     <td>argsort_16_1_1</td>
     <td align="center">16</td>
     <td align="center">1</td>
     <td align="center">1</td>
-    <td align="right">0.350</td>
-    <td align="right">2.386</td>
-    <td align="right">22.1676</td>
+    <td align="right">0.363</td>
+    <td align="right">2.394</td>
+    <td align="right">22.170</td>
     <td align="right">45.11</td>
   </tr>
   <tr>
@@ -257,8 +257,8 @@ Fig.2 Utlization(LUTs %)
     <td align="center">16</td>
     <td align="center">1</td>
     <td align="center">2</td>
-    <td align="right">0.343</td>
-    <td align="right">2.265</td>
+    <td align="right">0.369</td>
+    <td align="right">2.294</td>
     <td align="right">21.265</td>
     <td align="right">47.03</td>
   </tr>
@@ -267,97 +267,97 @@ Fig.2 Utlization(LUTs %)
     <td align="center">16</td>
     <td align="center">2</td>
     <td align="center">0</td>
-    <td align="right">0.340</td>
-    <td align="right">1.788</td>
-    <td align="right">24.493</td>
-    <td align="right">40.83</td>
+    <td align="right">0.347</td>
+    <td align="right">2.203</td>
+    <td align="right">24.540</td>
+    <td align="right">40.75</td>
   </tr>
   <tr>
     <td>argsort_16_2_1</td>
     <td align="center">16</td>
     <td align="center">2</td>
     <td align="center">1</td>
-    <td align="right">0.267</td>
-    <td align="right">1.196</td>
-    <td align="right">16.887</td>
-    <td align="right">59.22</td>
+    <td align="right">0.288</td>
+    <td align="right">1.358</td>
+    <td align="right">16.992</td>
+    <td align="right">58.85</td>
   </tr>
   <tr>
     <td>argsort_16_2_2</td>
     <td align="center">16</td>
     <td align="center">2</td>
     <td align="center">2</td>
-    <td align="right">0.285</td>
-    <td align="right">1.129</td>
-    <td align="right">15.259</td>
-    <td align="right">65.54</td>
+    <td align="right">0.304</td>
+    <td align="right">1.285</td>
+    <td align="right">15.299</td>
+    <td align="right">65.36</td>
   </tr>
   <tr>
     <td>argsort_32_1_0</td>
     <td align="center">32</td>
     <td align="center">1</td>
     <td align="center">0</td>
-    <td align="right">0.329</td>
-    <td align="right">2.304</td>
-    <td align="right">24.744</td>
-    <td align="right">40.41</td>
+    <td align="right">0.352</td>
+    <td align="right">2.523</td>
+    <td align="right">24.887</td>
+    <td align="right">40.18</td>
   </tr>
   <tr>
     <td>argsort_32_1_1</td>
     <td align="center">32</td>
     <td align="center">1</td>
     <td align="center">1</td>
-    <td align="right">0.289</td>
-    <td align="right">1.877</td>
-    <td align="right">17.446</td>
-    <td align="right">57.32</td>
+    <td align="right">0.309</td>
+    <td align="right">1.919</td>
+    <td align="right">17.509</td>
+    <td align="right">57.11</td>
   </tr>
   <tr>
     <td>argsort_32_1_2</td>
     <td align="center">32</td>
     <td align="center">1</td>
     <td align="center">2</td>
-    <td align="right">0.544</td>
-    <td align="right">2.157</td>
-    <td align="right">19.901</td>
-    <td align="right">50.25</td>
+    <td align="right">0.581</td>
+    <td align="right">2.345</td>
+    <td align="right">19.922</td>
+    <td align="right">50.20</td>
   </tr>
   <tr>
     <td>argsort_32_2_0</td>
     <td align="center">32</td>
     <td align="center">2</td>
     <td align="center">0</td>
-    <td align="right">0.276</td>
-    <td align="right">1.545</td>
-    <td align="right">18.835</td>
-    <td align="right">53.09</td>
+    <td align="right">0.293</td>
+    <td align="right">1.840</td>
+    <td align="right">18.986</td>
+    <td align="right">52.67</td>
   </tr>
   <tr>
     <td>argsort_32_2_1</td>
     <td align="center">32</td>
     <td align="center">2</td>
     <td align="center">1</td>
-    <td align="right">0.231</td>
-    <td align="right">1.332</td>
-    <td align="right">13.847</td>
-    <td align="right">72.22</td>
+    <td align="right">0.254</td>
+    <td align="right">1.277</td>
+    <td align="right">13.868</td>
+    <td align="right">72.11</td>
   </tr>
   <tr>
     <td>argsort_32_2_2</td>
     <td align="center">32</td>
     <td align="center">2</td>
     <td align="center">2</td>
-    <td align="right">0.655</td>
-    <td align="right">1.343</td>
-    <td align="right">15.500</td>
-    <td align="right">64.52</td>
+    <td align="right">0.637</td>
+    <td align="right">1.673</td>
+    <td align="right">15.504</td>
+    <td align="right">64.50</td>
   </tr>
   <tr>
     <td colspan="4">ZynqMP(arm64) numpy.argsort()</td>
-    <td align="right">1.551</td>
-    <td align="right">26.107</td>
-    <td align="right">840.246</td>
-    <td align="right">1.18</td>
+    <td align="right">1.758</td>
+    <td align="right">27.959</td>
+    <td align="right">851.644</td>
+    <td align="right">1.17</td>
   </tr>
 </table>
 
@@ -380,15 +380,14 @@ Quick Start
 
 ### Install
 
-#### Install ZynqMP-FPGA-Linux or ZynqMP-FPGA-Ubuntu20.04
+#### Install ZynqMP-FPGA-Debian13 or ZynqMP-FPGA-Debian12
 
 See the following URL:
 
-* ZynqMP-FPGA-Linux
- - https://github.com/ikwzm/ZynqMP-FPGA-Linux/blob/v2021.1.1/doc/install/kv260.md
-* ZynqMP-FPGA-Ubuntu20.04
- - https://github.com/ikwzm/ZynqMP-FPGA-Ubuntu20.04/blob/v2021.1-console-1/doc/install/kv260-console.md
- - https://github.com/ikwzm/ZynqMP-FPGA-Ubuntu20.04/blob/v2021.1-desktop-1/doc/install/kv260-desktop.md
+* ZynqMP-FPGA-Debian13
+ - https://github.com/ikwzm/ZynqMP-FPGA-Debian13/blob/v3.1.0/doc/install/kv260.md
+* ZynqMP-FPGA-Debian12
+ - https://github.com/ikwzm/ZynqMP-FPGA-Debian12/blob/v7.0.0/doc/install/kv260.md
 
 #### Boot Kv260
 
@@ -397,7 +396,7 @@ See the following URL:
 #### Download ArgSort-Kv260 to Kv260
 
 ```console
-fpga@debian-fpga:~/$ git clone --branch 1.2.0 git://github.com/ikwzm/ArgSort-Kv260.git
+fpga@debian-fpga:~/$ git clone --branch 1.7.0 git://github.com/ikwzm/ArgSort-Kv260.git
 fpga@debian-fpga:~/$ cd ArgSort-Kv260
 ```
 
@@ -475,7 +474,7 @@ crw----rw- 1 root root 243, 2 Mar 14 05:08 /dev/udmabuf-argsort-tmp
 ```console
 fpga@debian-fpga:~/ArgSort-Kv260$ rake info
 python3 argsort_info.py
-ArgSort_AXI Version      : 1.6
+ArgSort_AXI Version      : 1.7
 ArgSort_AXI Ways         : 32
 ArgSort_AXI Words        : 2
 ArgSort_AXI Feedback     : 1
@@ -503,7 +502,7 @@ generate_expect: size         : 5000
 generate_expect: average_time :    5.710 # [msec]
 generate_expect: throughput   :    0.876 # [mwords/sec]
 python3 argsort_test.py --sample sample_0000005000.npy --result result_0000005000.npy -n 10 -d 2 --log argsort_32_2_1.log 
-argsort_test   : Version      : 1.6
+argsort_test   : Version      : 1.7
 argsort_test   : Ways         : 32
 argsort_test   : Words        : 2
 argsort_test   : Feedback     : 1
@@ -548,7 +547,7 @@ generate_expect: size         : 1000000
 generate_expect: average_time :  849.691 # [msec]
 generate_expect: throughput   :    1.177 # [mwords/sec]
 python3 argsort_test.py --sample sample_0001000000.npy --result result_0001000000.npy -n 10 -d 2 --log argsort_32_2_1.log 
-argsort_test   : Version      : 1.6
+argsort_test   : Version      : 1.7
 argsort_test   : Ways         : 32
 argsort_test   : Words        : 2
 argsort_test   : Feedback     : 1
@@ -607,12 +606,12 @@ Build Bitstream file
 
 ### Requirement
 
-* Xilinx Vivado 2021.2 or 2023.1
+* Xilinx Vivado 2021.2 or 2023.1 or 2025.1
 
 ### Download ArgSort-Kv260
 
 ```console
-shell$ git clone --branch 1.6.0 git://github.com/ikwzm/ArgSort-Kv260.git
+shell$ git clone --branch 1.7.0 git://github.com/ikwzm/ArgSort-Kv260.git
 shell$ cd ArgSort-Kv260
 shell$ git submodule update --init --recursive
 ```
